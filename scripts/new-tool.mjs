@@ -1,6 +1,6 @@
 // 从模板生成一个工具仓库：node scripts/new-tool.mjs <编号> [--push]
 // 生成到 tools/<slug>，填好 tool.json、包名、窗口标题、安装包信息、README。
-// --push：在 campfire-code 组织下建公开仓库并推送，同时把总目录里该工具的状态改为 doing。
+// --push：生成后立刻调用 publish-tool.mjs 推送（一般先本地写好、测完再单独运行 publish-tool.mjs）。
 import { cpSync, existsSync, readFileSync, writeFileSync, rmSync, mkdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
@@ -134,16 +134,4 @@ MIT，版权方为篝火（campfire-code）。
 writeFileSync(`${dest}/CHANGELOG.md`, '# 更新记录\n\n## 0.1.0\n\n- 首个版本。\n');
 console.log(`已生成 ${dest}（界面 ${t.ui.layout.toUpperCase()} · ${t.ui.palette}）`);
 
-if (push) {
-  const sh = (cmd, args) => execFileSync(cmd, args, { cwd: dest, stdio: 'inherit' });
-  sh('git', ['init', '-q', '-b', 'main']);
-  sh('git', ['add', '-A']);
-  sh('git', ['commit', '-q', '-m', `初始化：${t.name}（从 toolkit-template 生成）`, '-m', 'Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>']);
-  sh('gh', ['repo', 'create', `${ORG}/${t.slug}`, '--public', '--source', '.', '--push', '--description', `${t.name}：${t.desc}`.slice(0, 340)]);
-  const topics = ['campfire-toolkit', { 电商运营: 'ecommerce', 微信私域: 'wechat', 内容生产: 'content-creation', 办公提效: 'productivity', 'AI 助手': 'ai-assistant' }[t.category], 'tauri', 'desktop-app'];
-  sh('gh', ['repo', 'edit', `${ORG}/${t.slug}`, ...topics.flatMap((x) => ['--add-topic', x])]);
-  t.repo = `${ORG}/${t.slug}`;
-  t.status = 'doing';
-  writeFileSync(catalogPath, JSON.stringify(catalog, null, 2) + '\n');
-  console.log(`已推送 https://github.com/${ORG}/${t.slug}`);
-}
+if (push) execFileSync('node', [root + 'scripts/publish-tool.mjs', t.id], { stdio: 'inherit' });

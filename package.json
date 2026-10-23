@@ -1,0 +1,14 @@
+{
+  "name": "toolkit-hub",
+  "private": true,
+  "type": "module",
+  "description": "篝火开源工具箱汇总仓库的脚本",
+  "scripts": {
+    "catalog": "node scripts/gen-catalog.mjs && node scripts/gen-docs.mjs",
+    "shot": "node scripts/shot.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.56.1"
+  },
+  "packageManager": "pnpm@11.16.0"
+}
