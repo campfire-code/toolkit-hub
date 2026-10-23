@@ -94,7 +94,7 @@ jobs:
 
       - name: 打包内置 Python 程序
         if: needs.meta.outputs.sidecar == 'true'
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.3.2
       - if: needs.meta.outputs.sidecar == 'true'
         shell: bash
         run: |
