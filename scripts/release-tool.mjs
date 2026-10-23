@@ -13,14 +13,17 @@ if (!t) throw new Error(`总目录里没有编号 ${id}`);
 const dir = `${root}tools/${t.slug}`;
 const repo = `${ORG}/${t.slug}`;
 const out = (cmd, args) => execFileSync(cmd, args, { cwd: dir, encoding: 'utf8' }).trim();
-const { version } = JSON.parse(readFileSync(`${dir}/tool.json`, 'utf8'));
+const { version, delivery = 'desktop' } = JSON.parse(readFileSync(`${dir}/tool.json`, 'utf8'));
 const tag = `v${version}`;
 
 if (out('git', ['status', '--porcelain'])) throw new Error('有未提交的改动，先运行 publish-tool.mjs');
-if (!out('git', ['tag', '-l', tag])) {
-  execFileSync('git', ['tag', tag], { cwd: dir });
-  execFileSync('git', ['push', '-q', 'origin', tag], { cwd: dir });
-}
+// fork 类工具的 origin 指向上游作者的仓库，标签只能推到 campfire 远程
+const remotes = out('git', ['remote']).split('\n');
+const remote = remotes.includes('campfire') ? 'campfire' : 'origin';
+const remoteUrl = out('git', ['remote', 'get-url', remote]);
+if (!remoteUrl.includes(`github.com/${ORG}/`)) throw new Error(`远程 ${remote}（${remoteUrl}）不是 ${ORG} 组织的仓库，拒绝推送`);
+if (!out('git', ['tag', '-l', tag])) execFileSync('git', ['tag', tag], { cwd: dir });
+execFileSync('git', ['push', '-q', remote, tag], { cwd: dir });
 let runId = '';
 for (let i = 0; i < 30 && !runId; i++) {
   execFileSync('sleep', ['4']);
@@ -34,8 +37,16 @@ try {
   throw new Error(`出包失败，查看 https://github.com/${repo}/actions/runs/${runId}`);
 }
 const assets = JSON.parse(out('gh', ['release', 'view', tag, '-R', repo, '--json', 'assets,url,isDraft']));
-const want = ['mac-arm64.dmg', 'mac-x64.dmg', 'windows-x64-setup.exe'];
+// 不同交付方式要求的产物：desktop 三个安装包；mirror 至少一个上游安装包；launcher 启动脚本包；docker 部署文件
+const WANT = {
+  desktop: ['mac-arm64.dmg', 'mac-x64.dmg', 'windows-x64-setup.exe'],
+  mirror: ['SHA256SUMS.txt'],
+  launcher: ['_portable.zip'],
+  docker: ['docker-compose.yml'],
+};
+const want = WANT[delivery] ?? WANT.desktop;
 const missing = want.filter((w) => !assets.assets.some((a) => a.name.endsWith(w)));
+if (delivery === 'mirror' && assets.assets.length < 2) missing.push('上游安装包');
 if (missing.length || assets.isDraft) throw new Error(`发布不完整：缺 ${missing.join('、') || '（仍是草稿）'}`);
 // 写回前重新读取，避免覆盖同时进行的其他发版的结果
 const fresh = JSON.parse(readFileSync(catalogPath, 'utf8'));

@@ -1,0 +1,46 @@
+# 复用流程「启动脚本包」：Python 类 fork 工具打 v*-campfire.* 标签时调用。
+# 把源码（git archive）和 campfire/ 里填好的双击启动脚本打成一个 zip 发布；.bat 转成 Windows 换行符。
+name: launcher-release
+
+on:
+  workflow_call:
+    inputs:
+      hub-ref:
+        type: string
+        default: v1
+
+permissions:
+  contents: write
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          repository: campfire-code/toolkit-hub
+          ref: ${{ inputs.hub-ref }}
+          path: .hub
+          sparse-checkout: ci
+      - name: 打包并发布
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          slug=$(jq -r .slug tool.json); name=$(jq -r .name tool.json); version=$(jq -r .version tool.json)
+          [ "$GITHUB_REF_NAME" = "v$version" ] || { echo "::error::标签与 tool.json 版本不一致"; exit 1; }
+          for f in "campfire/启动.bat" "campfire/启动.command"; do
+            [ -f "$f" ] || { echo "::error::缺少 $f"; exit 1; }
+            grep -q '{{' "$f" && { echo "::error::$f 里还有没填的占位符"; exit 1; }
+          done
+          dir="${slug}-${version}"
+          mkdir -p "build/$dir"
+          git archive HEAD | tar -x -C "build/$dir"
+          cp "campfire/启动.command" "build/$dir/启动（Mac 双击）.command"; chmod +x "build/$dir/启动（Mac 双击）.command"
+          sed 's/$/\r/' "campfire/启动.bat" > "build/$dir/启动（Windows 双击）.bat"
+          cp campfire/使用说明.txt "build/$dir/" 2>/dev/null || true
+          (cd build && zip -qr "../${slug}_${version}_portable.zip" "$dir")
+          sha256sum "${slug}_${version}_portable.zip" > SHA256SUMS.txt
+          notes=$(mktemp)
+          sed -e "s/{{SLUG}}/$slug/g" -e "s/{{VERSION}}/$version/g" -e "s/{{NAME}}/$name/g" .hub/ci/launcher-notes.md > "$notes"
+          gh release create "v$version" "${slug}_${version}_portable.zip" SHA256SUMS.txt --title "$name $version" --notes-file "$notes" --latest

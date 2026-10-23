@@ -18,7 +18,7 @@ for (const t of catalog.tools) {
   const rel = gh(['release', 'view', '-R', t.repo, '--json', 'tagName,url,isDraft,assets', '--jq', '{tag: .tagName, url: .url, draft: .isDraft, names: [.assets[].name]}']);
   if (rel) {
     const r = JSON.parse(rel);
-    const complete = t.track === 'fork' || ['mac-arm64.dmg', 'mac-x64.dmg', 'windows-x64-setup.exe'].every((s) => r.names.some((n) => n.endsWith(s)));
+    const complete = t.track === 'fork' ? r.names.length > 0 : ['mac-arm64.dmg', 'mac-x64.dmg', 'windows-x64-setup.exe'].every((s) => r.names.some((n) => n.endsWith(s)));
     if (!r.draft && complete) Object.assign(t, { status: 'released', version: r.tag.replace(/^v/, ''), release: r.url });
   }
   if (JSON.stringify(t) !== before) { changed++; console.log(`${t.id} ${t.name}：${t.status}${t.version ? ' ' + t.version : ''}`); }

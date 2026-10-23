@@ -1,0 +1,74 @@
+# 复用流程「Docker」：服务端类 fork 工具打 v*-campfire.* 标签时调用。
+# 构建 amd64 / arm64 镜像推到 ghcr.io/campfire-code/<slug>，Release 附上 campfire/ 里的一键部署文件。
+name: docker-release
+
+on:
+  workflow_call:
+    inputs:
+      hub-ref:
+        type: string
+        default: v1
+      context:
+        description: Docker 构建目录
+        type: string
+        default: .
+      dockerfile:
+        description: Dockerfile 路径
+        type: string
+        default: Dockerfile
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - id: m
+        run: |
+          echo "slug=$(jq -r .slug tool.json)" >> "$GITHUB_OUTPUT"
+          echo "name=$(jq -r .name tool.json)" >> "$GITHUB_OUTPUT"
+          v=$(jq -r .version tool.json); echo "version=$v" >> "$GITHUB_OUTPUT"
+          [ "$GITHUB_REF_NAME" = "v$v" ] || { echo "::error::标签与 tool.json 版本不一致"; exit 1; }
+          [ -f campfire/docker-compose.yml ] || { echo "::error::缺少 campfire/docker-compose.yml"; exit 1; }
+      - uses: docker/setup-qemu-action@v4
+      - uses: docker/setup-buildx-action@v4
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+      - uses: docker/build-push-action@v7
+        with:
+          context: ${{ inputs.context }}
+          file: ${{ inputs.dockerfile }}
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            ghcr.io/campfire-code/${{ steps.m.outputs.slug }}:${{ steps.m.outputs.version }}
+            ghcr.io/campfire-code/${{ steps.m.outputs.slug }}:latest
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+            org.opencontainers.image.description=篝火出品 · ${{ steps.m.outputs.name }}
+      - uses: actions/checkout@v7
+        with:
+          repository: campfire-code/toolkit-hub
+          ref: ${{ inputs.hub-ref }}
+          path: .hub
+          sparse-checkout: ci
+      - name: 发布部署文件
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SLUG: ${{ steps.m.outputs.slug }}
+          NAME: ${{ steps.m.outputs.name }}
+          VERSION: ${{ steps.m.outputs.version }}
+        run: |
+          files="campfire/docker-compose.yml"
+          [ -f campfire/.env.example ] && files="$files campfire/.env.example"
+          notes=$(mktemp)
+          sed -e "s/{{SLUG}}/$SLUG/g" -e "s/{{VERSION}}/$VERSION/g" -e "s/{{NAME}}/$NAME/g" .hub/ci/docker-notes.md > "$notes"
+          gh release create "v$VERSION" $files --title "$NAME $VERSION" --notes-file "$notes" --latest
+          # 镜像设为公开，方便直接拉取
+          gh api -X PATCH "/orgs/campfire-code/packages/container/$SLUG/visibility" -f visibility=public 2>/dev/null || echo "::warning::镜像可见性需要在组织的 Packages 页面手动设为 Public"

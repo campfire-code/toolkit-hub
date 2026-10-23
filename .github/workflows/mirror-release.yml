@@ -1,0 +1,50 @@
+# 复用流程「转发布」：fork 类工具打 v*-campfire.* 标签时调用。
+# 从上游官方发布下载安装包（tool.json 的 upstream.repo 与 upstream.tag），统一改名后附中文说明与 SHA256 校验重新发布，不修改二进制。
+name: mirror-release
+
+on:
+  workflow_call:
+    inputs:
+      hub-ref:
+        type: string
+        default: v1
+      exclude:
+        description: 不转发布的附件（正则），默认去掉签名、更新清单与源码包
+        type: string
+        default: '\.(sig|json|blockmap|yml)$|^Source code'
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          repository: campfire-code/toolkit-hub
+          ref: ${{ inputs.hub-ref }}
+          path: .hub
+          sparse-checkout: ci
+      - name: 下载上游安装包并发布
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXCLUDE: ${{ inputs.exclude }}
+        run: |
+          slug=$(jq -r .slug tool.json); name=$(jq -r .name tool.json); version=$(jq -r .version tool.json)
+          up=$(jq -r .upstream.repo tool.json); uptag=$(jq -r .upstream.tag tool.json)
+          [ "$GITHUB_REF_NAME" = "v$version" ] || { echo "::error::标签 $GITHUB_REF_NAME 与 tool.json 版本 $version 不一致"; exit 1; }
+          mkdir -p dl out
+          gh release download "$uptag" -R "$up" -D dl
+          for f in dl/*; do
+            b=$(basename "$f")
+            if echo "$b" | grep -Eq "$EXCLUDE"; then continue; fi
+            cp "$f" "out/${slug}_${version}_${b}"
+          done
+          ls out | grep -q . || { echo "::error::上游 $up $uptag 没有可转发布的安装包"; exit 1; }
+          (cd out && sha256sum * > SHA256SUMS.txt)
+          notes=$(mktemp)
+          sed -e "s/{{SLUG}}/$slug/g" -e "s/{{VERSION}}/$version/g" -e "s/{{NAME}}/$name/g" -e "s#{{UPSTREAM}}#$up#g" -e "s/{{UPTAG}}/$uptag/g" .hub/ci/mirror-notes.md > "$notes"
+          echo -e "\n### 本次附件\n" >> "$notes"; (cd out && ls -1 | sed 's/^/- `/; s/$/`/') >> "$notes"
+          gh release create "v$version" out/* --title "$name $version" --notes-file "$notes" --latest

@@ -32,6 +32,8 @@ if (!existsSync(`${dir}/.git`)) {
 } else {
   sh('git', ['add', '-A']);
   if (out('git', ['status', '--porcelain'])) sh('git', ['commit', '-q', '-m', message || `更新 ${t.name}`, '-m', CO]);
+  const url = out('git', ['remote', 'get-url', 'origin']);
+  if (!url.includes(`github.com/${ORG}/`)) throw new Error(`origin（${url}）不是 ${ORG} 组织的仓库；fork 类工具请用 publish-fork.mjs`);
   sh('git', ['push', '-q']);
 }
 const fresh = JSON.parse(readFileSync(catalogPath, 'utf8'));
