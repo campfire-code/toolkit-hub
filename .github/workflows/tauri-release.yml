@@ -116,6 +116,11 @@ jobs:
           cp "dist/sidecar$ext" "../src-tauri/binaries/sidecar-${{ matrix.target }}$ext"
 
       - run: pnpm install --frozen-lockfile
+      - name: 下载内置 ffmpeg
+        working-directory: ${{ inputs.app-dir }}
+        shell: bash
+        run: |
+          if [ "$(jq -r '.ffmpeg // false' tool.json 2>/dev/null)" = "true" ]; then node scripts/fetch-ffmpeg.mjs ${{ matrix.target }}; else echo "不需要 ffmpeg"; fi
       - name: 单元测试
         if: inputs.test != ''
         run: ${{ inputs.test }}

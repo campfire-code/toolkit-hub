@@ -209,10 +209,10 @@
         "layout": "e",
         "palette": "blue"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/main-image-resizer",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/main-image-resizer/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -3006,10 +3006,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/meeting-minutes",
-      "version": null,
-      "release": null,
+      "version": "0.4.1-campfire.1",
+      "release": "https://github.com/campfire-code/meeting-minutes/releases/tag/v0.4.1-campfire.1",
       "notes": ""
     },
     {

@@ -1,6 +1,7 @@
 // 把模板里的公共部分同步到工具仓库：node scripts/sync-kit.mjs [编号...]（不写编号则同步 tools/ 下全部从模板生成的工具）
 // 同步：src/kit、src/main.tsx、src/preview.tsx、preview.html、工作流引用、安装包的发布者与版权；工具自己的 src/tool 与 README 不动。
-import { cpSync, existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
 
 const root = new URL('..', import.meta.url).pathname;
 const tpl = root + 'tools/toolkit-template';
@@ -8,14 +9,14 @@ const { tools } = JSON.parse(readFileSync(root + 'catalog/tools.json', 'utf8'));
 const ids = process.argv.slice(2);
 const targets = tools.filter((t) => t.track !== 'fork' && existsSync(`${root}tools/${t.slug}/tool.json`) && (!ids.length || ids.includes(t.id)));
 
-const FILES = ['src/main.tsx', 'src/preview.tsx', 'preview.html', '.github/workflows/release.yml', '.github/workflows/check.yml'];
+const FILES = ['src/main.tsx', 'src/preview.tsx', 'preview.html', '.github/workflows/release.yml', '.github/workflows/check.yml', 'scripts/fetch-ffmpeg.mjs', 'src-tauri/capabilities/default.json'];
 const tplConf = JSON.parse(readFileSync(`${tpl}/src-tauri/tauri.conf.json`, 'utf8'));
 
 for (const t of targets) {
   const dest = `${root}tools/${t.slug}`;
   rmSync(`${dest}/src/kit`, { recursive: true, force: true });
   cpSync(`${tpl}/src/kit`, `${dest}/src/kit`, { recursive: true });
-  for (const f of FILES) cpSync(`${tpl}/${f}`, `${dest}/${f}`);
+  for (const f of FILES) { mkdirSync(dirname(`${dest}/${f}`), { recursive: true }); cpSync(`${tpl}/${f}`, `${dest}/${f}`); }
   const confPath = `${dest}/src-tauri/tauri.conf.json`;
   const conf = JSON.parse(readFileSync(confPath, 'utf8'));
   conf.bundle.publisher = tplConf.bundle.publisher;

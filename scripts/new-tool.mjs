@@ -1,4 +1,4 @@
-// 从模板生成一个工具仓库：node scripts/new-tool.mjs <编号> [--push]
+// 从模板生成一个工具仓库：node scripts/new-tool.mjs <编号> [--ffmpeg] [--push]
 // 生成到 tools/<slug>，填好 tool.json、包名、窗口标题、安装包信息、README。
 // --push：生成后立刻调用 publish-tool.mjs 推送（一般先本地写好、测完再单独运行 publish-tool.mjs）。
 import { cpSync, existsSync, readFileSync, writeFileSync, rmSync, mkdirSync } from 'node:fs';
@@ -8,6 +8,7 @@ const root = new URL('..', import.meta.url).pathname;
 const ORG = 'campfire-code';
 const [id, ...flags] = process.argv.slice(2);
 const push = flags.includes('--push');
+const withFfmpeg = flags.includes('--ffmpeg');
 const catalogPath = root + 'catalog/tools.json';
 const catalog = JSON.parse(readFileSync(catalogPath, 'utf8'));
 const t = catalog.tools.find((x) => x.id === id);
@@ -45,6 +46,17 @@ json('src-tauri/tauri.conf.json', (v) => {
   v.app.windows[0].title = t.name;
   v.bundle.shortDescription = t.name;
 });
+
+// 需要处理音视频的工具：打包内置 ffmpeg（GPL，作为独立程序随应用分发，附许可证）
+if (withFfmpeg) {
+  json('tool.json', (v) => { v.ffmpeg = true; });
+  json('src-tauri/tauri.conf.json', (v) => {
+    v.bundle.externalBin = ['binaries/ffmpeg'];
+    v.bundle.resources = { 'binaries/ffmpeg-LICENSE.txt': 'licenses/ffmpeg-LICENSE.txt' };
+  });
+  writeFileSync(`${dest}/THIRD_PARTY_LICENSES.md`, readFileSync(`${dest}/THIRD_PARTY_LICENSES.md`, 'utf8').trimEnd() +
+    '\n| [FFmpeg](https://ffmpeg.org) 6.x 静态构建（取自 [eugeneware/ffmpeg-static](https://github.com/eugeneware/ffmpeg-static) b6.1.1；Windows 版来自 gyan.dev） | 音视频处理，作为独立程序随应用分发 | GPL-3.0（许可证随安装包附在 licenses/ffmpeg-LICENSE.txt；源码见 https://ffmpeg.org/download.html） |\n');
+}
 
 // 模板里的样例工具（图片批量压缩）只给 o13 保留；其他工具放一个待实现的骨架
 if (t.id !== 'o13') {
