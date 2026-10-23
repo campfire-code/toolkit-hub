@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T08:54:25.187Z",
+  "generatedAt": "2026-10-23T09:39:43.810Z",
   "decisionsSource": "https://claude.ai/artifact/5r6mavUV5zM6ptrAn5Zkfi decisions/plan v54",
   "engineering": {
     "q_batch": "20",
@@ -93,10 +93,10 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/bg-remover-batch",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/bg-remover-batch/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -209,8 +209,8 @@
         "layout": "e",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/main-image-resizer",
       "version": null,
       "release": null,
       "notes": ""
@@ -261,8 +261,8 @@
         "layout": "e",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/ai-title-writer",
       "version": null,
       "release": null,
       "notes": ""
@@ -287,8 +287,8 @@
         "layout": "a",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/banned-words-checker",
       "version": null,
       "release": null,
       "notes": ""
@@ -313,8 +313,8 @@
         "layout": "a",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/order-profit-reconciler",
       "version": null,
       "release": null,
       "notes": ""
@@ -575,8 +575,8 @@
         "layout": "b",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/review-insight",
       "version": null,
       "release": null,
       "notes": ""
@@ -923,10 +923,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/wechat-md-formatter",
+      "version": "2.1.0-campfire.1",
+      "release": "https://github.com/campfire-code/wechat-md-formatter/releases/tag/v2.1.0-campfire.1",
       "notes": ""
     },
     {
@@ -945,11 +945,14 @@
       "recommended": "do",
       "decision": "do",
       "firstBatch": true,
-      "track": "fork",
-      "trackLabel": "fork 中文化 + 安装包",
+      "track": "wrap",
+      "trackLabel": "自研界面 + 开源库",
       "listing": "store",
-      "uiType": null,
-      "ui": null,
+      "uiType": "text",
+      "ui": {
+        "layout": "f",
+        "palette": "violet"
+      },
       "status": "todo",
       "repo": null,
       "version": null,
@@ -1191,8 +1194,8 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/moments-daily-writer",
       "version": null,
       "release": null,
       "notes": ""
@@ -1217,8 +1220,8 @@
         "layout": "a",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/script-quick-reply",
       "version": null,
       "release": null,
       "notes": ""
@@ -2090,8 +2093,8 @@
         "layout": "b",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/xhs-card-maker",
       "version": null,
       "release": null,
       "notes": ""
@@ -2142,11 +2145,14 @@
       "recommended": "do",
       "decision": "do",
       "firstBatch": true,
-      "track": "fork",
-      "trackLabel": "fork 中文化 + 安装包",
+      "track": "wrap",
+      "trackLabel": "自研界面 + 开源库",
       "listing": "store",
-      "uiType": null,
-      "ui": null,
+      "uiType": "text",
+      "ui": {
+        "layout": "f",
+        "palette": "violet"
+      },
       "status": "todo",
       "repo": null,
       "version": null,
@@ -2251,8 +2257,8 @@
         "layout": "a",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/ai-content-labeler",
       "version": null,
       "release": null,
       "notes": ""
@@ -2532,9 +2538,9 @@
       "name": "PDF 百宝箱",
       "desc": "合并、拆分、压缩、加水印、转图",
       "upstream": {
-        "repo": "py-pdf/pypdf",
-        "stars": "10k",
-        "license": "BSD-3"
+        "repo": "Hopding/pdf-lib",
+        "stars": "8.7k",
+        "license": "MIT"
       },
       "form": "桌面",
       "risk": "low",
@@ -2549,8 +2555,8 @@
         "layout": "b",
         "palette": "amber"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/pdf-toolbox",
       "version": null,
       "release": null,
       "notes": ""
@@ -2636,8 +2642,8 @@
         "layout": "a",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/batch-ocr",
       "version": null,
       "release": null,
       "notes": ""
@@ -2689,10 +2695,10 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "released",
+      "status": "doing",
       "repo": "campfire-code/excel-split-merge",
-      "version": "0.1.0",
-      "release": "https://github.com/campfire-code/excel-split-merge/releases/tag/v0.1.0",
+      "version": null,
+      "release": null,
       "notes": ""
     },
     {
@@ -2715,8 +2721,8 @@
         "layout": "c",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/excel-to-word-batch",
       "version": null,
       "release": null,
       "notes": ""

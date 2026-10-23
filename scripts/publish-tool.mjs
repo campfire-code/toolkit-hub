@@ -16,6 +16,12 @@ const dir = `${root}tools/${t.slug}`;
 const sh = (cmd, args, opts = {}) => execFileSync(cmd, args, { cwd: dir, stdio: 'inherit', ...opts });
 const out = (cmd, args) => execFileSync(cmd, args, { cwd: dir, encoding: 'utf8' }).trim();
 
+// 还是模板默认图标时，先生成篝火图标
+const appDir = existsSync(`${dir}/src-tauri`) ? dir : existsSync(`${dir}/apps/desktop/src-tauri`) ? `${dir}/apps/desktop` : null;
+if (appDir && !existsSync(`${appDir}/src-tauri/icons/.campfire`)) {
+  execFileSync('node', [root + 'scripts/make-icon.mjs', id, appDir.slice(root.length)], { stdio: 'inherit' });
+}
+
 if (!existsSync(`${dir}/.git`)) {
   sh('git', ['init', '-q', '-b', 'main']);
   sh('git', ['add', '-A']);

@@ -45,9 +45,9 @@ const SLUG = {
 };
 
 // 做法：fork = 直接 fork 现成应用后中文化、补安装包；wrap = 我们写桌面界面，调用开源库；own = 从零写
-const FORK = new Set(['e22', 'e23', 'e24', 'e25', 'e26', 'e27', 'e28', 'e29', 'e30', 'w01', 'w02', 'w03', 'w04',
+const FORK = new Set(['e22', 'e23', 'e24', 'e25', 'e26', 'e27', 'e28', 'e29', 'e30', 'w01', 'w03', 'w04',
   'w05', 'w20', 'w21', 'w23', 'w24', 'w25', 'w26', 'w27', 'w28', 'c01', 'c02', 'c03', 'c05', 'c08', 'c12', 'c13',
-  'c14', 'c15', 'c16', 'c19', 'c26', 'c27', 'c28', 'c30', 'o18', 'o22', 'o23', 'o24', 'o25', 'o19', 'o20', 'a02',
+  'c14', 'c15', 'c16', 'c26', 'c27', 'c28', 'c30', 'o18', 'o22', 'o23', 'o24', 'o25', 'o19', 'o20', 'a02',
   'a03', 'a04', 'a05', 'a06', 'w16', 'w22', 'c09', 'o03', 'o06']);
 const TRACK_LABEL = { own: '从零写', wrap: '自研界面 + 开源库', fork: 'fork 中文化 + 安装包' };
 
@@ -57,7 +57,7 @@ const UITYPE = {
   media: ['e03', 'e04', 'e05', 'e06', 'e07', 'e08', 'e31', 'e32', 'c04', 'c06', 'c10', 'c11', 'c17', 'c18', 'c23', 'c24', 'c29', 'o13', 'o14'],
   data: ['e01', 'e02', 'e11', 'e12', 'e13', 'e14', 'e15', 'e16', 'e17', 'e18', 'e19', 'e20', 'e21', 'w06', 'w08', 'w09', 'w10', 'w13', 'w15',
     'o01', 'o02', 'o04', 'o05', 'o07', 'o08', 'o10', 'o11', 'o12', 'o15', 'o16', 'o17', 'a01', 'w14', 'w18', 'c22', 'c25', 'c32', 'o09', 'w07'],
-  text: ['e09', 'e10', 'w11', 'w12', 'w17', 'w19', 'c20', 'c21', 'c31', 'o21'],
+  text: ['w02', 'c19', 'e09', 'e10', 'w11', 'w12', 'w17', 'w19', 'c20', 'c21', 'c31', 'o21'],
 };
 const uiTypeOf = Object.fromEntries(Object.entries(UITYPE).flatMap(([k, ids]) => ids.map((id) => [id, k])));
 
@@ -85,13 +85,16 @@ const prev = existsSync(root + 'catalog/tools.json')
   ? Object.fromEntries(JSON.parse(readFileSync(root + 'catalog/tools.json', 'utf8')).tools.map((t) => [t.id, t]))
   : {};
 
+// 实际使用的上游与拍板页候选不同时，以实际为准
+const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' } };
+
 const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec, first]) => {
   const decision = decisions.tools[id] ?? rec;
   const track = !base ? 'own' : FORK.has(id) ? 'fork' : 'wrap';
   const p = prev[id] ?? {};
   return {
     id, slug: SLUG[id], category: CATS[cat], name, desc,
-    upstream: base ? { repo: base, stars: star, license } : null,
+    upstream: UPSTREAM_FIX[id] ?? (base ? { repo: base, stars: star, license } : null),
     form, risk, recommended: rec, decision,
     firstBatch: Boolean(first) && decision === 'do',
     track, trackLabel: TRACK_LABEL[track],
