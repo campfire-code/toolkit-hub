@@ -1,0 +1,139 @@
+# 复用出包工作流：工具仓库打 v* 标签时调用。
+# 产物统一命名为 <slug>_<版本>_<平台>.<扩展名>，避免中文文件名在 Releases 里被改写。
+name: tauri-release
+
+on:
+  workflow_call:
+    inputs:
+      hub-ref:
+        description: 汇总仓库的版本，用来取发布说明模板
+        type: string
+        default: v1
+
+permissions:
+  contents: write
+
+jobs:
+  meta:
+    runs-on: ubuntu-latest
+    outputs:
+      slug: ${{ steps.m.outputs.slug }}
+      name: ${{ steps.m.outputs.name }}
+      version: ${{ steps.m.outputs.version }}
+      sidecar: ${{ steps.m.outputs.sidecar }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: |
+          slug=$(jq -r .slug tool.json); name=$(jq -r .name tool.json); version=$(jq -r .version tool.json)
+          tag="${GITHUB_REF_NAME#v}"
+          if [ "$GITHUB_REF_TYPE" = "tag" ] && [ "$tag" != "$version" ]; then
+            echo "::error::标签 v$tag 与 tool.json 里的版本 $version 不一致"; exit 1
+          fi
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"; echo "name=$name" >> "$GITHUB_OUTPUT"; echo "version=$version" >> "$GITHUB_OUTPUT"
+          if [ -f sidecar/main.py ]; then echo "sidecar=true" >> "$GITHUB_OUTPUT"; else echo "sidecar=false" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        with:
+          repository: campfire-code/toolkit-hub
+          ref: ${{ inputs.hub-ref }}
+          path: .hub
+          sparse-checkout: ci
+      - name: 创建或更新 Release（草稿）
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NAME: ${{ steps.m.outputs.name }}
+          VERSION: ${{ steps.m.outputs.version }}
+          SLUG: ${{ steps.m.outputs.slug }}
+        run: |
+          notes=$(mktemp)
+          if [ -f CHANGELOG.md ]; then
+            awk -v v="$VERSION" '$0 ~ "^## \\[?v?"v"\\]?" {f=1; next} /^## / && f {exit} f' CHANGELOG.md > "$notes"
+          fi
+          [ -s "$notes" ] || echo "- 版本 $VERSION" > "$notes"
+          sed -e "s/{{SLUG}}/$SLUG/g" -e "s/{{VERSION}}/$VERSION/g" -e "s/{{NAME}}/$NAME/g" .hub/ci/release-notes.md >> "$notes"
+          tag="v$VERSION"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release edit "$tag" --notes-file "$notes"
+          else
+            gh release create "$tag" --draft --title "$NAME $VERSION" --notes-file "$notes" --target "$GITHUB_SHA"
+          fi
+
+  build:
+    needs: meta
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-14
+            target: aarch64-apple-darwin
+            bundles: dmg
+            label: mac-arm64
+          - os: macos-14
+            target: x86_64-apple-darwin
+            bundles: dmg
+            label: mac-x64
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            bundles: nsis
+            label: windows-x64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+          key: ${{ matrix.target }}
+
+      - name: 打包内置 Python 程序
+        if: needs.meta.outputs.sidecar == 'true'
+        uses: astral-sh/setup-uv@v6
+      - if: needs.meta.outputs.sidecar == 'true'
+        shell: bash
+        run: |
+          cd sidecar
+          arch=""
+          [ "${{ matrix.target }}" = "x86_64-apple-darwin" ] && arch="--target-arch x86_64"
+          uv run --python 3.12 --with-requirements requirements.txt --with pyinstaller pyinstaller --onefile --name sidecar $arch main.py
+          mkdir -p ../src-tauri/binaries
+          ext=""; [ "${{ runner.os }}" = "Windows" ] && ext=".exe"
+          cp "dist/sidecar$ext" "../src-tauri/binaries/sidecar-${{ matrix.target }}$ext"
+
+      - run: pnpm install --frozen-lockfile
+      - name: 单元测试
+        run: pnpm test
+      - name: 构建安装包
+        run: pnpm tauri build --target ${{ matrix.target }} --bundles ${{ matrix.bundles }}
+
+      - name: 改名并上传
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SLUG: ${{ needs.meta.outputs.slug }}
+          VERSION: ${{ needs.meta.outputs.version }}
+        run: |
+          dir="src-tauri/target/${{ matrix.target }}/release/bundle"
+          mkdir -p out
+          if [ "${{ matrix.bundles }}" = "dmg" ]; then
+            cp "$dir"/dmg/*.dmg "out/${SLUG}_${VERSION}_${{ matrix.label }}.dmg"
+          else
+            cp "$dir"/nsis/*-setup.exe "out/${SLUG}_${VERSION}_${{ matrix.label }}-setup.exe"
+          fi
+          ls -la out
+          gh release upload "v$VERSION" out/* --clobber
+
+  publish:
+    needs: [meta, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 三个平台都成功后正式发布
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release edit "v${{ needs.meta.outputs.version }}" --repo "$GITHUB_REPOSITORY" --draft=false --latest

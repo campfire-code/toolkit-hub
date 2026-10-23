@@ -1,0 +1,397 @@
+<title>工具箱界面抽签池</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* 布局：外页是中性的评审台；四个「软件窗口」各自带一套主题变量，互不影响 */
+:root{
+  --bg:#EFF1F4; --panel:#FFFFFF; --ink:#151922; --muted:#586070; --line:#D9DEE6; --accent:#2D5BD8; --accent-soft:#E3EAFB;
+  --f:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif; --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111318;--panel:#1A1D24;--ink:#E6E9EF;--muted:#9AA2B1;--line:#2C313B;--accent:#8DA8F5;--accent-soft:#222C45;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111318;--panel:#1A1D24;--ink:#E6E9EF;--muted:#9AA2B1;--line:#2C313B;--accent:#8DA8F5;--accent-soft:#222C45;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 56px;display:grid;gap:36px}
+h1{font-size:clamp(24px,3.4vw,32px);margin:0;text-wrap:balance}
+h2{font-size:21px;margin:0;text-wrap:balance}
+p{margin:0}
+.lead{color:var(--muted);max-width:70ch}
+.head{display:grid;gap:10px}
+.ver{display:grid;gap:14px}
+.ver-top{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.ver-top h2{margin-right:auto}
+.tag{font-size:12px;padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:700}
+.desc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px 24px;color:var(--muted);font-size:13.5px}
+.desc b{color:var(--ink);font-weight:600}
+.ctrl{display:flex;gap:8px;flex-wrap:wrap}
+.btn{font:inherit;font-size:13.5px;padding:7px 14px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.btn:focus-visible,.opt input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.pick{border-color:var(--accent);color:var(--accent);font-weight:600}
+.btn.pick.on{background:var(--accent);color:var(--panel)}
+.stage{width:100%;overflow:hidden;border-radius:12px}
+.scaler{width:1000px;transform-origin:0 0}
+.qs{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+@media (max-width:420px){.qs{grid-template-columns:1fr}}
+.q{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:10px;min-width:0}
+.q h3{margin:0;font-size:15.5px}
+.q .why{font-size:13px;color:var(--muted)}
+.opt{display:grid;grid-template-columns:20px 1fr;gap:8px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.opt.on{border-color:var(--accent);background:var(--accent-soft)}
+.opt input{margin-top:4px;accent-color:var(--accent)}
+.opt .l{font-weight:600}.opt .rec{font-size:11.5px;color:var(--accent);font-weight:700;margin-left:6px}
+.opt .s{font-size:12.8px;color:var(--muted)}
+textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);font:inherit;padding:12px}
+.save{position:sticky;bottom:0;background:var(--panel);border-top:1px solid var(--line);padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-bottom:max(10px,env(safe-area-inset-bottom,0px));display:flex;gap:12px;align-items:center;justify-content:center;font-size:13.5px}
+.save b{color:var(--accent)}
+
+/* ========= 软件窗口公共骨架 ========= */
+.win{width:1000px;height:640px;display:flex;flex-direction:column;overflow:hidden;background:var(--w-bg);color:var(--w-ink);font-family:var(--w-font);font-size:13.5px;line-height:1.5;border:1px solid var(--w-line);border-radius:var(--w-radius-win)}
+.win *{box-sizing:border-box}
+.titlebar{height:34px;flex:none;display:flex;align-items:center;gap:8px;padding:0 12px;background:var(--w-title);border-bottom:1px solid var(--w-line);font-size:12.5px;color:var(--w-muted)}
+.dots{display:flex;gap:7px}.dots i{width:11px;height:11px;border-radius:50%;background:var(--w-line)}
+.titlebar .t{flex:1;text-align:center}
+.ico{width:16px;height:16px;flex:none;stroke:currentColor;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.w-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:34px;padding:0 14px;border-radius:var(--w-radius);border:1px solid var(--w-line);background:var(--w-surface);color:var(--w-ink);font:inherit;font-weight:500;cursor:pointer;white-space:nowrap}
+.w-btn.primary{background:var(--w-primary);border-color:var(--w-primary);color:var(--w-on-primary)}
+.w-label{font-size:12px;color:var(--w-muted);font-weight:500}
+.w-input{height:32px;border:1px solid var(--w-line);border-radius:var(--w-radius);background:var(--w-surface);color:var(--w-ink);padding:0 10px;display:flex;align-items:center;justify-content:space-between;font-variant-numeric:tabular-nums}
+.seg{display:flex;border:1px solid var(--w-line);border-radius:var(--w-radius);overflow:hidden;background:var(--w-surface)}
+.seg span{flex:1;text-align:center;padding:5px 0;font-size:12.5px;color:var(--w-muted)}
+.seg span+span{border-left:1px solid var(--w-line)}
+.seg span.on{background:var(--w-primary-soft);color:var(--w-primary);font-weight:600}
+.st{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;padding:1px 8px;border-radius:999px;white-space:nowrap}
+.st.ok{background:var(--w-ok-soft);color:var(--w-ok)}.st.run{background:var(--w-primary-soft);color:var(--w-primary)}.st.wait{background:var(--w-chip);color:var(--w-muted)}.st.err{background:var(--w-err-soft);color:var(--w-err)}
+.bar{height:6px;border-radius:3px;background:var(--w-chip);overflow:hidden}.bar i{display:block;height:100%;background:var(--w-primary)}
+.thumb{width:40px;height:40px;border-radius:6px;flex:none;position:relative;overflow:hidden}
+.thumb::after{content:"";position:absolute;left:28%;top:22%;width:44%;height:56%;border-radius:40% 40% 18% 18%;background:var(--sh)}
+.thumb.done{background:#FFFFFF;box-shadow:inset 0 0 0 1px var(--w-line)}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--w-muted)}
+.drop{border:1.5px dashed var(--w-line-strong);border-radius:var(--w-radius-lg);display:flex;align-items:center;justify-content:center;gap:10px;color:var(--w-muted)}
+
+/* ========= A 清爽蓝 · 侧边导航 ========= */
+.win[data-v="a"]{--w-font:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;--w-radius:8px;--w-radius-lg:12px;--w-radius-win:12px}
+.win[data-v="a"][data-m="light"]{--w-bg:#F6F8FB;--w-title:#EEF1F6;--w-surface:#FFFFFF;--w-ink:#0F172A;--w-muted:#5B6474;--w-line:#E2E7EF;--w-line-strong:#C3CCDA;--w-primary:#2563EB;--w-on-primary:#FFFFFF;--w-primary-soft:#E6EEFE;--w-chip:#EEF1F6;--w-ok:#15803D;--w-ok-soft:#E3F4E8;--w-err:#B91C1C;--w-err-soft:#FBE6E6;--w-side:#FFFFFF}
+.win[data-v="a"][data-m="dark"]{--w-bg:#0F1420;--w-title:#141A28;--w-surface:#171E2D;--w-ink:#E5EAF3;--w-muted:#97A2B6;--w-line:#263044;--w-line-strong:#3A4660;--w-primary:#6E9BFF;--w-on-primary:#0B1220;--w-primary-soft:#1C2A4A;--w-chip:#1F2738;--w-ok:#5BD08A;--w-ok-soft:#173326;--w-err:#F28B82;--w-err-soft:#3A1E1E;--w-side:#131927}
+.a-body{flex:1;display:flex;min-height:0}
+.a-side{width:188px;flex:none;background:var(--w-side);border-right:1px solid var(--w-line);padding:14px 10px;display:flex;flex-direction:column;gap:4px}
+.a-brand{display:flex;align-items:center;gap:10px;padding:4px 8px 14px;font-weight:700}
+.a-logo{width:30px;height:30px;border-radius:8px;background:var(--w-primary);color:var(--w-on-primary);display:grid;place-items:center}
+.a-nav{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;color:var(--w-muted)}
+.a-nav.on{background:var(--w-primary-soft);color:var(--w-primary);font-weight:600}
+.a-side .grow{flex:1}
+.a-main{flex:1;display:flex;flex-direction:column;min-width:0;padding:18px 20px;gap:14px}
+.a-h{display:flex;align-items:center;gap:12px}
+.a-h h4{margin:0;font-size:18px;flex:1}
+.a-grid{flex:1;display:grid;grid-template-columns:1fr 260px;gap:14px;min-height:0}
+.card{background:var(--w-surface);border:1px solid var(--w-line);border-radius:var(--w-radius-lg)}
+.a-list{display:flex;flex-direction:column;min-height:0}
+.a-list .hd{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--w-line)}
+.a-row{display:flex;align-items:center;gap:12px;padding:9px 14px;border-bottom:1px solid var(--w-line)}
+.a-row .n{flex:1;min-width:0}.a-row .n div:first-child{font-weight:500}
+.a-row .n div:last-child{font-size:12px;color:var(--w-muted)}
+.a-params{padding:14px;display:flex;flex-direction:column;gap:12px}
+.a-params .f{display:grid;gap:6px}
+.a-foot{display:flex;align-items:center;gap:14px}
+.a-foot .bar{flex:1}
+
+/* ========= B 工作台 · 三栏紧凑 ========= */
+.win[data-v="b"]{--w-font:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;--w-radius:4px;--w-radius-lg:6px;--w-radius-win:8px;font-size:12.5px}
+.win[data-v="b"][data-m="light"]{--w-bg:#ECEEF0;--w-title:#E2E5E8;--w-surface:#FFFFFF;--w-ink:#1B1F24;--w-muted:#5A626C;--w-line:#D3D8DE;--w-line-strong:#B5BDC7;--w-primary:#0B6E77;--w-on-primary:#FFFFFF;--w-primary-soft:#DDF0F1;--w-chip:#E7EAED;--w-ok:#1C7A3E;--w-ok-soft:#E0F1E6;--w-err:#B42318;--w-err-soft:#FBE4E1;--w-side:#F5F6F7}
+.win[data-v="b"][data-m="dark"]{--w-bg:#16191D;--w-title:#1D2126;--w-surface:#1F2328;--w-ink:#DDE2E7;--w-muted:#97A0AA;--w-line:#30363D;--w-line-strong:#434B55;--w-primary:#3FC1C9;--w-on-primary:#0B1416;--w-primary-soft:#15363A;--w-chip:#2A3037;--w-ok:#5CC98A;--w-ok-soft:#183324;--w-err:#F28A7E;--w-err-soft:#3A1F1C;--w-side:#1A1E22}
+.b-tool{height:44px;flex:none;display:flex;align-items:center;gap:6px;padding:0 10px;background:var(--w-side);border-bottom:1px solid var(--w-line)}
+.b-tool .sep{width:1px;height:22px;background:var(--w-line);margin:0 6px}
+.b-tool .w-btn{height:30px;padding:0 10px}
+.b-tool .sp{flex:1}
+.b-body{flex:1;display:grid;grid-template-columns:1fr 250px;min-height:0}
+.b-table{background:var(--w-surface);overflow:hidden}
+.b-table table{width:100%;border-collapse:collapse}
+.b-table th{font-weight:600;text-align:left;color:var(--w-muted);font-size:12px;padding:7px 10px;background:var(--w-side);border-bottom:1px solid var(--w-line)}
+.b-table td{padding:6px 10px;border-bottom:1px solid var(--w-line);vertical-align:middle}
+.b-table tr.sel td{background:var(--w-primary-soft)}
+.b-table .thumb{width:30px;height:30px;border-radius:3px}
+.b-insp{background:var(--w-side);border-left:1px solid var(--w-line);display:flex;flex-direction:column}
+.b-sec{padding:12px;border-bottom:1px solid var(--w-line);display:grid;gap:8px}
+.b-sec h5{margin:0;font-size:11.5px;letter-spacing:.06em;color:var(--w-muted)}
+.b-sec .w-input{height:28px}
+.b-prev{display:flex;gap:8px}.b-prev .thumb{width:100%;height:96px;border-radius:4px}
+.b-status{height:30px;flex:none;display:flex;align-items:center;gap:14px;padding:0 12px;background:var(--w-title);border-top:1px solid var(--w-line);font-size:12px;color:var(--w-muted)}
+.b-status .bar{width:220px}
+
+/* ========= C 向导步骤 · 大卡片 ========= */
+.win[data-v="c"]{--w-font:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;--w-radius:10px;--w-radius-lg:16px;--w-radius-win:16px;font-size:14px}
+.win[data-v="c"][data-m="light"]{--w-bg:#FBF7F3;--w-title:#F4EDE6;--w-surface:#FFFFFF;--w-ink:#24170F;--w-muted:#6E5D50;--w-line:#EADFD4;--w-line-strong:#D6C3B1;--w-primary:#C2410C;--w-on-primary:#FFFFFF;--w-primary-soft:#FCE9DE;--w-chip:#F3ECE5;--w-ok:#15803D;--w-ok-soft:#E3F4E8;--w-err:#B91C1C;--w-err-soft:#FBE6E6;--w-side:#FFFFFF}
+.win[data-v="c"][data-m="dark"]{--w-bg:#1A1411;--w-title:#211915;--w-surface:#251D18;--w-ink:#F1E7DF;--w-muted:#B8A699;--w-line:#3A2E26;--w-line-strong:#54443A;--w-primary:#FB8A50;--w-on-primary:#1E120B;--w-primary-soft:#432717;--w-chip:#30261F;--w-ok:#6BD394;--w-ok-soft:#1B3325;--w-err:#F59A8F;--w-err-soft:#3F211C;--w-side:#211915}
+.c-steps{flex:none;display:flex;align-items:center;gap:10px;padding:16px 28px;border-bottom:1px solid var(--w-line);background:var(--w-side)}
+.c-step{display:flex;align-items:center;gap:8px;color:var(--w-muted);font-weight:500}
+.c-step b{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--w-chip);color:var(--w-muted)}
+.c-step.done b{background:var(--w-ok-soft);color:var(--w-ok)}
+.c-step.on{color:var(--w-ink);font-weight:700}.c-step.on b{background:var(--w-primary);color:var(--w-on-primary)}
+.c-line{flex:1;height:2px;background:var(--w-line);border-radius:1px}
+.c-body{flex:1;padding:22px 28px;display:grid;grid-template-columns:1fr 1fr;gap:20px;min-height:0}
+.c-big{background:var(--w-surface);border:1px solid var(--w-line);border-radius:var(--w-radius-lg);padding:20px;display:flex;flex-direction:column;gap:14px}
+.c-big h4{margin:0;font-size:17px}
+.c-ring{display:flex;align-items:center;gap:18px}
+.c-ring .r{width:96px;height:96px;border-radius:50%;background:conic-gradient(var(--w-primary) 0 63%,var(--w-chip) 63% 100%);display:grid;place-items:center}
+.c-ring .r span{width:74px;height:74px;border-radius:50%;background:var(--w-surface);display:grid;place-items:center;font-size:22px;font-weight:700}
+.c-thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.c-thumbs .thumb{width:100%;height:56px;border-radius:8px}
+.c-kv{display:grid;grid-template-columns:auto 1fr;gap:10px 16px;align-items:center}
+.c-foot{flex:none;display:flex;justify-content:space-between;align-items:center;padding:14px 28px;border-top:1px solid var(--w-line);background:var(--w-side)}
+.c-foot .w-btn{height:40px;padding:0 22px;font-size:14.5px}
+
+/* ========= D 暗色专业 · 预览为主 ========= */
+.win[data-v="d"]{--w-font:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;--w-radius:6px;--w-radius-lg:10px;--w-radius-win:10px}
+.win[data-v="d"][data-m="dark"]{--w-bg:#131416;--w-title:#0E0F11;--w-surface:#1C1D21;--w-ink:#ECEDEF;--w-muted:#9C9FA6;--w-line:#2A2C31;--w-line-strong:#3D4047;--w-primary:#F2A93B;--w-on-primary:#1A1206;--w-primary-soft:#3A2B12;--w-chip:#26282D;--w-ok:#5ACB8C;--w-ok-soft:#173023;--w-err:#F0857A;--w-err-soft:#3B1F1C;--w-side:#17181B}
+.win[data-v="d"][data-m="light"]{--w-bg:#F2F2F3;--w-title:#E6E6E8;--w-surface:#FFFFFF;--w-ink:#17181B;--w-muted:#5D6068;--w-line:#DCDDE0;--w-line-strong:#BEC0C5;--w-primary:#8F5200;--w-on-primary:#FFFFFF;--w-primary-soft:#F7E9D2;--w-chip:#E9E9EB;--w-ok:#17733F;--w-ok-soft:#E0F1E7;--w-err:#B42318;--w-err-soft:#FBE4E1;--w-side:#FAFAFA}
+.d-body{flex:1;display:grid;grid-template-columns:220px 1fr 240px;min-height:0}
+.d-files{background:var(--w-side);border-right:1px solid var(--w-line);display:flex;flex-direction:column}
+.d-files .hd{padding:12px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--w-line);font-weight:600}
+.d-f{display:flex;gap:10px;align-items:center;padding:7px 12px}
+.d-f.on{background:var(--w-primary-soft)}
+.d-f .thumb{width:34px;height:34px;border-radius:4px}
+.d-f .n{flex:1;min-width:0;font-size:12.5px}
+.d-stage{display:flex;flex-direction:column;padding:16px;gap:12px;min-width:0}
+.d-compare{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:2px;border-radius:var(--w-radius-lg);overflow:hidden;background:var(--w-line)}
+.d-compare div{position:relative;display:grid;place-items:center}
+.d-compare .before{background:linear-gradient(135deg,#7A6A58,#4E5A49)}
+.d-compare .after{background:#FFFFFF}
+.d-compare div::after{content:"";width:34%;height:58%;border-radius:40% 40% 16% 16%;background:#3F6FB5}
+.d-compare em{position:absolute;left:10px;top:10px;font-style:normal;font-size:11.5px;padding:2px 8px;border-radius:4px;background:rgba(0,0,0,.55);color:#FFFFFF}
+.d-ctl{display:flex;align-items:center;gap:12px}
+.d-ctl .bar{flex:1}
+.d-side{background:var(--w-side);border-left:1px solid var(--w-line);padding:14px;display:flex;flex-direction:column;gap:14px}
+.d-side .f{display:grid;gap:6px}
+.d-side .grow{flex:1}
+
+/* ========= E 极简单窗 · 拖入即用 ========= */
+.win[data-v="e"]{--w-font:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;--w-radius:999px;--w-radius-lg:14px;--w-radius-win:14px}
+.win[data-v="e"][data-m="light"]{--w-bg:#F7F8F6;--w-title:#F7F8F6;--w-surface:#FFFFFF;--w-ink:#18201B;--w-muted:#59645D;--w-line:#E1E5E1;--w-line-strong:#BCC5BE;--w-primary:#166534;--w-on-primary:#FFFFFF;--w-primary-soft:#E1F2E7;--w-chip:#EDF0ED;--w-ok:#166534;--w-ok-soft:#E1F2E7;--w-err:#B42318;--w-err-soft:#FBE4E1;--w-side:#FFFFFF}
+.win[data-v="e"][data-m="dark"]{--w-bg:#121614;--w-title:#121614;--w-surface:#1A201C;--w-ink:#E4EAE5;--w-muted:#9AA69E;--w-line:#29312C;--w-line-strong:#3C4740;--w-primary:#6FCF97;--w-on-primary:#0D1A12;--w-primary-soft:#173326;--w-chip:#222A25;--w-ok:#6FCF97;--w-ok-soft:#173326;--w-err:#F28A7E;--w-err-soft:#3A1F1C;--w-side:#1A201C}
+.e-body{flex:1;display:flex;flex-direction:column;align-items:center;padding:22px 0 0;gap:16px;min-height:0}
+.e-col{width:600px;display:flex;flex-direction:column;gap:14px;min-height:0;flex:1}
+.e-drop{height:108px;border:1.5px dashed var(--w-line-strong);border-radius:var(--w-radius-lg);display:flex;align-items:center;justify-content:center;gap:12px;color:var(--w-muted);background:var(--w-surface)}
+.e-drop b{color:var(--w-ink)}
+.e-chips{display:flex;gap:8px;flex-wrap:wrap}
+.e-chip{padding:5px 12px;border-radius:999px;border:1px solid var(--w-line);background:var(--w-surface);font-size:12.5px;display:inline-flex;gap:6px;align-items:center}
+.e-chip.on{border-color:var(--w-primary);color:var(--w-primary);font-weight:600}
+.e-list{flex:1;display:flex;flex-direction:column}
+.e-row{display:flex;align-items:center;gap:12px;padding:8px 2px;border-bottom:1px solid var(--w-line)}
+.e-row .n{flex:1;min-width:0}
+.e-row .thumb{width:32px;height:32px;border-radius:8px}
+.e-foot{width:100%;flex:none;display:flex;justify-content:center;align-items:center;gap:16px;padding:14px;border-top:1px solid var(--w-line);background:var(--w-surface)}
+.e-foot .bar{width:260px}
+.e-foot .w-btn{height:38px;padding:0 22px}
+
+/* ========= F 顶部标签 · 卡片网格 ========= */
+.win[data-v="f"]{--w-font:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;--w-radius:8px;--w-radius-lg:12px;--w-radius-win:10px}
+.win[data-v="f"][data-m="light"]{--w-bg:#F4F3F8;--w-title:#ECEAF3;--w-surface:#FFFFFF;--w-ink:#1A1726;--w-muted:#5C5870;--w-line:#E2DFEC;--w-line-strong:#C4BFD6;--w-primary:#6D28D9;--w-on-primary:#FFFFFF;--w-primary-soft:#EEE7FC;--w-chip:#ECEAF3;--w-ok:#15803D;--w-ok-soft:#E3F4E8;--w-err:#B91C1C;--w-err-soft:#FBE6E6;--w-side:#FFFFFF}
+.win[data-v="f"][data-m="dark"]{--w-bg:#141220;--w-title:#18162A;--w-surface:#1D1A2C;--w-ink:#E8E5F3;--w-muted:#A29DB9;--w-line:#2E2A44;--w-line-strong:#433E5E;--w-primary:#A78BFA;--w-on-primary:#140F24;--w-primary-soft:#2A2145;--w-chip:#26223A;--w-ok:#5BD08A;--w-ok-soft:#173326;--w-err:#F28B82;--w-err-soft:#3A1E1E;--w-side:#1D1A2C}
+.f-tabs{flex:none;display:flex;align-items:flex-end;gap:4px;padding:0 18px;background:var(--w-side);border-bottom:1px solid var(--w-line)}
+.f-tab{padding:12px 14px 10px;color:var(--w-muted);border-bottom:2px solid transparent;display:flex;gap:6px;align-items:center}
+.f-tab.on{color:var(--w-primary);border-color:var(--w-primary);font-weight:600}
+.f-tabs .sp{flex:1}
+.f-tabs .w-btn{margin-bottom:7px}
+.f-body{flex:1;display:flex;flex-direction:column;padding:16px 18px;gap:12px;min-height:0}
+.f-bar{display:flex;align-items:center;gap:10px}
+.f-bar .e-chip{background:var(--w-surface)}
+.f-bar .sp{flex:1}
+.f-grid{flex:1;display:grid;grid-template-columns:repeat(6,1fr);gap:12px;align-content:start}
+.f-card{background:var(--w-surface);border:1px solid var(--w-line);border-radius:var(--w-radius-lg);overflow:hidden;display:flex;flex-direction:column}
+.f-card .thumb{width:100%;height:96px;border-radius:0}
+.f-card .m{padding:8px 10px;display:grid;gap:4px;font-size:12px}
+.f-card .m div:first-child{font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.f-foot{flex:none;display:flex;align-items:center;gap:14px;padding:12px 18px;border-top:1px solid var(--w-line);background:var(--w-side)}
+.f-foot .bar{flex:1}
+.pal{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+.pal button{width:22px;height:22px;border-radius:50%;border:2px solid var(--panel);box-shadow:0 0 0 1px var(--line);cursor:pointer;padding:0}
+.pal button.on{box-shadow:0 0 0 2px var(--ink)}
+.pool{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;cursor:pointer}
+.pool input{width:18px;height:18px;accent-color:var(--accent)}
+.draw{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.draw th,.draw td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line)}
+.draw th{color:var(--muted);font-weight:600;font-size:12.5px}
+.draw .sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;margin-right:6px}
+.tbl{overflow-x:auto}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="head">
+    <h1>工具箱界面抽签池</h1>
+    <p class="lead">一共 6 套界面，每套配 3 种颜色。每个自研工具从池子里抽一套布局和一种配色，抽签用工具编号做种子，所以同一个工具每次抽到的都一样，不同工具之间又各不相同，避免看起来像批量生产。下面 6 套都是同一个工具「主图一键白底（批量）」的同一时刻：拖入了 24 张商品图，处理到一半，有 1 张失败。不想要的那套取消勾选「放进抽签池」就行；每套右上角可以单独切换亮色 / 暗色、换配色看效果。</p>
+  </header>
+  <div id="versions"></div>
+  <section class="ver">
+    <h2>抽签规则</h2>
+    <div class="qs" id="qs"></div>
+  </section>
+  <section class="ver">
+    <h2>抽签预览：首批 18 个自研工具</h2>
+    <p class="lead">按当前勾选和规则实时计算。fork 的工具沿用上游界面，不参与抽签。</p>
+    <div class="tbl"><table class="draw" id="draw"></table></div>
+  </section>
+  <section class="ver"><h2>其他意见</h2><textarea id="note" placeholder="比如「B 只给对账类工具用」「再加一套更活泼的」，自动保存"></textarea></section>
+</div>
+<div class="save"><span>抽签池：<b id="cur"></b></span><span id="savest" class="lead">未连接存储</span></div>
+<script>
+const IC={
+ img:'<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>',
+ clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ gear:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
+ info:'<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/>',
+ plus:'<path d="M12 5v14M5 12h14"/>',
+ folder:'<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+ play:'<path d="m7 4 13 8-13 8z"/>',
+ pause:'<path d="M8 5v14M16 5v14"/>',
+ upload:'<path d="M12 15V3M7 8l5-5 5 5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/>',
+ download:'<path d="M12 3v12M7 10l5 5 5-5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/>',
+ trash:'<path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/>',
+ check:'<path d="m5 12 5 5 9-10"/>',
+ x:'<path d="M18 6 6 18M6 6l12 12"/>',
+ sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+ moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+ key:'<circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.8-9.8M17 6l3 3"/>',
+ chev:'<path d="m6 9 6 6 6-6"/>',
+ spark:'<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>'
+};
+const ic=(n,s)=>`<svg class="ico" viewBox="0 0 24 24"${s?` style="width:${s}px;height:${s}px"`:''}>${IC[n]}</svg>`;
+// 示例数据：同一批 24 张主图里的前 8 张
+const BG=[["#C9B79C","#7A4B2B"],["#8BA6B9","#2F4858"],["#B9C9A7","#4D6B3A"],["#D4A5A5","#7D2E3A"],["#A7B4D6","#2C3E7A"],["#D9C38C","#6E5317"],["#B0B0B0","#333333"],["#C7A8D1","#5A2E6E"]];
+const F=[
+ ["保温杯-主图-01.jpg","1200×1200","ok"],["保温杯-主图-02.jpg","1200×1200","ok"],["运动鞋-侧面.png","2000×1500","ok"],
+ ["连衣裙-正面.jpg","1080×1440","run"],["蓝牙耳机-盒.jpg","800×800","wait"],["零食礼盒.jpg","1500×1500","wait"],
+ ["数据线-缩略.jpg","180×180","err"],["香薰蜡烛.png","1600×1600","wait"]];
+const ST={ok:["ok","已完成"],run:["run","处理中 63%"],wait:["wait","等待中"],err:["err","失败：图片小于 200 像素"]};
+const th=(i,done)=>`<span class="thumb${done?' done':''}" style="${done?'':`background:linear-gradient(135deg,${BG[i][0]},${BG[i][1]});`}--sh:${done?BG[i][1]:'rgba(0,0,0,.35)'}"></span>`;
+const st=k=>`<span class="st ${ST[k][0]}">${k==='ok'?ic('check',12):k==='err'?ic('x',12):''}${ST[k][1]}</span>`;
+const tb=t=>`<div class="titlebar"><span class="dots"><i></i><i></i><i></i></span><span class="t">${t}</span><span style="width:47px"></span></div>`;
+
+const V=[
+{id:"a",suits:["data","media","text"],name:"A 清爽蓝 · 侧边导航",mode:"light",
+ why:[["给谁","大多数运营人员，第一次用就能看懂"],["长处","左侧固定导航（处理 / 历史 / 设置），和微信、钉钉桌面版的习惯一致；参数集中在右侧"],["短处","风格比较常规，辨识度一般"]],
+ html:()=>`${tb("主图一键白底")}<div class="a-body">
+ <nav class="a-side"><div class="a-brand"><span class="a-logo">${ic('img',18)}</span>主图一键白底</div>
+ <div class="a-nav on">${ic('img')}批量处理</div><div class="a-nav">${ic('clock')}处理记录</div><div class="a-nav">${ic('key')}大模型设置</div><div class="grow"></div><div class="a-nav">${ic('info')}关于与更新</div></nav>
+ <main class="a-main"><div class="a-h"><h4>批量处理</h4><button class="w-btn">${ic('plus')}添加图片</button><button class="w-btn">${ic('trash')}清空</button></div>
+ <div class="a-grid"><div class="card a-list"><div class="hd"><b>24 张图片</b><span class="muted num">已完成 15 · 失败 1 · 等待 7</span></div>
+ ${F.slice(0,7).map((f,i)=>`<div class="a-row">${th(i,f[2]==='ok')}<div class="n"><div>${f[0]}</div><div class="num">${f[1]}</div></div>${st(f[2])}</div>`).join('')}</div>
+ <div class="card a-params"><b>处理参数</b>
+ <div class="f"><span class="w-label">背景</span><div class="seg"><span class="on">纯白</span><span>透明</span><span>自定义</span></div></div>
+ <div class="f"><span class="w-label">输出尺寸</span><div class="w-input">800 × 800（拼多多 / 淘宝）${ic('chev',14)}</div></div>
+ <div class="f"><span class="w-label">商品四周留白</span><div class="w-input">10%${ic('chev',14)}</div></div>
+ <div class="f"><span class="w-label">输出格式</span><div class="seg"><span class="on">JPG</span><span>PNG</span><span>WebP</span></div></div>
+ <div class="f"><span class="w-label">保存到</span><div class="w-input">桌面 / 白底图 ${ic('folder',14)}</div></div></div></div>
+ <div class="a-foot"><span class="num muted">15 / 24 · 预计还要 40 秒</span><span class="bar"><i style="width:63%"></i></span><button class="w-btn">${ic('pause')}暂停</button><button class="w-btn primary">${ic('folder')}打开输出文件夹</button></div></main></div>`},
+{id:"b",suits:["data","media"],name:"B 工作台 · 三栏紧凑",mode:"light",
+ why:[["给谁","每天处理几百张图、几千行表的重度用户"],["长处","表格一屏看得更多：顶部工具栏、中间文件表、右侧检查器、底部状态栏，像 Excel、Lightroom"],["短处","按钮和文字偏小，新手要适应"]],
+ html:()=>`${tb("主图一键白底 — 24 张")}<div class="b-tool"><button class="w-btn">${ic('plus')}添加</button><button class="w-btn">${ic('folder')}添加文件夹</button><button class="w-btn">${ic('trash')}移除</button><span class="sep"></span><button class="w-btn primary">${ic('play')}开始处理</button><button class="w-btn">${ic('pause')}暂停</button><span class="sp"></span><button class="w-btn">${ic('key')}设置</button></div>
+ <div class="b-body"><div class="b-table"><table><thead><tr><th style="width:44px"></th><th>文件名</th><th>原尺寸</th><th>输出</th><th>状态</th></tr></thead><tbody>
+ ${F.map((f,i)=>`<tr${i===3?' class="sel"':''}><td>${th(i,f[2]==='ok')}</td><td>${f[0]}</td><td class="num muted">${f[1]}</td><td class="num muted">800×800 · JPG</td><td>${st(f[2])}</td></tr>`).join('')}</tbody></table></div>
+ <aside class="b-insp"><div class="b-sec"><h5>选中：连衣裙-正面.jpg</h5><div class="b-prev">${th(3,false)}${th(3,true)}</div></div>
+ <div class="b-sec"><h5>背景</h5><div class="seg"><span class="on">纯白</span><span>透明</span><span>自定义</span></div></div>
+ <div class="b-sec"><h5>尺寸与留白</h5><div class="w-input">800 × 800 ${ic('chev',13)}</div><div class="w-input">留白 10% ${ic('chev',13)}</div></div>
+ <div class="b-sec"><h5>输出</h5><div class="seg"><span class="on">JPG</span><span>PNG</span><span>WebP</span></div><div class="w-input">桌面/白底图 ${ic('folder',13)}</div></div></aside></div>
+ <div class="b-status"><span class="num">15 / 24 完成</span><span class="bar"><i style="width:63%"></i></span><span>失败 1</span><span>预计 40 秒</span><span style="margin-left:auto">CPU 模式 · 模型 u2net 已就绪</span></div>`},
+{id:"c",suits:["data","media","text"],name:"C 向导步骤 · 大卡片",mode:"light",
+ why:[["给谁","不常用电脑软件的店主、新人运营"],["长处","顶部四步：添加图片 → 设置 → 处理 → 导出，每一步只做一件事；字号和按钮更大；暖橙色呼应 campfire 篝火"],["短处","批量看明细不如表格方便，熟练用户会觉得步骤多"]],
+ html:()=>`${tb("主图一键白底")}<div class="c-steps"><span class="c-step done"><b>${ic('check',14)}</b>添加图片</span><span class="c-line"></span><span class="c-step done"><b>${ic('check',14)}</b>设置效果</span><span class="c-line"></span><span class="c-step on"><b>3</b>批量处理</span><span class="c-line"></span><span class="c-step"><b>4</b>导出</span></div>
+ <div class="c-body"><div class="c-big"><h4>正在处理 24 张图片</h4><div class="c-ring"><div class="r"><span class="num">63%</span></div><div style="display:grid;gap:6px"><span class="num">已完成 15 张</span><span class="num muted">等待 7 张 · 预计 40 秒</span>${st('err')}</div></div>
+ <div class="c-thumbs">${F.slice(0,6).map((f,i)=>th(i,f[2]==='ok')).join('')}</div></div>
+ <div class="c-big"><h4>本次设置</h4><div class="c-kv"><span class="muted">背景</span><span>纯白</span><span class="muted">尺寸</span><span class="num">800 × 800（拼多多 / 淘宝）</span><span class="muted">留白</span><span>10%</span><span class="muted">格式</span><span>JPG，质量 90</span><span class="muted">保存到</span><span>桌面 / 白底图</span></div>
+ <div class="drop" style="flex:1;padding:14px">${ic('upload',18)}还想加图？直接拖进窗口</div></div></div>
+ <div class="c-foot"><button class="w-btn">上一步</button><span class="muted">处理中可以关掉窗口，回来会继续</span><button class="w-btn primary">暂停处理</button></div>`},
+{id:"d",suits:["media"],name:"D 暗色专业 · 预览为主",mode:"dark",
+ why:[["给谁","剪视频、做图的内容团队，长时间盯屏幕"],["长处","默认暗色、琥珀强调色，像剪映、达芬奇；中间大预览区做前后对比，适合图片、视频类工具"],["短处","表格、文档类工具用这套会显得重"]],
+ html:()=>`${tb("主图一键白底")}<div class="d-body"><aside class="d-files"><div class="hd"><span>24 张图片</span><button class="w-btn" style="height:28px;padding:0 8px">${ic('plus',14)}</button></div>
+ ${F.map((f,i)=>`<div class="d-f${i===3?' on':''}">${th(i,f[2]==='ok')}<div class="n"><div>${f[0]}</div>${f[2]==='err'?'<div class="st err" style="padding:0">尺寸太小</div>':f[2]==='ok'?'<div class="muted">已完成</div>':f[2]==='run'?'<div style="color:var(--w-primary)">63%</div>':'<div class="muted">等待中</div>'}</div></div>`).join('')}</aside>
+ <section class="d-stage"><div class="d-compare"><div class="before"><em>原图</em></div><div class="after"><em>白底 800×800</em></div></div>
+ <div class="d-ctl"><span class="num">15 / 24</span><span class="bar"><i style="width:63%"></i></span><span class="num muted">40 秒</span><button class="w-btn">${ic('pause')}暂停</button></div></section>
+ <aside class="d-side"><div class="f"><span class="w-label">背景</span><div class="seg"><span class="on">纯白</span><span>透明</span><span>自定义</span></div></div>
+ <div class="f"><span class="w-label">尺寸</span><div class="w-input">800 × 800 ${ic('chev',14)}</div></div>
+ <div class="f"><span class="w-label">留白</span><div class="w-input">10% ${ic('chev',14)}</div></div>
+ <div class="f"><span class="w-label">格式</span><div class="seg"><span class="on">JPG</span><span>PNG</span><span>WebP</span></div></div>
+ <div class="grow"></div><button class="w-btn primary">${ic('download')}导出全部</button></aside></div>`}
+,{id:"e",suits:["media","data","text"],name:"E 极简单窗 · 拖入即用",mode:"light",
+ why:[["给谁","只做一件事的小工具，比如压缩图片、改文件名"],["长处","没有导航，打开就是一个拖放区、一行选项、一列结果，像 ImageOptim 这类小工具"],["短处","参数多的工具放不下"]],
+ html:()=>`${tb("主图一键白底")}<div class="e-body"><div class="e-col"><div class="e-drop">${ic('upload',22)}<span><b>把商品图拖到这里</b>，或点击选择文件 / 文件夹</span></div>
+ <div class="e-chips"><span class="e-chip on">${ic('check',13)}纯白背景</span><span class="e-chip">透明背景</span><span class="e-chip on">${ic('check',13)}800 × 800</span><span class="e-chip">留白 10%</span><span class="e-chip on">${ic('check',13)}JPG</span><span class="e-chip">${ic('gear',13)}更多选项</span></div>
+ <div class="e-list">${F.slice(0,7).map((f,i)=>`<div class="e-row">${th(i,f[2]==='ok')}<div class="n">${f[0]} <span class="muted num">${f[1]}</span></div>${st(f[2])}</div>`).join('')}</div></div>
+ <div class="e-foot"><span class="num muted">15 / 24</span><span class="bar"><i style="width:63%"></i></span><button class="w-btn primary">${ic('folder')}打开输出文件夹</button></div></div>`}
+,{id:"f",suits:["text","media","data"],name:"F 顶部标签 · 卡片网格",mode:"light",
+ why:[["给谁","生成类工具：AI 写标题、做封面、出小红书卡片"],["长处","顶部标签页切换「生成 / 记录 / 设置」，结果以卡片网格展示，一眼看到所有产出"],["短处","纯表格类工具（对账、拆表）不适合卡片"]],
+ html:()=>`${tb("主图一键白底")}<div class="f-tabs"><span class="f-tab on">${ic('img')}批量处理</span><span class="f-tab">${ic('clock')}处理记录</span><span class="f-tab">${ic('key')}设置</span><span class="sp"></span><button class="w-btn">${ic('plus')}添加图片</button></div>
+ <div class="f-body"><div class="f-bar"><span class="e-chip on">全部 24</span><span class="e-chip">已完成 15</span><span class="e-chip">失败 1</span><span class="sp"></span><span class="muted">纯白 · 800×800 · 留白 10% · JPG</span><button class="w-btn">${ic('gear')}参数</button></div>
+ <div class="f-grid">${F.concat(F.slice(0,4)).map((f,i)=>`<div class="f-card">${th(i%8,f[2]==='ok')}<div class="m"><div>${f[0]}</div>${st(f[2]==='err'?'err':f[2])}</div></div>`).join('').replace(/失败：图片小于 200 像素/g,'太小')}</div></div>
+ <div class="f-foot"><span class="num muted">15 / 24 · 预计 40 秒</span><span class="bar"><i style="width:63%"></i></span><button class="w-btn">${ic('pause')}暂停</button><button class="w-btn primary">${ic('download')}导出全部</button></div>`}
+
+];
+
+// 配色：[名称, 亮色主色, 亮色浅底, 暗色主色, 暗色浅底, 亮色主色上的文字, 暗色主色上的文字]
+const PAL={blue:["蓝","#2563EB","#E6EEFE","#6E9BFF","#1C2A4A"],teal:["青","#0B6E77","#DDF0F1","#3FC1C9","#15363A"],orange:["橙","#C2410C","#FCE9DE","#FB8A50","#432717"],amber:["琥珀","#8F5200","#F7E9D2","#F2A93B","#3A2B12"],green:["绿","#166534","#E1F2E7","#6FCF97","#173326"],violet:["紫","#6D28D9","#EEE7FC","#A78BFA","#2A2145"],rose:["玫红","#BE123C","#FCE4EA","#FB7191","#3D1B25"]};
+const VPAL={a:["blue","teal","rose"],b:["teal","blue","amber"],c:["orange","rose","green"],d:["amber","teal","violet"],e:["green","blue","orange"],f:["violet","rose","teal"]};
+// 首批自研工具与界面类型：media 图片视频、data 表格文档、text 文案生成
+const TOOLS=[["e01","1688→拼多多 / 抖店上架数据包","data"],["e03","主图一键白底（批量）","media"],["e07","主图多平台尺寸导出","media"],["e09","AI 标题卖点批量生成","text"],["e10","广告法违禁词检测","text"],["e11","多平台订单利润对账","data"],["e20","差评归因分析","data"],["w11","朋友圈文案日更","text"],["w12","私域话术库快捷回复","text"],["c04","剪映草稿批量生成器","media"],["c06","离线视频转字幕","media"],["c17","小红书图文卡片生成","media"],["c23","AI 内容标识器","media"],["o01","发票批量转报销表","data"],["o02","PDF 百宝箱","data"],["o05","批量图片 OCR","data"],["o07","Excel 拆分与合并","data"],["o08","Excel 批量套 Word 模板","data"]];
+const TYPE={media:"图片视频",data:"表格文档",text:"文案生成"};
+
+const QS=[
+ {id:"q_assign",t:"怎么抽",o:[["typed","按工具类型限定范围再随机","图片视频类只抽适合预览的布局，表格类不会抽到卡片网格；每套都标了适合哪类",1],["free","完全随机","差异最大，但个别工具会抽到不顺手的布局"]]},
+ {id:"q_palette",t:"配色也抽吗",o:[["draw","抽：每套布局在它的 3 种配色里再抽一种","同一套布局也会有不同颜色，重复感最低",1],["fixed","不抽：每套布局固定用第一种配色","同一布局的工具颜色一致"]]},
+ {id:"q_theme",t:"软件打开时默认亮色还是暗色",o:[["system","跟随电脑系统设置","电脑是暗色就暗色，用户也能在设置里改",1],["light","默认亮色","办公场景最常见"],["layout","由抽到的布局决定（D 默认暗色，其余亮色）","风格差异更明显"]]},
+ {id:"q_size",t:"字号",o:[["std","标准（正文 13.5–14 像素）","和常见桌面软件一致",1],["large","大一号（正文 15 像素）","年纪大或屏幕小的用户更容易看清，一屏内容变少"]]}
+];
+
+let state={pool:Object.fromEntries(V.map(v=>[v.id,true])),q:Object.fromEntries(QS.map(q=>[q.id,(q.o.find(o=>o[3])||[])[0]])),note:"",modes:{},pals:{}};
+const $=s=>document.querySelector(s);
+function hash(str){let h=2166136261;for(const c of str){h^=c.codePointAt(0);h=Math.imul(h,16777619)}return h>>>0}
+function palStyle(id,m){const k=state.pals[id]||VPAL[id][0];const p=PAL[k];return m==='light'?`--w-primary:${p[1]};--w-primary-soft:${p[2]};--w-on-primary:#FFFFFF`:`--w-primary:${p[3]};--w-primary-soft:${p[4]};--w-on-primary:#10131A`}
+function draw(id,type){
+ let pool=V.filter(v=>state.pool[v.id]);
+ if(state.q.q_assign==='typed'){const f=pool.filter(v=>v.suits.includes(type));if(f.length)pool=f}
+ if(!pool.length)return null;
+ const v=pool[hash(id+'#layout')%pool.length];
+ const pk=state.q.q_palette==='draw'?VPAL[v.id][hash(id+'#color')%3]:VPAL[v.id][0];
+ return {v,pk};
+}
+function renderVersions(){
+ $("#versions").innerHTML=V.map(v=>{const m=state.modes[v.id]||v.mode;const pk=state.pals[v.id]||VPAL[v.id][0];return `<section class="ver" id="v-${v.id}">
+ <div class="ver-top"><h2>${v.name}</h2><span class="tag">适合：${v.suits.map(s=>TYPE[s]).join(' / ')}</span>
+ <div class="ctrl"><span class="pal">配色${VPAL[v.id].map(k=>`<button type="button" title="${PAL[k][0]}" aria-label="配色：${PAL[k][0]}" data-pal="${v.id}:${k}" class="${k===pk?'on':''}" style="background:${m==='light'?PAL[k][1]:PAL[k][3]}"></button>`).join('')}</span>
+ <button class="btn" data-mode="${v.id}">${m==='light'?'看暗色':'看亮色'}</button>
+ <label class="pool btn"><input type="checkbox" id="pool_${v.id}" data-pool="${v.id}"${state.pool[v.id]?' checked':''}>放进抽签池</label></div></div>
+ <div class="desc">${v.why.map(w=>`<span><b>${w[0]}：</b>${w[1]}</span>`).join('')}</div>
+ <div class="stage"><div class="scaler"><div class="win" data-v="${v.id}" data-m="${m}" style="${palStyle(v.id,m)}">${v.html()}</div></div></div></section>`}).join('');
+ fit();
+}
+function renderQs(){
+ $("#qs").innerHTML=QS.map(q=>`<div class="q"><h3>${q.t}</h3>${q.o.map(o=>`<label class="opt${state.q[q.id]===o[0]?' on':''}"><input type="radio" id="${q.id}_${o[0]}" name="${q.id}" value="${o[0]}"${state.q[q.id]===o[0]?' checked':''}><span><span class="l">${o[1]}</span>${o[3]?'<span class="rec">推荐</span>':''}<br><span class="s">${o[2]}</span></span></label>`).join('')}</div>`).join('');
+}
+function renderDraw(){
+ const rows=TOOLS.map(([id,name,type])=>{const d=draw(id,type);if(!d)return `<tr><td>${id}</td><td>${name}</td><td>${TYPE[type]}</td><td colspan="2">池子为空</td></tr>`;const p=PAL[d.pk];return `<tr><td>${id}</td><td>${name}</td><td>${TYPE[type]}</td><td>${d.v.name}</td><td><span class="sw" style="background:${p[1]}"></span>${p[0]}</td></tr>`}).join('');
+ $("#draw").innerHTML=`<thead><tr><th>编号</th><th>工具</th><th>类型</th><th>抽到的布局</th><th>配色</th></tr></thead><tbody>${rows}</tbody>`;
+ const n=V.filter(v=>state.pool[v.id]);$("#cur").textContent=n.length?`${n.length} 套（${n.map(v=>v.id.toUpperCase()).join('、')}）`:'空';
+}
+function fit(){document.querySelectorAll('.stage').forEach(s=>{const k=Math.min(1,s.clientWidth/1000);s.firstElementChild.style.transform=`scale(${k})`;s.style.height=(642*k)+'px'})}
+addEventListener('resize',fit);
+
+let ref=null,timer=null;
+const setS=t=>$("#savest").textContent=t;
+function save(){
+ if(!ref){setS('未连接存储，选择不会保存');return}
+ setS('保存中…');clearTimeout(timer);
+ timer=setTimeout(async()=>{try{await ref.set({pool:state.pool,q:state.q,note:state.note,updatedAt:new Date().toISOString()});setS('已保存')}catch(e){setS(e&&e.code==='invalid_argument'?'只读，无法保存':'保存失败，再试一次')}},600);
+}
+document.addEventListener('click',e=>{
+ const m=e.target.closest('[data-mode]');if(m){const v=V.find(x=>x.id===m.dataset.mode);state.modes[v.id]=(state.modes[v.id]||v.mode)==='light'?'dark':'light';renderVersions();return}
+ const p=e.target.closest('[data-pal]');if(p){const [id,k]=p.dataset.pal.split(':');state.pals[id]=k;renderVersions()}
+});
+document.addEventListener('change',e=>{
+ if(e.target.matches('[data-pool]')){state.pool[e.target.dataset.pool]=e.target.checked;renderDraw();save();return}
+ if(e.target.matches('.q input')){state.q[e.target.name]=e.target.value;renderQs();renderDraw();save()}
+});
+$("#note").addEventListener('input',e=>{state.note=e.target.value;save()});
+
+renderVersions();renderQs();renderDraw();
+(async()=>{try{const db=await window.claude?.use?.('db');if(!db){setS('未连接存储，选择不会保存');return}
+ ref=db.doc('decisions/ui');const s=await ref.get();
+ if(s.exists){const d=s.data()||{};state.pool={...state.pool,...(d.pool||{})};state.q={...state.q,...(d.q||{})};state.note=d.note||'';$("#note").value=state.note;renderVersions();renderQs();renderDraw();setS('已读取上次的选择')}else setS('已连接，选择自动保存')}catch(e){setS('存储暂不可用')}})();
+</script>
