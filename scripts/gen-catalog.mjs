@@ -86,14 +86,27 @@ const prev = existsSync(root + 'catalog/tools.json')
   : {};
 
 // 实际使用的上游与拍板页候选不同时，以实际为准
-const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' } };
+// 做出来的功能和调研时的一句话不同，以实际为准
+const DESC_FIX = {
+  c21: '粘贴文案或导入字幕，AI 拆成钩子、分镜、话术节奏表',
+  w15: '读库存表和订单表，异常时推到企微 / 钉钉 / 飞书群',
+  e21: '导入运单表或用快递100 接口，列出停滞件、退回件并导出',
+  w09: '按最后互动时间（导入）或添加时间分级列出沉睡客户，同步对比发现流失',
+  e16: '导入各店订单表和库存表，出多店汇总与 SKU 跨店对照',
+  e17: '导入商品表，按利润、需求、竞争、口碑打分排名并出选品报告',
+  e19: '批量 ASIN 走亚马逊官方 Creators API 查标题、价格，导出 Excel',
+};
+// 调研时列的上游最后没用（例如出于合规改走官方接口），按自研处理
+const NO_UPSTREAM = new Set(['e16', 'e17', 'e19', 'w08']);
+const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' } };
 
 const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec, first]) => {
   const decision = decisions.tools[id] ?? rec;
+  if (NO_UPSTREAM.has(id)) base = '';
   const track = !base ? 'own' : FORK.has(id) ? 'fork' : 'wrap';
   const p = prev[id] ?? {};
   return {
-    id, slug: SLUG[id], category: CATS[cat], name, desc,
+    id, slug: SLUG[id], category: CATS[cat], name, desc: DESC_FIX[id] ?? desc,
     upstream: UPSTREAM_FIX[id] ?? (base ? { repo: base, stars: star, license } : null),
     form, risk, recommended: rec, decision,
     firstBatch: Boolean(first) && decision === 'do',

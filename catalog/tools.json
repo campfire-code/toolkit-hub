@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T09:39:43.810Z",
+  "generatedAt": "2026-10-23T13:34:11.323Z",
   "decisionsSource": "https://claude.ai/artifact/5r6mavUV5zM6ptrAn5Zkfi decisions/plan v54",
   "engineering": {
     "q_batch": "20",
@@ -235,8 +235,8 @@
         "layout": "d",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/sku-image-composer",
       "version": null,
       "release": null,
       "notes": ""
@@ -343,10 +343,10 @@
         "layout": "a",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/doudian-batch-price",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/doudian-batch-price/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -373,10 +373,10 @@
         "layout": "e",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/shopee-batch-price",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/shopee-batch-price/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -403,10 +403,10 @@
         "layout": "b",
         "palette": "amber"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/amazon-order-export",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/amazon-order-export/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -433,10 +433,10 @@
         "layout": "a",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/tiktokshop-listing",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/tiktokshop-listing/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -444,29 +444,25 @@
       "slug": "sea-multistore",
       "category": "电商运营",
       "name": "东南亚多店调度",
-      "desc": "Lazada / Shopee / TikTok 多店统一管理",
-      "upstream": {
-        "repo": "easycb/easycb-go",
-        "stars": "173",
-        "license": "MIT"
-      },
+      "desc": "导入各店订单表和库存表，出多店汇总与 SKU 跨店对照",
+      "upstream": null,
       "form": "桌面",
       "risk": "mid",
       "recommended": "later",
       "decision": "do",
       "firstBatch": false,
-      "track": "wrap",
-      "trackLabel": "自研界面 + 开源库",
+      "track": "own",
+      "trackLabel": "从零写",
       "listing": "store",
       "uiType": "data",
       "ui": {
         "layout": "c",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/sea-multistore",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/sea-multistore/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -474,27 +470,23 @@
       "slug": "crossborder-product-research",
       "category": "电商运营",
       "name": "跨境选品报告",
-      "desc": "TikTok / 亚马逊选品分析报告",
-      "upstream": {
-        "repo": "nexscope-ai/eCommerce-Skills",
-        "stars": "1.2k",
-        "license": "MIT"
-      },
+      "desc": "导入商品表，按利润、需求、竞争、口碑打分排名并出选品报告",
+      "upstream": null,
       "form": "桌面",
       "risk": "low",
       "recommended": "do",
       "decision": "do",
       "firstBatch": false,
-      "track": "wrap",
-      "trackLabel": "自研界面 + 开源库",
+      "track": "own",
+      "trackLabel": "从零写",
       "listing": "store",
       "uiType": "data",
       "ui": {
         "layout": "c",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/crossborder-product-research",
       "version": null,
       "release": null,
       "notes": ""
@@ -519,10 +511,10 @@
         "layout": "c",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/shopee-profit-calculator",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/shopee-profit-calculator/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -530,27 +522,23 @@
       "slug": "amazon-asin-lookup",
       "category": "电商运营",
       "name": "亚马逊 ASIN 批量查询",
-      "desc": "批量查商品信息与价格",
-      "upstream": {
-        "repo": "tducret/amazon-scraper-python",
-        "stars": "878",
-        "license": "MIT"
-      },
+      "desc": "批量 ASIN 走亚马逊官方 Creators API 查标题、价格，导出 Excel",
+      "upstream": null,
       "form": "桌面",
       "risk": "mid",
       "recommended": "later",
       "decision": "do",
       "firstBatch": false,
-      "track": "wrap",
-      "trackLabel": "自研界面 + 开源库",
+      "track": "own",
+      "trackLabel": "从零写",
       "listing": "store",
       "uiType": "data",
       "ui": {
         "layout": "a",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/amazon-asin-lookup",
       "version": null,
       "release": null,
       "notes": ""
@@ -586,7 +574,7 @@
       "slug": "express-exception-board",
       "category": "电商运营",
       "name": "快递异常件看板",
-      "desc": "接快递查询接口，提醒停滞件、退回件",
+      "desc": "导入运单表或用快递100 接口，列出停滞件、退回件并导出",
       "upstream": null,
       "form": "桌面",
       "risk": "low",
@@ -601,8 +589,8 @@
         "layout": "b",
         "palette": "amber"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/express-exception-board",
       "version": null,
       "release": null,
       "notes": ""
@@ -870,10 +858,10 @@
         "layout": "b",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/ai-detail-page",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ai-detail-page/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -896,8 +884,8 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/product-image-to-video",
       "version": null,
       "release": null,
       "notes": ""
@@ -1060,8 +1048,8 @@
         "layout": "b",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/wecom-customer-tagger",
       "version": null,
       "release": null,
       "notes": ""
@@ -1098,26 +1086,22 @@
       "category": "微信私域",
       "name": "渠道活码与加粉统计",
       "desc": "用官方「联系我」接口统计每个渠道的加粉来源",
-      "upstream": {
-        "repo": "openscrm/api-server",
-        "stars": "1.7k",
-        "license": "Apache-2.0"
-      },
+      "upstream": null,
       "form": "服务端",
       "risk": "low",
       "recommended": "do",
       "decision": "do",
       "firstBatch": false,
-      "track": "wrap",
-      "trackLabel": "自研界面 + 开源库",
+      "track": "own",
+      "trackLabel": "从零写",
       "listing": "store",
       "uiType": "data",
       "ui": {
         "layout": "f",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/wecom-channel-qrcode",
       "version": null,
       "release": null,
       "notes": ""
@@ -1127,7 +1111,7 @@
       "slug": "wecom-churn-alert",
       "category": "微信私域",
       "name": "客户流失预警清单",
-      "desc": "按最后互动时间生成跟进清单",
+      "desc": "按最后互动时间（导入）或添加时间分级列出沉睡客户，同步对比发现流失",
       "upstream": null,
       "form": "服务端",
       "risk": "low",
@@ -1142,8 +1126,8 @@
         "layout": "e",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/wecom-churn-alert",
       "version": null,
       "release": null,
       "notes": ""
@@ -1168,10 +1152,10 @@
         "layout": "a",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/mp-weekly-report",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/mp-weekly-report/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1246,10 +1230,10 @@
         "layout": "e",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/chat-screenshot-to-crm",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/chat-screenshot-to-crm/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1283,7 +1267,7 @@
       "slug": "wechat-alert-push",
       "category": "微信私域",
       "name": "订单 / 库存告警推到微信",
-      "desc": "通过企业微信应用推送到个人微信",
+      "desc": "读库存表和订单表，异常时推到企微 / 钉钉 / 飞书群",
       "upstream": {
         "repo": "easychen/wecomchan",
         "stars": "1.8k",
@@ -1302,10 +1286,10 @@
         "layout": "a",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/wechat-alert-push",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/wechat-alert-push/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1355,10 +1339,10 @@
         "layout": "c",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/bot-webhook-debugger",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/bot-webhook-debugger/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1407,10 +1391,10 @@
         "layout": "f",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/live-script-writer",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/live-script-writer/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1761,10 +1745,10 @@
         "layout": "d",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/jianying-draft-generator",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/jianying-draft-generator/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2123,10 +2107,10 @@
         "layout": "c",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/cover-studio",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/cover-studio/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2179,10 +2163,10 @@
         "layout": "f",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/title-ab-generator",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/title-ab-generator/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2190,7 +2174,7 @@
       "slug": "video-breakdown",
       "category": "内容生产",
       "name": "竞品视频拆解卡",
-      "desc": "输入视频，输出分镜、钩子、话术结构表",
+      "desc": "粘贴文案或导入字幕，AI 拆成钩子、分镜、话术节奏表",
       "upstream": null,
       "form": "桌面",
       "risk": "mid",
@@ -2205,10 +2189,10 @@
         "layout": "e",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/video-breakdown",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/video-breakdown/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2283,10 +2267,10 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/asset-dedup",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/asset-dedup/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2473,10 +2457,10 @@
         "layout": "c",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/comment-insight",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/comment-insight/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2595,9 +2579,9 @@
       "name": "文档转 Markdown",
       "desc": "Word、PPT、Excel、PDF 转成 AI 能读的文本",
       "upstream": {
-        "repo": "microsoft/markitdown",
-        "stars": "192k",
-        "license": "MIT"
+        "repo": "mwilliamson/mammoth.js",
+        "stars": "",
+        "license": "BSD-2-Clause"
       },
       "form": "桌面",
       "risk": "low",
@@ -2612,10 +2596,10 @@
         "layout": "f",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/doc-to-markdown",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/doc-to-markdown/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2773,10 +2757,10 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/bill-reconciler",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/bill-reconciler/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2799,10 +2783,10 @@
         "layout": "b",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/ofd-to-pdf",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ofd-to-pdf/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2829,10 +2813,10 @@
         "layout": "b",
         "palette": "amber"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/batch-rename",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/batch-rename/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2889,10 +2873,10 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/id-photo",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/id-photo/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2902,8 +2886,8 @@
       "name": "批量二维码标签",
       "desc": "带编号的二维码批量生成，排版成可打印 PDF",
       "upstream": {
-        "repo": "pdfme/pdfme",
-        "stars": "4.9k",
+        "repo": "soldair/node-qrcode",
+        "stars": "",
         "license": "MIT"
       },
       "form": "桌面",
@@ -2919,10 +2903,10 @@
         "layout": "b",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/batch-qrcode-labels",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/batch-qrcode-labels/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -3086,10 +3070,10 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/screenshot-translate",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/screenshot-translate/releases/tag/v0.1.0",
       "notes": ""
     },
     {

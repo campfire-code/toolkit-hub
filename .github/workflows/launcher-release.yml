@@ -36,6 +36,7 @@ jobs:
           dir="${slug}-${version}"
           mkdir -p "build/$dir"
           git archive HEAD | tar -x -C "build/$dir"
+          rm -rf "build/$dir/campfire"
           cp "campfire/启动.command" "build/$dir/启动（Mac 双击）.command"; chmod +x "build/$dir/启动（Mac 双击）.command"
           sed 's/$/\r/' "campfire/启动.bat" > "build/$dir/启动（Windows 双击）.bat"
           cp campfire/使用说明.txt "build/$dir/" 2>/dev/null || true

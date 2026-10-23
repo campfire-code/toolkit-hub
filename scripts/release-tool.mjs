@@ -1,6 +1,6 @@
 // 发版：node scripts/release-tool.mjs <编号>
 // 按 tool.json 的版本打标签并推送，等云端三平台出包完成，核对安装包齐全后把总目录里的状态改为 released。
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -17,6 +17,13 @@ const { version, delivery = 'desktop' } = JSON.parse(readFileSync(`${dir}/tool.j
 const tag = `v${version}`;
 
 if (out('git', ['status', '--porcelain'])) throw new Error('有未提交的改动，先运行 publish-tool.mjs');
+// 打包声明了 ffmpeg 但 tool.json 没开 ffmpeg 时，出包流程不会下载它，打包必然失败
+const confPath = `${dir}/src-tauri/tauri.conf.json`;
+if (delivery === 'desktop' && existsSync(confPath)) {
+  const bins = JSON.parse(readFileSync(confPath, 'utf8')).bundle?.externalBin ?? [];
+  const meta = JSON.parse(readFileSync(`${dir}/tool.json`, 'utf8'));
+  if (bins.includes('binaries/ffmpeg') && !meta.ffmpeg) throw new Error('tauri.conf.json 声明了 ffmpeg，但 tool.json 没有 "ffmpeg": true；不用 ffmpeg 就删掉 externalBin 和 resources');
+}
 // fork 类工具的 origin 指向上游作者的仓库，标签只能推到 campfire 远程
 const remotes = out('git', ['remote']).split('\n');
 const remote = remotes.includes('campfire') ? 'campfire' : 'origin';

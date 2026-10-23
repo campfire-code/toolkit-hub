@@ -4,7 +4,7 @@
 
 面向电商运营、微信私域、内容生产、办公提效的开源小工具合集。每个工具是 [campfire-code](https://github.com/campfire-code) 组织下的独立仓库，提供源码与 Windows / macOS 安装包。
 
-- 计划做 96 个，已发布 19 个；另有 26 个后做，见 [docs/backlog.md](docs/backlog.md)
+- 计划做 96 个，已发布 35 个；另有 26 个后做，见 [docs/backlog.md](docs/backlog.md)
 - 总方案：[docs/00-总方案.md](docs/00-总方案.md)
 - 本页由 `node scripts/gen-docs.mjs` 根据 `catalog/tools.json` 生成，不要手改
 
@@ -23,16 +23,16 @@
 | e09 | AI 标题卖点批量生成 | Excel 进、Excel 出，可指定平台字数规则 | [ai-title-writer](https://github.com/campfire-code/ai-title-writer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/ai-title-writer/releases/tag/v0.1.0) |
 | e10 | 广告法违禁词检测 | 标题、详情、文案、字幕上架前自检，标出极限词 | [banned-words-checker](https://github.com/campfire-code/banned-words-checker) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/banned-words-checker/releases/tag/v0.1.0) |
 | e11 | 多平台订单利润对账 | 导入各平台账单，扣成本、运费、佣金后算真实利润 | [order-profit-reconciler](https://github.com/campfire-code/order-profit-reconciler) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/order-profit-reconciler/releases/tag/v0.1.0) |
-| e12 | 抖店批量改价改库存 | 一张表批量改多个店，走抖店官方接口 | `doudian-batch-price` | [whalesky-labs/doudian-sdk](https://github.com/whalesky-labs/doudian-sdk) · MIT | 中 | 待做 | — |
-| e13 | 虾皮批量改价改库存 | 走 Shopee 官方接口 | `shopee-batch-price` | [congminh1254/shopee-sdk](https://github.com/congminh1254/shopee-sdk) · MIT | 中 | 待做 | — |
-| e14 | 亚马逊订单库存导出 | 走亚马逊 SP-API | `amazon-order-export` | [saleweaver/python-amazon-sp-api](https://github.com/saleweaver/python-amazon-sp-api) · MIT | 中 | 待做 | — |
-| e15 | TikTok Shop 批量上品 | 走 TikTok Shop 官方接口 | `tiktokshop-listing` | [EcomPHP/tiktokshop-php](https://github.com/EcomPHP/tiktokshop-php) · Apache-2.0 | 中 | 待做 | — |
-| e16 | 东南亚多店调度 | Lazada / Shopee / TikTok 多店统一管理 | `sea-multistore` | [easycb/easycb-go](https://github.com/easycb/easycb-go) · MIT | 中 | 待做 | — |
-| e17 | 跨境选品报告 | TikTok / 亚马逊选品分析报告 | `crossborder-product-research` | [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills) · MIT | 低 | 待做 | — |
-| e18 | 虾皮选品利润计算器 | 商品页一键算毛利、佣金和运费 | `shopee-profit-calculator` | 从零写 | 低 | 待做 | — |
-| e19 | 亚马逊 ASIN 批量查询 | 批量查商品信息与价格 | `amazon-asin-lookup` | [tducret/amazon-scraper-python](https://github.com/tducret/amazon-scraper-python) · MIT | 中 | 待做 | — |
+| e12 | 抖店批量改价改库存 | 一张表批量改多个店，走抖店官方接口 | [doudian-batch-price](https://github.com/campfire-code/doudian-batch-price) | [whalesky-labs/doudian-sdk](https://github.com/whalesky-labs/doudian-sdk) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/doudian-batch-price/releases/tag/v0.1.0) |
+| e13 | 虾皮批量改价改库存 | 走 Shopee 官方接口 | [shopee-batch-price](https://github.com/campfire-code/shopee-batch-price) | [congminh1254/shopee-sdk](https://github.com/congminh1254/shopee-sdk) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/shopee-batch-price/releases/tag/v0.1.0) |
+| e14 | 亚马逊订单库存导出 | 走亚马逊 SP-API | [amazon-order-export](https://github.com/campfire-code/amazon-order-export) | [saleweaver/python-amazon-sp-api](https://github.com/saleweaver/python-amazon-sp-api) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/amazon-order-export/releases/tag/v0.1.0) |
+| e15 | TikTok Shop 批量上品 | 走 TikTok Shop 官方接口 | [tiktokshop-listing](https://github.com/campfire-code/tiktokshop-listing) | [EcomPHP/tiktokshop-php](https://github.com/EcomPHP/tiktokshop-php) · Apache-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/tiktokshop-listing/releases/tag/v0.1.0) |
+| e16 | 东南亚多店调度 | 导入各店订单表和库存表，出多店汇总与 SKU 跨店对照 | [sea-multistore](https://github.com/campfire-code/sea-multistore) | 从零写 | 中 | 进行中 | — |
+| e17 | 跨境选品报告 | 导入商品表，按利润、需求、竞争、口碑打分排名并出选品报告 | [crossborder-product-research](https://github.com/campfire-code/crossborder-product-research) | 从零写 | 低 | 进行中 | — |
+| e18 | 虾皮选品利润计算器 | 商品页一键算毛利、佣金和运费 | [shopee-profit-calculator](https://github.com/campfire-code/shopee-profit-calculator) | 从零写 | 低 | 进行中 | — |
+| e19 | 亚马逊 ASIN 批量查询 | 批量 ASIN 走亚马逊官方 Creators API 查标题、价格，导出 Excel | [amazon-asin-lookup](https://github.com/campfire-code/amazon-asin-lookup) | 从零写 | 中 | 进行中 | — |
 | e20 | 差评归因分析 | 导入评论表格，AI 聚类出问题点和改进建议 | [review-insight](https://github.com/campfire-code/review-insight) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/review-insight/releases/tag/v0.1.0) |
-| e21 | 快递异常件看板 | 接快递查询接口，提醒停滞件、退回件 | `express-exception-board` | 从零写 | 低 | 待做 | — |
+| e21 | 快递异常件看板 | 导入运单表或用快递100 接口，列出停滞件、退回件并导出 | [express-exception-board](https://github.com/campfire-code/express-exception-board) | 从零写 | 低 | 进行中 | — |
 | e22 | 采购单对账 | 导出淘宝 / 1688 买家订单，与入库对账 | `purchase-order-export` | [Sky-seeker/BuyerOrdersExport](https://github.com/Sky-seeker/BuyerOrdersExport) · MIT | 低 | 待做 | — |
 | e23 | 闲鱼捡漏 / 竞品监控（仅开源） | 关键词监控新上架商品，AI 筛选 | `xianyu-monitor` | [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) · MIT | 高 | 待做 | — |
 | e24 | 闲鱼自动发货（仅开源） | 多账号自动发货、自动回复 | `xianyu-auto-delivery` | [Christ9038/Ydisks-Xianyu-Helper](https://github.com/Christ9038/Ydisks-Xianyu-Helper) · Apache-2.0 | 高 | 待做 | — |
@@ -54,16 +54,16 @@
 | w03 | 企微群 AI 答疑机器人 | 企业微信群机器人接大模型 + 知识库 | `wecom-group-ai-bot` | [easy-wx/wecom-bot-svr](https://github.com/easy-wx/wecom-bot-svr) · MIT | 低 | 待做 | — |
 | w04 | 企微 / 公众号 AI 客服 | 多渠道 AI 客服，只启用官方通道 | `wecom-ai-service` | [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) · MIT | 低 | 待做 | — |
 | w05 | Dify 知识库客服接入器 | 把 Dify 知识库接到企微 | `dify-wecom-connector` | [hanfangyuan4396/dify-on-wechat](https://github.com/hanfangyuan4396/dify-on-wechat) · MIT | 中 | 待做 | — |
-| w06 | 企微客户标签批量整理 | 官方接口拉客户，按规则或 AI 批量打标签 | `wecom-customer-tagger` | 从零写 | 低 | 待做 | — |
-| w08 | 渠道活码与加粉统计 | 用官方「联系我」接口统计每个渠道的加粉来源 | `wecom-channel-qrcode` | [openscrm/api-server](https://github.com/openscrm/api-server) · Apache-2.0 | 低 | 待做 | — |
-| w09 | 客户流失预警清单 | 按最后互动时间生成跟进清单 | `wecom-churn-alert` | 从零写 | 低 | 待做 | — |
+| w06 | 企微客户标签批量整理 | 官方接口拉客户，按规则或 AI 批量打标签 | [wecom-customer-tagger](https://github.com/campfire-code/wecom-customer-tagger) | 从零写 | 低 | 进行中 | — |
+| w08 | 渠道活码与加粉统计 | 用官方「联系我」接口统计每个渠道的加粉来源 | `wecom-channel-qrcode` | 从零写 | 低 | 待做 | — |
+| w09 | 客户流失预警清单 | 按最后互动时间（导入）或添加时间分级列出沉睡客户，同步对比发现流失 | `wecom-churn-alert` | 从零写 | 低 | 待做 | — |
 | w10 | 公众号数据周报 | 官方数据接口，自动出阅读、涨粉图表 | `mp-weekly-report` | 从零写 | 低 | 待做 | — |
 | w11 | 朋友圈文案日更 | 按商品库和节日日历生成一周文案和九宫格配图，手动发布 | [moments-daily-writer](https://github.com/campfire-code/moments-daily-writer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/moments-daily-writer/releases/tag/v0.1.0) |
 | w12 | 私域话术库快捷回复 | 桌面小窗，按场景搜话术一键复制 | [script-quick-reply](https://github.com/campfire-code/script-quick-reply) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/script-quick-reply/releases/tag/v0.1.0) |
-| w13 | 聊天截图转客户档案 | 截图 OCR 后抽取需求、预算、意向 | `chat-screenshot-to-crm` | 从零写 | 低 | 待做 | — |
-| w15 | 订单 / 库存告警推到微信 | 通过企业微信应用推送到个人微信 | `wechat-alert-push` | [easychen/wecomchan](https://github.com/easychen/wecomchan) · MIT | 低 | 待做 | — |
-| w17 | 机器人 Webhook 调试器 | 钉钉、飞书、企微机器人消息统一调试 | `bot-webhook-debugger` | 从零写 | 低 | 待做 | — |
-| w19 | 视频号直播话术生成 | 按商品生成直播讲解稿和互动话术 | `live-script-writer` | 从零写 | 低 | 待做 | — |
+| w13 | 聊天截图转客户档案 | 截图 OCR 后抽取需求、预算、意向 | [chat-screenshot-to-crm](https://github.com/campfire-code/chat-screenshot-to-crm) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/chat-screenshot-to-crm/releases/tag/v0.1.0) |
+| w15 | 订单 / 库存告警推到微信 | 读库存表和订单表，异常时推到企微 / 钉钉 / 飞书群 | [wechat-alert-push](https://github.com/campfire-code/wechat-alert-push) | [easychen/wecomchan](https://github.com/easychen/wecomchan) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/wechat-alert-push/releases/tag/v0.1.0) |
+| w17 | 机器人 Webhook 调试器 | 钉钉、飞书、企微机器人消息统一调试 | [bot-webhook-debugger](https://github.com/campfire-code/bot-webhook-debugger) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/bot-webhook-debugger/releases/tag/v0.1.0) |
+| w19 | 视频号直播话术生成 | 按商品生成直播讲解稿和互动话术 | [live-script-writer](https://github.com/campfire-code/live-script-writer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/live-script-writer/releases/tag/v0.1.0) |
 | w20 | 手机备份聊天导出（本人数据） | 从手机备份导出本人聊天记录，全程本地 | `wechat-backup-exporter` | [BlueMatthew/WechatExporter](https://github.com/BlueMatthew/WechatExporter) · GPL-2.0 | 中 | 待做 | — |
 | w21 | 竞品公众号文章采集（仅开源） | 批量下载公众号文章及阅读数 | `mp-article-exporter` | [wechat-article/wechat-article-exporter](https://github.com/wechat-article/wechat-article-exporter) · MIT | 高 | 待做 | — |
 | w23 | 个微自动回复（桌面）（仅开源） | 操作 Windows 微信界面自动回复 | `wechat-auto-reply-rpa` | [cluic/wxauto](https://github.com/cluic/wxauto) · Apache-2.0 | 高 | 待做 | — |
@@ -80,7 +80,7 @@
 | c01 | 主题一键出短视频 | 输入主题，自动写文案、配音、配素材、合成成片 | `topic-to-short-video` | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) · MIT | 中 | 待做 | — |
 | c02 | 影视解说一键成片（仅开源） | 解说文案 + 自动剪辑（影视素材版权风险高） | `film-commentary-maker` | [linyqh/NarratoAI](https://github.com/linyqh/NarratoAI) · MIT | 高 | 待做 | — |
 | c03 | 长视频一键切爆点 | 长视频自动切成多条短视频 | `long-video-clipper` | [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) · MIT | 中 | 待做 | — |
-| c04 | 剪映草稿批量生成器 | 批量生成剪映草稿，打开剪映即可微调 | `jianying-draft-generator` | [GuanYixuan/pyJianYingDraft](https://github.com/GuanYixuan/pyJianYingDraft) · Apache-2.0 | 中 | 待做 | — |
+| c04 | 剪映草稿批量生成器 | 批量生成剪映草稿，打开剪映即可微调 | [jianying-draft-generator](https://github.com/campfire-code/jianying-draft-generator) | [GuanYixuan/pyJianYingDraft](https://github.com/GuanYixuan/pyJianYingDraft) · Apache-2.0 | 中 | 进行中 | — |
 | c05 | 批量混剪工厂 | 素材批量混剪出多条视频 | `batch-video-remix` | [ddean2009/MoneyPrinterPlus](https://github.com/ddean2009/MoneyPrinterPlus) · GPL-3.0 | 中 | 待做 | — |
 | c06 | 离线视频转字幕 | 不联网、不用显卡，Mac 和 Windows 都能跑 | `offline-subtitle` | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) · MIT | 低 | 待做 | — |
 | c08 | 视频出海翻译配音 | 字幕翻译 + 配音一条龙 | `video-translate-dub` | [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo) · Apache-2.0 | 中 | 待做 | — |
@@ -90,16 +90,16 @@
 | c14 | 自家直播自动录制存档 | 直播开播自动录制，用于自家回放和切片 | `live-recorder` | [ihmily/StreamCap](https://github.com/ihmily/StreamCap) · Apache-2.0 | 中 | 待做 | — |
 | c16 | 去硬字幕 / 去水印（仅开源） | 视频去字幕和水印（需显卡，侵权风险） | `subtitle-watermark-remover` | [YaoFANGUK/video-subtitle-remover](https://github.com/YaoFANGUK/video-subtitle-remover) · Apache-2.0 | 高 | 待做 | — |
 | c17 | 小红书图文卡片生成 | 输入主题生成整套图文卡片（参考项目为非商用，代码自己写） | [xhs-card-maker](https://github.com/campfire-code/xhs-card-maker) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/xhs-card-maker/releases/tag/v0.1.0) |
-| c18 | 封面工坊 | 公众号、视频封面模板批量出图 | `cover-studio` | [weizwz/cover](https://github.com/weizwz/cover) · MIT | 低 | 待做 | — |
+| c18 | 封面工坊 | 公众号、视频封面模板批量出图 | [cover-studio](https://github.com/campfire-code/cover-studio) | [weizwz/cover](https://github.com/weizwz/cover) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/cover-studio/releases/tag/v0.1.0) |
 | c19 | 全网热点雷达 | 聚合各平台热榜，按关键词提醒 | [trending-radar](https://github.com/campfire-code/trending-radar) | [newsnext/newsnow](https://github.com/newsnext/newsnow) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/trending-radar/releases/tag/v0.1.0) |
-| c20 | 爆款标题 A/B 生成 | 按平台风格批量出标题并打分 | `title-ab-generator` | 从零写 | 低 | 待做 | — |
-| c21 | 竞品视频拆解卡 | 输入视频，输出分镜、钩子、话术结构表 | `video-breakdown` | 从零写 | 中 | 待做 | — |
+| c20 | 爆款标题 A/B 生成 | 按平台风格批量出标题并打分 | [title-ab-generator](https://github.com/campfire-code/title-ab-generator) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/title-ab-generator/releases/tag/v0.1.0) |
+| c21 | 竞品视频拆解卡 | 粘贴文案或导入字幕，AI 拆成钩子、分镜、话术节奏表 | [video-breakdown](https://github.com/campfire-code/video-breakdown) | 从零写 | 中 | 已发布 | [下载](https://github.com/campfire-code/video-breakdown/releases/tag/v0.1.0) |
 | c23 | AI 内容标识器 | 按《人工智能生成合成内容标识办法》一键加显式标识和元数据 | [ai-content-labeler](https://github.com/campfire-code/ai-content-labeler) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/ai-content-labeler/releases/tag/v0.1.0) |
-| c24 | 素材库查重 | 图片 / 视频指纹比对，避免重复发布被判搬运 | `asset-dedup` | 从零写 | 低 | 待做 | — |
+| c24 | 素材库查重 | 图片 / 视频指纹比对，避免重复发布被判搬运 | [asset-dedup](https://github.com/campfire-code/asset-dedup) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/asset-dedup/releases/tag/v0.1.0) |
 | c26 | 一键多平台发布（仅开源） | 抖音、视频号、小红书、快手、B 站自动上传 | `social-auto-upload` | [dreammis/social-auto-upload](https://github.com/dreammis/social-auto-upload) · MIT | 高 | 待做 | — |
 | c29 | 全网视频下载器（仅开源） | 各平台视频下载 | `video-downloader` | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) · Unlicense | 高 | 待做 | — |
 | c30 | 抖音无水印下载（仅开源） | 解析抖音 / TikTok 无水印视频 | `douyin-downloader` | [Evil0ctal/Douyin_TikTok_Download_API](https://github.com/Evil0ctal/Douyin_TikTok_Download_API) · Apache-2.0 | 高 | 待做 | — |
-| c31 | 评论情绪与需求分析 | 分析自有账号导出的评论数据 | `comment-insight` | 从零写 | 低 | 待做 | — |
+| c31 | 评论情绪与需求分析 | 分析自有账号导出的评论数据 | [comment-insight](https://github.com/campfire-code/comment-insight) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/comment-insight/releases/tag/v0.1.0) |
 
 ## 办公提效（16）
 
@@ -107,20 +107,20 @@
 |---|---|---|---|---|---|---|---|
 | o01 | 发票批量转报销表 | 电子发票 PDF / OFD 批量读取，导出报销 Excel | `invoice-to-expense` | 从零写 | 低 | 待做 | — |
 | o02 | PDF 百宝箱 | 合并、拆分、压缩、加水印、转图 | [pdf-toolbox](https://github.com/campfire-code/pdf-toolbox) | [Hopding/pdf-lib](https://github.com/Hopding/pdf-lib) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/pdf-toolbox/releases/tag/v0.1.0) |
-| o04 | 文档转 Markdown | Word、PPT、Excel、PDF 转成 AI 能读的文本 | `doc-to-markdown` | [microsoft/markitdown](https://github.com/microsoft/markitdown) · MIT | 低 | 待做 | — |
+| o04 | 文档转 Markdown | Word、PPT、Excel、PDF 转成 AI 能读的文本 | [doc-to-markdown](https://github.com/campfire-code/doc-to-markdown) | [mwilliamson/mammoth.js](https://github.com/mwilliamson/mammoth.js) · BSD-2-Clause | 低 | 进行中 | — |
 | o05 | 批量图片 OCR | 离线识别，结果导出 Excel / TXT | [batch-ocr](https://github.com/campfire-code/batch-ocr) | [RapidAI/RapidOCR](https://github.com/RapidAI/RapidOCR) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/batch-ocr/releases/tag/v0.1.0) |
 | o07 | Excel 拆分与合并 | 按列拆成多个文件（如按门店），多表合并 | [excel-split-merge](https://github.com/campfire-code/excel-split-merge) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/excel-split-merge/releases/tag/v0.1.1) |
 | o08 | Excel 批量套 Word 模板 | 批量生成合同、证书、通知 | [excel-to-word-batch](https://github.com/campfire-code/excel-to-word-batch) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/excel-to-word-batch/releases/tag/v0.1.0) |
-| o10 | 微信 / 支付宝账单对账 | 多份账单合并、分类、汇总 | `bill-reconciler` | 从零写 | 低 | 待做 | — |
-| o11 | OFD 转 PDF | 国产版式文件转 PDF | `ofd-to-pdf` | 从零写 | 低 | 待做 | — |
-| o12 | 按表格批量改文件名 | 按 Excel 映射表批量重命名 | `batch-rename` | [ayoisaiah/f2](https://github.com/ayoisaiah/f2) · MIT | 低 | 待做 | — |
+| o10 | 微信 / 支付宝账单对账 | 多份账单合并、分类、汇总 | [bill-reconciler](https://github.com/campfire-code/bill-reconciler) | 从零写 | 低 | 进行中 | — |
+| o11 | OFD 转 PDF | 国产版式文件转 PDF | [ofd-to-pdf](https://github.com/campfire-code/ofd-to-pdf) | 从零写 | 低 | 进行中 | — |
+| o12 | 按表格批量改文件名 | 按 Excel 映射表批量重命名 | [batch-rename](https://github.com/campfire-code/batch-rename) | [ayoisaiah/f2](https://github.com/ayoisaiah/f2) · MIT | 低 | 进行中 | — |
 | o13 | 图片批量压缩转格式 | 压缩、转 WebP / JPG，保持清晰 | [image-compressor](https://github.com/campfire-code/image-compressor) | [GoogleChromeLabs/squoosh](https://github.com/GoogleChromeLabs/squoosh) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/image-compressor/releases/tag/v0.1.1) |
-| o14 | 证件照换底排版 | AI 证件照，换底色、排版打印 | `id-photo` | [Zeyi-Lin/HivisionIDPhotos](https://github.com/Zeyi-Lin/HivisionIDPhotos) · Apache-2.0 | 低 | 待做 | — |
-| o15 | 批量二维码标签 | 带编号的二维码批量生成，排版成可打印 PDF | `batch-qrcode-labels` | [pdfme/pdfme](https://github.com/pdfme/pdfme) · MIT | 低 | 待做 | — |
+| o14 | 证件照换底排版 | AI 证件照，换底色、排版打印 | [id-photo](https://github.com/campfire-code/id-photo) | [Zeyi-Lin/HivisionIDPhotos](https://github.com/Zeyi-Lin/HivisionIDPhotos) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/id-photo/releases/tag/v0.1.0) |
+| o15 | 批量二维码标签 | 带编号的二维码批量生成，排版成可打印 PDF | [batch-qrcode-labels](https://github.com/campfire-code/batch-qrcode-labels) | [soldair/node-qrcode](https://github.com/soldair/node-qrcode) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/batch-qrcode-labels/releases/tag/v0.1.0) |
 | o16 | 录音转文字 | 中文识别准，支持说话人区分 | `speech-to-text` | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) · MIT | 低 | 待做 | — |
 | o17 | 电话录音质检 | 转写后检查话术命中、违禁词 | `call-qa` | [modelscope/FunASR](https://github.com/modelscope/FunASR) · MIT | 低 | 待做 | — |
 | o18 | 会议纪要助手 | 本地录音生成纪要和待办 | [meeting-minutes](https://github.com/campfire-code/meeting-minutes) | [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/meeting-minutes/releases/tag/v0.4.1-campfire.1) |
-| o21 | 截图识字翻译 | 截图 OCR 后用大模型翻译 | `screenshot-translate` | 从零写 | 低 | 待做 | — |
+| o21 | 截图识字翻译 | 截图 OCR 后用大模型翻译 | [screenshot-translate](https://github.com/campfire-code/screenshot-translate) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/screenshot-translate/releases/tag/v0.1.0) |
 
 ## AI 助手（2）
 
