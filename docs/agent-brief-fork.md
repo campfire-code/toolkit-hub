@@ -28,6 +28,8 @@
      - 把 `ci/launcher/启动.bat` 和 `启动.command` 复制到 `campfire/`，填好占位符：`{{NAME}}` 工具名、`{{PY_VERSION}}` 上游要求的 Python 版本、`{{INSTALL_CMD}}`（例如 `uv pip install -r requirements.txt`）、`{{RUN_CMD}}`（例如 `python main.py` 或 `streamlit run app.py`）、`{{OPEN_URL}}`（网页界面的地址，没有就留空）。
      - 安装和启动命令以上游 README 为准。**在本机实际跑一次**：用 uv 建环境、装依赖、启动后确认能访问。
      - 上游依赖 ffmpeg 等系统软件时，在 README 写清楚怎么装。
+     - 打包时会删掉 `campfire/` 目录。启动脚本要调用的辅助脚本放在仓库根目录（如 `campfire_install.py`），脚本里按自己的实际位置计算项目根路径。
+     - 上游默认的大模型接口指向某个合作方服务时，改成通用默认值（如 `https://api.openai.com/v1`），模型名留空。
    - **docker**：
      - 上游有 Dockerfile 就先在本机 build；上游的构建不了（例如基础镜像已停止维护）就复制一份 `docker/Dockerfile.campfire` 改到能用，release.yml 传 `dockerfile`。
      - 检查上游启动日志会不会明文打印密钥，会的话在 fork 里改掉。

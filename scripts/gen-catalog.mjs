@@ -45,7 +45,7 @@ const SLUG = {
 };
 
 // 做法：fork = 直接 fork 现成应用后中文化、补安装包；wrap = 我们写桌面界面，调用开源库；own = 从零写
-const FORK = new Set(['e22', 'e23', 'e24', 'e25', 'e26', 'e27', 'e28', 'e29', 'e30', 'w01', 'w03', 'w04',
+const FORK = new Set(['a01', 'e22', 'e23', 'e24', 'e25', 'e26', 'e27', 'e28', 'e29', 'e30', 'w01', 'w03', 'w04',
   'w05', 'w20', 'w21', 'w23', 'w24', 'w25', 'w26', 'w27', 'w28', 'c01', 'c02', 'c03', 'c05', 'c08', 'c12', 'c13',
   'c14', 'c15', 'c16', 'c26', 'c27', 'c28', 'c30', 'o18', 'o22', 'o23', 'o24', 'o25', 'o19', 'o20', 'a02',
   'a03', 'a04', 'a05', 'a06', 'w16', 'w22', 'c09', 'o03', 'o06']);
@@ -95,10 +95,11 @@ const DESC_FIX = {
   e16: '导入各店订单表和库存表，出多店汇总与 SKU 跨店对照',
   e17: '导入商品表，按利润、需求、竞争、口碑打分排名并出选品报告',
   e19: '批量 ASIN 走亚马逊官方 Creators API 查标题、价格，导出 Excel',
+  e22: '油猴脚本：导出淘宝「已买到的宝贝」订单（不含 1688），用来和入库对账',
 };
 // 调研时列的上游最后没用（例如出于合规改走官方接口），按自研处理
 const NO_UPSTREAM = new Set(['e16', 'e17', 'e19', 'w08']);
-const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' } };
+const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' }, a01: { repo: 'browser-use/web-ui', stars: '16.6k', license: 'MIT' } };
 
 const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec, first]) => {
   const decision = decisions.tools[id] ?? rec;

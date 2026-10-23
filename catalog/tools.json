@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T13:34:11.323Z",
+  "generatedAt": "2026-10-23T17:02:58.693Z",
   "decisionsSource": "https://claude.ai/artifact/5r6mavUV5zM6ptrAn5Zkfi decisions/plan v54",
   "engineering": {
     "q_batch": "20",
@@ -123,10 +123,10 @@
         "layout": "d",
         "palette": "amber"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/hd-product-cutout",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/hd-product-cutout/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -183,10 +183,10 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/detail-image-translator",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/detail-image-translator/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -600,7 +600,7 @@
       "slug": "purchase-order-export",
       "category": "电商运营",
       "name": "采购单对账",
-      "desc": "导出淘宝 / 1688 买家订单，与入库对账",
+      "desc": "油猴脚本：导出淘宝「已买到的宝贝」订单（不含 1688），用来和入库对账",
       "upstream": {
         "repo": "Sky-seeker/BuyerOrdersExport",
         "stars": "45",
@@ -616,10 +616,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/purchase-order-export",
+      "version": "2.0.4-campfire.1",
+      "release": "https://github.com/campfire-code/purchase-order-export/releases/tag/v2.0.4-campfire.1",
       "notes": ""
     },
     {
@@ -643,10 +643,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/xianyu-monitor",
+      "version": "2.5-campfire.1",
+      "release": "https://github.com/campfire-code/xianyu-monitor/releases/tag/v2.5-campfire.1",
       "notes": ""
     },
     {
@@ -670,10 +670,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/xianyu-auto-delivery",
+      "version": "1.0.14-campfire.1",
+      "release": "https://github.com/campfire-code/xianyu-auto-delivery/releases/tag/v1.0.14-campfire.1",
       "notes": ""
     },
     {
@@ -724,10 +724,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/live-room-assistant",
+      "version": "1.6.3-campfire.1",
+      "release": "https://github.com/campfire-code/live-room-assistant/releases/tag/v1.6.3-campfire.1",
       "notes": ""
     },
     {
@@ -778,10 +778,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/price-compare-crawler",
+      "version": "2.0.0-campfire.1",
+      "release": "https://github.com/campfire-code/price-compare-crawler/releases/tag/v2.0.0-campfire.1",
       "notes": ""
     },
     {
@@ -832,10 +832,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/ecom-mcp-connector",
+      "version": "0.1.6-campfire.1",
+      "release": "https://github.com/campfire-code/ecom-mcp-connector/releases/tag/v0.1.6-campfire.1",
       "notes": ""
     },
     {
@@ -968,10 +968,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/wecom-group-ai-bot",
+      "version": "0.3.4-campfire.1",
+      "release": "https://github.com/campfire-code/wecom-group-ai-bot/releases/tag/v0.3.4-campfire.1",
       "notes": ""
     },
     {
@@ -995,10 +995,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/wecom-ai-service",
+      "version": "2.2.1-campfire.1",
+      "release": "https://github.com/campfire-code/wecom-ai-service/releases/tag/v2.2.1-campfire.1",
       "notes": ""
     },
     {
@@ -1418,10 +1418,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/wechat-backup-exporter",
+      "version": "1.9.5.13-campfire.1",
+      "release": "https://github.com/campfire-code/wechat-backup-exporter/releases/tag/v1.9.5.13-campfire.1",
       "notes": ""
     },
     {
@@ -1553,10 +1553,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/wechat-bulk-rpa",
+      "version": "1.9.8-campfire.1",
+      "release": "https://github.com/campfire-code/wechat-bulk-rpa/releases/tag/v1.9.8-campfire.1",
       "notes": ""
     },
     {
@@ -1580,10 +1580,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/wecom-group-manager-android",
+      "version": "2.8.0-campfire.1",
+      "release": "https://github.com/campfire-code/wecom-group-manager-android/releases/tag/v2.8.0-campfire.1",
       "notes": ""
     },
     {
@@ -1607,10 +1607,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/channels-video-downloader",
+      "version": "5.7.13-campfire.1",
+      "release": "https://github.com/campfire-code/channels-video-downloader/releases/tag/v5.7.13-campfire.1",
       "notes": ""
     },
     {
@@ -1634,10 +1634,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/bot-hub",
+      "version": "0.1.36-campfire.1",
+      "release": "https://github.com/campfire-code/bot-hub/releases/tag/v0.1.36-campfire.1",
       "notes": ""
     },
     {
@@ -1688,10 +1688,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/film-commentary-maker",
+      "version": "0.8.7-campfire.1",
+      "release": "https://github.com/campfire-code/film-commentary-maker/releases/tag/v0.8.7-campfire.1",
       "notes": ""
     },
     {
@@ -1715,10 +1715,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/long-video-clipper",
+      "version": "1.5.6-campfire.1",
+      "release": "https://github.com/campfire-code/long-video-clipper/releases/tag/v1.5.6-campfire.1",
       "notes": ""
     },
     {
@@ -1829,10 +1829,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/video-translate-dub",
+      "version": "3.1.1-campfire.1",
+      "release": "https://github.com/campfire-code/video-translate-dub/releases/tag/v3.1.1-campfire.1",
       "notes": ""
     },
     {
@@ -1943,10 +1943,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/voice-clone",
+      "version": "20250606v2pro-campfire.1",
+      "release": "https://github.com/campfire-code/voice-clone/releases/tag/v20250606v2pro-campfire.1",
       "notes": ""
     },
     {
@@ -1997,10 +1997,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/live-recorder",
+      "version": "1.0.3-campfire.1",
+      "release": "https://github.com/campfire-code/live-recorder/releases/tag/v1.0.3-campfire.1",
       "notes": ""
     },
     {
@@ -2051,10 +2051,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/subtitle-watermark-remover",
+      "version": "1.4.0-campfire.1",
+      "release": "https://github.com/campfire-code/subtitle-watermark-remover/releases/tag/v1.4.0-campfire.1",
       "notes": ""
     },
     {
@@ -2320,10 +2320,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/social-auto-upload",
+      "version": "1.0.0-campfire.1",
+      "release": "https://github.com/campfire-code/social-auto-upload/releases/tag/v1.0.0-campfire.1",
       "notes": ""
     },
     {
@@ -2431,10 +2431,10 @@
       "listing": "repo-only",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/douyin-downloader",
+      "version": "5.1.7-campfire.1",
+      "release": "https://github.com/campfire-code/douyin-downloader/releases/tag/v5.1.7-campfire.1",
       "notes": ""
     },
     {
@@ -3191,8 +3191,8 @@
       "name": "网页自动填表 / 采集助手",
       "desc": "用一句话让 AI 操作浏览器完成重复操作",
       "upstream": {
-        "repo": "browser-use/browser-use",
-        "stars": "119k",
+        "repo": "browser-use/web-ui",
+        "stars": "16.6k",
         "license": "MIT"
       },
       "form": "桌面",
@@ -3200,18 +3200,15 @@
       "recommended": "do",
       "decision": "do",
       "firstBatch": false,
-      "track": "wrap",
-      "trackLabel": "自研界面 + 开源库",
+      "track": "fork",
+      "trackLabel": "fork 中文化 + 安装包",
       "listing": "store",
-      "uiType": "data",
-      "ui": {
-        "layout": "b",
-        "palette": "amber"
-      },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "uiType": null,
+      "ui": null,
+      "status": "released",
+      "repo": "campfire-code/browser-agent",
+      "version": "3.0.0-campfire.1",
+      "release": "https://github.com/campfire-code/browser-agent/releases/tag/v3.0.0-campfire.1",
       "notes": ""
     },
     {
@@ -3289,10 +3286,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/excel-mcp",
+      "version": "2.2.2-campfire.1",
+      "release": "https://github.com/campfire-code/excel-mcp/releases/tag/v2.2.2-campfire.1",
       "notes": ""
     },
     {

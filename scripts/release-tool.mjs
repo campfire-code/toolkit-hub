@@ -46,12 +46,13 @@ try {
   throw new Error(`出包失败，查看 https://github.com/${repo}/actions/runs/${runId}`);
 }
 const assets = JSON.parse(out('gh', ['release', 'view', tag, '-R', repo, '--json', 'assets,url,isDraft']));
-// 不同交付方式要求的产物：desktop 三个安装包；mirror 至少一个上游安装包；launcher 启动脚本包；docker 部署文件
+// 不同交付方式要求的产物：desktop 三个安装包；mirror 至少一个上游安装包；launcher 启动脚本包；docker 部署文件；userscript 油猴脚本
 const WANT = {
   desktop: ['mac-arm64.dmg', 'mac-x64.dmg', 'windows-x64-setup.exe'],
   mirror: ['SHA256SUMS.txt'],
   launcher: ['_portable.zip'],
   docker: ['docker-compose.yml'],
+  userscript: ['.user.js', 'SHA256SUMS.txt'],
 };
 const want = WANT[delivery] ?? WANT.desktop;
 const missing = want.filter((w) => !assets.assets.some((a) => a.name.endsWith(w)));

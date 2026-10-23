@@ -17,8 +17,8 @@ if (!up) throw new Error('tool.json 里没有 upstream.repo');
 const sh = (cmd, args, opts = {}) => execFileSync(cmd, args, { cwd: dir, stdio: 'inherit', ...opts });
 const out = (cmd, args) => { try { return execFileSync(cmd, args, { cwd: dir, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim(); } catch { return ''; } };
 
-// 图标：桌面壳工程还是默认图标时生成篝火图标
-const appDir = existsSync(`${dir}/apps/desktop/src-tauri`) ? `${dir}/apps/desktop` : existsSync(`${dir}/src-tauri`) ? dir : null;
+// 图标：desktop 交付的桌面壳工程还是默认图标时生成篝火图标；mirror 等转发布上游安装包的不动上游图标
+const appDir = (meta.delivery ?? 'desktop') !== 'desktop' ? null : existsSync(`${dir}/apps/desktop/src-tauri`) ? `${dir}/apps/desktop` : existsSync(`${dir}/src-tauri`) ? dir : null;
 if (appDir && !existsSync(`${appDir}/src-tauri/icons/.campfire`)) execFileSync('node', [root + 'scripts/make-icon.mjs', id, appDir.slice(root.length)], { stdio: 'inherit' });
 
 sh('git', ['add', '-A']);
