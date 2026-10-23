@@ -9,6 +9,14 @@ on:
         description: 汇总仓库的版本，用来取发布说明模板
         type: string
         default: v1
+      app-dir:
+        description: 桌面工程（含 src-tauri）所在目录，fork 类仓库一般是 apps/desktop
+        type: string
+        default: .
+      test:
+        description: 出包前跑的测试命令，留空则不跑
+        type: string
+        default: pnpm test
 
 permissions:
   contents: write
@@ -31,7 +39,7 @@ jobs:
             echo "::error::标签 v$tag 与 tool.json 里的版本 $version 不一致"; exit 1
           fi
           echo "slug=$slug" >> "$GITHUB_OUTPUT"; echo "name=$name" >> "$GITHUB_OUTPUT"; echo "version=$version" >> "$GITHUB_OUTPUT"
-          if [ -f sidecar/main.py ]; then echo "sidecar=true" >> "$GITHUB_OUTPUT"; else echo "sidecar=false" >> "$GITHUB_OUTPUT"; fi
+          if [ -f "${{ inputs.app-dir }}/sidecar/main.py" ]; then echo "sidecar=true" >> "$GITHUB_OUTPUT"; else echo "sidecar=false" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/checkout@v7
         with:
           repository: campfire-code/toolkit-hub
@@ -97,6 +105,7 @@ jobs:
         uses: astral-sh/setup-uv@v10.3.2
       - if: needs.meta.outputs.sidecar == 'true'
         shell: bash
+        working-directory: ${{ inputs.app-dir }}
         run: |
           cd sidecar
           arch=""
@@ -108,8 +117,10 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
       - name: 单元测试
-        run: pnpm test
+        if: inputs.test != ''
+        run: ${{ inputs.test }}
       - name: 构建安装包
+        working-directory: ${{ inputs.app-dir }}
         run: pnpm tauri build --target ${{ matrix.target }} --bundles ${{ matrix.bundles }}
 
       - name: 改名并上传
@@ -119,7 +130,7 @@ jobs:
           SLUG: ${{ needs.meta.outputs.slug }}
           VERSION: ${{ needs.meta.outputs.version }}
         run: |
-          dir="src-tauri/target/${{ matrix.target }}/release/bundle"
+          dir="${{ inputs.app-dir }}/src-tauri/target/${{ matrix.target }}/release/bundle"
           mkdir -p out
           if [ "${{ matrix.bundles }}" = "dmg" ]; then
             cp "$dir"/dmg/*.dmg "out/${SLUG}_${VERSION}_${{ matrix.label }}.dmg"

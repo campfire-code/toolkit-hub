@@ -2689,10 +2689,10 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/excel-split-merge",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/excel-split-merge/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2853,10 +2853,10 @@
         "layout": "b",
         "palette": "teal"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/image-compressor",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/image-compressor/releases/tag/v0.1.0",
       "notes": ""
     },
     {

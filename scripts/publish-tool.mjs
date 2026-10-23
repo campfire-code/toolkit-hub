@@ -28,7 +28,9 @@ if (!existsSync(`${dir}/.git`)) {
   if (out('git', ['status', '--porcelain'])) sh('git', ['commit', '-q', '-m', message || `更新 ${t.name}`, '-m', CO]);
   sh('git', ['push', '-q']);
 }
-t.repo = `${ORG}/${t.slug}`;
-if (t.status === 'todo') t.status = 'doing';
-writeFileSync(catalogPath, JSON.stringify(catalog, null, 2) + '\n');
+const fresh = JSON.parse(readFileSync(catalogPath, 'utf8'));
+const ft = fresh.tools.find((x) => x.id === id);
+ft.repo = `${ORG}/${t.slug}`;
+if (ft.status === 'todo') ft.status = 'doing';
+writeFileSync(catalogPath, JSON.stringify(fresh, null, 2) + '\n');
 console.log(`已推送 https://github.com/${ORG}/${t.slug}`);
