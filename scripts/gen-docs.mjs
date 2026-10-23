@@ -46,7 +46,9 @@ const dl = (t) => (t.release ? `[下载](${t.release})` : '—');
 // README 总目录
 const done = tools.filter((t) => t.status === 'released').length;
 const doList = tools.filter((t) => t.decision === 'do');
-let md = `# campfire-code 开源工具箱
+let md = `# 篝火开源工具箱
+
+> 篝火出品 · 全部工具收录于篝火 App 应用区
 
 面向电商运营、微信私域、内容生产、办公提效的开源小工具合集。每个工具是 [campfire-code](https://github.com/${ORG}) 组织下的独立仓库，提供源码与 Windows / macOS 安装包。
 
@@ -65,7 +67,7 @@ for (const cat of CATS) {
 }
 md += `## 许可证
 
-我们自己写的工具使用 MIT；基于 GPL / AGPL 项目的工具沿用上游协议，以各仓库 LICENSE 为准。标「仅开源」的工具存在封号、违反平台规则或侵权风险，仅供学习研究，使用后果自负。
+全部工具归属篝火（GitHub 组织 campfire-code），由篝火维护与更新。我们自己写的工具使用 MIT，版权方为篝火；基于 GPL / AGPL 项目的工具沿用上游协议，以各仓库 LICENSE 为准。标「仅开源」的工具存在封号、违反平台规则或侵权风险，仅供学习研究，使用后果自负。
 `;
 writeFileSync(root + 'README.md', md);
 

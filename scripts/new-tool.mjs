@@ -81,6 +81,8 @@ const risk = t.listing === 'repo-only'
   ? '\n> [!WARNING]\n> 本工具涉及第三方平台的自动化或内容获取，存在账号被限制、违反平台规则或侵权的风险，仅供学习研究。请遵守平台规则与法律法规，使用后果自负。\n'
   : '';
 writeFileSync(`${dest}/README.md`, `# ${t.name}
+
+> 篝火出品 · 收录于篝火 App 应用区
 ${risk}
 ${t.desc}
 
@@ -121,9 +123,13 @@ pnpm tauri build   # 打包
 
 界面框架在 \`src/kit\`（所有 campfire-code 工具共用），本工具的逻辑在 \`src/tool\`。
 ${up}
+## 归属
+
+本工具由**篝火**出品，是篝火 App 应用区收录的开源工具之一，由篝火（GitHub 组织 [${ORG}](https://github.com/${ORG})）维护与更新。全部工具的目录见 [toolkit-hub](https://github.com/${ORG}/toolkit-hub)。
+
 ## 许可证
 
-MIT。本工具属于 [campfire-code 开源工具箱](https://github.com/${ORG}/toolkit-hub)。
+MIT，版权方为篝火（campfire-code）。
 `);
 writeFileSync(`${dest}/CHANGELOG.md`, '# 更新记录\n\n## 0.1.0\n\n- 首个版本。\n');
 console.log(`已生成 ${dest}（界面 ${t.ui.layout.toUpperCase()} · ${t.ui.palette}）`);

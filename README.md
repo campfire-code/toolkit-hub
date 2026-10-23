@@ -1,4 +1,6 @@
-# campfire-code 开源工具箱
+# 篝火开源工具箱
+
+> 篝火出品 · 全部工具收录于篝火 App 应用区
 
 面向电商运营、微信私域、内容生产、办公提效的开源小工具合集。每个工具是 [campfire-code](https://github.com/campfire-code) 组织下的独立仓库，提供源码与 Windows / macOS 安装包。
 
@@ -112,7 +114,7 @@
 | o10 | 微信 / 支付宝账单对账 | 多份账单合并、分类、汇总 | `bill-reconciler` | 从零写 | 低 | 待做 | — |
 | o11 | OFD 转 PDF | 国产版式文件转 PDF | `ofd-to-pdf` | 从零写 | 低 | 待做 | — |
 | o12 | 按表格批量改文件名 | 按 Excel 映射表批量重命名 | `batch-rename` | [ayoisaiah/f2](https://github.com/ayoisaiah/f2) · MIT | 低 | 待做 | — |
-| o13 | 图片批量压缩转格式 | 压缩、转 WebP / JPG，保持清晰 | `image-compressor` | [GoogleChromeLabs/squoosh](https://github.com/GoogleChromeLabs/squoosh) · Apache-2.0 | 低 | 待做 | — |
+| o13 | 图片批量压缩转格式 | 压缩、转 WebP / JPG，保持清晰 | [image-compressor](https://github.com/campfire-code/image-compressor) | [GoogleChromeLabs/squoosh](https://github.com/GoogleChromeLabs/squoosh) · Apache-2.0 | 低 | 进行中 | — |
 | o14 | 证件照换底排版 | AI 证件照，换底色、排版打印 | `id-photo` | [Zeyi-Lin/HivisionIDPhotos](https://github.com/Zeyi-Lin/HivisionIDPhotos) · Apache-2.0 | 低 | 待做 | — |
 | o15 | 批量二维码标签 | 带编号的二维码批量生成，排版成可打印 PDF | `batch-qrcode-labels` | [pdfme/pdfme](https://github.com/pdfme/pdfme) · MIT | 低 | 待做 | — |
 | o16 | 录音转文字 | 中文识别准，支持说话人区分 | `speech-to-text` | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) · MIT | 低 | 待做 | — |
@@ -129,4 +131,4 @@
 
 ## 许可证
 
-我们自己写的工具使用 MIT；基于 GPL / AGPL 项目的工具沿用上游协议，以各仓库 LICENSE 为准。标「仅开源」的工具存在封号、违反平台规则或侵权风险，仅供学习研究，使用后果自负。
+全部工具归属篝火（GitHub 组织 campfire-code），由篝火维护与更新。我们自己写的工具使用 MIT，版权方为篝火；基于 GPL / AGPL 项目的工具沿用上游协议，以各仓库 LICENSE 为准。标「仅开源」的工具存在封号、违反平台规则或侵权风险，仅供学习研究，使用后果自负。

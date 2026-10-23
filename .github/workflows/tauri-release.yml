@@ -22,7 +22,7 @@ jobs:
       version: ${{ steps.m.outputs.version }}
       sidecar: ${{ steps.m.outputs.sidecar }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - id: m
         run: |
           slug=$(jq -r .slug tool.json); name=$(jq -r .name tool.json); version=$(jq -r .version tool.json)
@@ -32,7 +32,7 @@ jobs:
           fi
           echo "slug=$slug" >> "$GITHUB_OUTPUT"; echo "name=$name" >> "$GITHUB_OUTPUT"; echo "version=$version" >> "$GITHUB_OUTPUT"
           if [ -f sidecar/main.py ]; then echo "sidecar=true" >> "$GITHUB_OUTPUT"; else echo "sidecar=false" >> "$GITHUB_OUTPUT"; fi
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: campfire-code/toolkit-hub
           ref: ${{ inputs.hub-ref }}
@@ -78,9 +78,9 @@ jobs:
             label: windows-x64
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -94,7 +94,7 @@ jobs:
 
       - name: 打包内置 Python 程序
         if: needs.meta.outputs.sidecar == 'true'
-        uses: astral-sh/setup-uv@v6
+        uses: astral-sh/setup-uv@v10
       - if: needs.meta.outputs.sidecar == 'true'
         shell: bash
         run: |

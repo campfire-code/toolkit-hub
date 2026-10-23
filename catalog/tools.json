@@ -2853,8 +2853,8 @@
         "layout": "b",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/image-compressor",
       "version": null,
       "release": null,
       "notes": ""
