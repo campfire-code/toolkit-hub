@@ -29,7 +29,8 @@
      - 安装和启动命令以上游 README 为准。**在本机实际跑一次**：用 uv 建环境、装依赖、启动后确认能访问。
      - 上游依赖 ffmpeg 等系统软件时，在 README 写清楚怎么装。
    - **docker**：
-     - 上游有 Dockerfile 就用上游的，没有就写一个最小可用的。
+     - 上游有 Dockerfile 就先在本机 build；上游的构建不了（例如基础镜像已停止维护）就复制一份 `docker/Dockerfile.campfire` 改到能用，release.yml 传 `dockerfile`。
+     - 检查上游启动日志会不会明文打印密钥，会的话在 fork 里改掉。
      - 写 `campfire/docker-compose.yml`，镜像用 `ghcr.io/campfire-code/<slug>:latest`；需要配置时再写 `campfire/.env.example`。
      - **本机实际 `docker build` 一次**，能启动就做一次健康检查。
      - release.yml 里按需要传 `context`、`dockerfile`。

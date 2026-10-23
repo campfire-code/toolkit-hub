@@ -30,11 +30,13 @@ const remote = remotes.includes('campfire') ? 'campfire' : 'origin';
 const remoteUrl = out('git', ['remote', 'get-url', remote]);
 if (!remoteUrl.includes(`github.com/${ORG}/`)) throw new Error(`远程 ${remote}（${remoteUrl}）不是 ${ORG} 组织的仓库，拒绝推送`);
 if (!out('git', ['tag', '-l', tag])) execFileSync('git', ['tag', tag], { cwd: dir });
+// 只认推送之后新建的运行，避免把同一标签上一次失败的运行当成这次
+const pushedAt = new Date(Date.now() - 60_000).toISOString();
 execFileSync('git', ['push', '-q', remote, tag], { cwd: dir });
 let runId = '';
 for (let i = 0; i < 30 && !runId; i++) {
   execFileSync('sleep', ['4']);
-  runId = out('gh', ['run', 'list', '-R', repo, '--workflow', 'release', '--branch', tag, '--limit', '1', '--json', 'databaseId', '--jq', '.[0].databaseId // ""']);
+  runId = out('gh', ['run', 'list', '-R', repo, '--workflow', 'release', '--branch', tag, '--limit', '5', '--json', 'databaseId,createdAt', '--jq', `[.[] | select(.createdAt > "${pushedAt}")][0].databaseId // ""`]);
 }
 if (!runId) throw new Error('没有找到出包流程');
 console.log(`出包中：https://github.com/${repo}/actions/runs/${runId}`);
