@@ -68,7 +68,8 @@ jobs:
           files="campfire/docker-compose.yml"
           [ -f campfire/.env.example ] && files="$files campfire/.env.example"
           notes=$(mktemp)
-          sed -e "s/{{SLUG}}/$SLUG/g" -e "s/{{VERSION}}/$VERSION/g" -e "s/{{NAME}}/$NAME/g" .hub/ci/docker-notes.md > "$notes"
+          name_esc=$(printf "%s" "$NAME" | sed -e "s/[\\/&]/\\\\&/g")
+          sed -e "s/{{SLUG}}/$SLUG/g" -e "s/{{VERSION}}/$VERSION/g" -e "s/{{NAME}}/$name_esc/g" .hub/ci/docker-notes.md > "$notes"
           gh release create "v$VERSION" $files --title "$NAME $VERSION" --notes-file "$notes" --latest
           # 镜像设为公开，方便直接拉取
           gh api -X PATCH "/orgs/campfire-code/packages/container/$SLUG/visibility" -f visibility=public 2>/dev/null || echo "::warning::镜像可见性需要在组织的 Packages 页面手动设为 Public"

@@ -42,5 +42,6 @@ jobs:
           (cd build && zip -qr "../${slug}_${version}_portable.zip" "$dir")
           sha256sum "${slug}_${version}_portable.zip" > SHA256SUMS.txt
           notes=$(mktemp)
-          sed -e "s/{{SLUG}}/$slug/g" -e "s/{{VERSION}}/$version/g" -e "s/{{NAME}}/$name/g" .hub/ci/launcher-notes.md > "$notes"
+          name_esc=$(printf "%s" "$name" | sed -e "s/[\\/&]/\\\\&/g")
+          sed -e "s/{{SLUG}}/$slug/g" -e "s/{{VERSION}}/$version/g" -e "s/{{NAME}}/$name_esc/g" .hub/ci/launcher-notes.md > "$notes"
           gh release create "v$version" "${slug}_${version}_portable.zip" SHA256SUMS.txt --title "$name $version" --notes-file "$notes" --latest

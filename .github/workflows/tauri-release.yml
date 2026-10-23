@@ -58,7 +58,8 @@ jobs:
             awk -v v="$VERSION" '$0 ~ "^## \\[?v?"v"\\]?" {f=1; next} /^## / && f {exit} f' CHANGELOG.md > "$notes"
           fi
           [ -s "$notes" ] || echo "- 版本 $VERSION" > "$notes"
-          sed -e "s/{{SLUG}}/$SLUG/g" -e "s/{{VERSION}}/$VERSION/g" -e "s/{{NAME}}/$NAME/g" .hub/ci/release-notes.md >> "$notes"
+          name_esc=$(printf "%s" "$NAME" | sed -e "s/[\\/&]/\\\\&/g")
+          sed -e "s/{{SLUG}}/$SLUG/g" -e "s/{{VERSION}}/$VERSION/g" -e "s/{{NAME}}/$name_esc/g" .hub/ci/release-notes.md >> "$notes"
           tag="v$VERSION"
           if gh release view "$tag" >/dev/null 2>&1; then
             gh release edit "$tag" --notes-file "$notes"
