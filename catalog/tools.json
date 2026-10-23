@@ -953,8 +953,8 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/wechat-draft-publisher",
       "version": null,
       "release": null,
       "notes": ""
@@ -2153,8 +2153,8 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/trending-radar",
       "version": null,
       "release": null,
       "notes": ""
@@ -3006,8 +3006,8 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/meeting-minutes",
       "version": null,
       "release": null,
       "notes": ""
