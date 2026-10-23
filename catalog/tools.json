@@ -95,8 +95,8 @@
       },
       "status": "released",
       "repo": "campfire-code/bg-remover-batch",
-      "version": "0.1.0",
-      "release": "https://github.com/campfire-code/bg-remover-batch/releases/tag/v0.1.0",
+      "version": "0.1.1",
+      "release": "https://github.com/campfire-code/bg-remover-batch/releases/tag/v0.1.1",
       "notes": ""
     },
     {
@@ -261,10 +261,10 @@
         "layout": "e",
         "palette": "blue"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/ai-title-writer",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ai-title-writer/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -287,10 +287,10 @@
         "layout": "a",
         "palette": "blue"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/banned-words-checker",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/banned-words-checker/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -313,10 +313,10 @@
         "layout": "a",
         "palette": "teal"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/order-profit-reconciler",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/order-profit-reconciler/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -575,10 +575,10 @@
         "layout": "b",
         "palette": "teal"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/review-insight",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/review-insight/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -953,10 +953,10 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/wechat-draft-publisher",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/wechat-draft-publisher/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1194,10 +1194,10 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/moments-daily-writer",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/moments-daily-writer/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1220,10 +1220,10 @@
         "layout": "a",
         "palette": "blue"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/script-quick-reply",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/script-quick-reply/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2093,10 +2093,10 @@
         "layout": "b",
         "palette": "blue"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/xhs-card-maker",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/xhs-card-maker/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2153,10 +2153,10 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/trending-radar",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/trending-radar/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2257,10 +2257,10 @@
         "layout": "a",
         "palette": "teal"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/ai-content-labeler",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ai-content-labeler/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2555,10 +2555,10 @@
         "layout": "b",
         "palette": "amber"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/pdf-toolbox",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/pdf-toolbox/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2642,10 +2642,10 @@
         "layout": "a",
         "palette": "blue"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/batch-ocr",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/batch-ocr/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2695,10 +2695,10 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/excel-split-merge",
-      "version": null,
-      "release": null,
+      "version": "0.1.1",
+      "release": "https://github.com/campfire-code/excel-split-merge/releases/tag/v0.1.1",
       "notes": ""
     },
     {
@@ -2721,10 +2721,10 @@
         "layout": "c",
         "palette": "rose"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/excel-to-word-batch",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/excel-to-word-batch/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2861,8 +2861,8 @@
       },
       "status": "released",
       "repo": "campfire-code/image-compressor",
-      "version": "0.1.0",
-      "release": "https://github.com/campfire-code/image-compressor/releases/tag/v0.1.0",
+      "version": "0.1.1",
+      "release": "https://github.com/campfire-code/image-compressor/releases/tag/v0.1.1",
       "notes": ""
     },
     {
