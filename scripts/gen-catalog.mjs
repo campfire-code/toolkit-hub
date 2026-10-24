@@ -54,9 +54,9 @@ const TRACK_LABEL = { own: '从零写', wrap: '自研界面 + 开源库', fork: 
 
 // 界面类型（只对自研界面的工具有意义）：media 图片视频 / data 表格文档 / text 文案生成
 const UITYPE = {
-  media: ['e03', 'e04', 'e05', 'e06', 'e07', 'e08', 'e31', 'e32', 'c04', 'c06', 'c10', 'c11', 'c17', 'c18', 'c23', 'c24', 'c29', 'o13', 'o14'],
+  media: ['e03', 'e04', 'e05', 'e06', 'e07', 'e08', 'e31', 'e32', 'c04', 'c06', 'c10', 'c11', 'c17', 'c18', 'c23', 'c24', 'c29', 'o13', 'o14', 'c05'],
   data: ['e01', 'e02', 'e11', 'e12', 'e13', 'e14', 'e15', 'e16', 'e17', 'e18', 'e19', 'e20', 'e21', 'w06', 'w08', 'w09', 'w10', 'w13', 'w15',
-    'o01', 'o02', 'o04', 'o05', 'o07', 'o08', 'o10', 'o11', 'o12', 'o15', 'o16', 'o17', 'a01', 'w14', 'w18', 'c22', 'c25', 'c32', 'o09', 'w07'],
+    'o01', 'o02', 'o04', 'o05', 'o07', 'o08', 'o10', 'o11', 'o12', 'o15', 'o16', 'o17', 'a01', 'w14', 'w18', 'c22', 'c25', 'c32', 'o09', 'w07', 'e25', 'e27', 'e28', 'e29', 'w23', 'w24'],
   text: ['w02', 'c19', 'e09', 'e10', 'w11', 'w12', 'w17', 'w19', 'c20', 'c21', 'c31', 'o21'],
 };
 const uiTypeOf = Object.fromEntries(Object.entries(UITYPE).flatMap(([k, ids]) => ids.map((id) => [id, k])));
@@ -98,8 +98,9 @@ const DESC_FIX = {
   e22: '油猴脚本：导出淘宝「已买到的宝贝」订单（不含 1688），用来和入库对账',
 };
 // 调研时列的上游最后没用（例如出于合规改走官方接口），按自研处理
-const NO_UPSTREAM = new Set(['e16', 'e17', 'e19', 'w08']);
-const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' }, a01: { repo: 'browser-use/web-ui', stars: '16.6k', license: 'MIT' } };
+// e28 w23 w24 e25 e27 e29 c05：上游附加了非商用 / 商业需授权声明，2026-10-23 用户定为只借思路自研
+const NO_UPSTREAM = new Set(['e16', 'e17', 'e19', 'w08', 'e28', 'w23', 'w24', 'e25', 'e27', 'e29', 'c05']);
+const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' }, a01: { repo: 'browser-use/web-ui', stars: '16.6k', license: 'MIT' }, c06: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, e05: { repo: 'danielgatis/rembg', stars: '', license: 'MIT' } };
 
 const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec, first]) => {
   const decision = decisions.tools[id] ?? rec;
