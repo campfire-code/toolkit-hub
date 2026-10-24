@@ -1,8 +1,8 @@
 {
   "id": "a04",
-  "summary": "让 Claude 等 MCP 客户端直接创建、读取、编辑本机 Excel 文件",
+  "summary": "让 Claude 等 AI 客户端直接创建、读取、编辑本机 Excel 文件",
   "slogan": "对话里直接改 Excel",
-  "intro": "MCP 服务：接入 Claude Desktop、Cursor 等客户端后，让 AI 直接创建、读取、编辑本机 xlsx 和 xlsm，支持公式、图表、透视表，不需装 Excel。",
+  "intro": "接入 Claude 桌面版、Cursor 等 AI 客户端后，你在对话里说一句话，AI 就能直接创建、读取、编辑本机的 xlsx 和 xlsm 文件，支持公式、图表、透视表，电脑上不用装 Excel。它是「AI 工具接入协议（MCP）」服务，自己没有界面。",
   "features": [
     {
       "title": "创建读取编辑",
@@ -18,30 +18,34 @@
     },
     {
       "title": "不需要装 Excel",
-      "desc": "基于 openpyxl"
+      "desc": "不依赖 Excel 软件，直接处理文件"
     },
     {
       "title": "限定文件夹",
-      "desc": "--allow-dir 只允许读写指定目录"
+      "desc": "启动参数 --allow-dir 只允许读写指定目录"
     },
     {
       "title": "可设只读",
-      "desc": "--read-only 只读模式"
+      "desc": "启动参数 --read-only 只看不改"
     }
   ],
   "audience": [
     "想用 AI 整理报表的财务、运营",
-    "用 Claude Desktop 整理表格的白领",
+    "用 Claude 桌面版整理表格的白领",
     "在 Cursor 等客户端里做数据任务的开发"
   ],
   "steps": [
-    "装 uv，Claude Desktop 双击安装",
+    "先装 uv（Python 工具管理器），Claude 桌面版双击下载的扩展包安装",
     "选好允许读写的文件夹",
     "在对话里让 AI 操作该文件夹里的 Excel"
   ],
   "limits": [
-    "本身没有图形界面，要配合 AI 客户端，账号和模型自备",
+    "本身没有图形界面，要配合 AI 客户端使用，账号和模型自备",
     "需要先装 uv；工具说明和日志是英文",
-    "写 VBA 宏默认关闭，需 --allow-vba-write 开启"
-  ]
+    "写 VBA 宏默认关闭，需加启动参数 --allow-vba-write 才开启"
+  ],
+  "scene": {
+    "title": "一句话做完月度汇总",
+    "body": "运营小林把「10月销售表」放进允许读写的文件夹，对 AI 说「按店铺汇总，加一列占比，再做个柱状图」。AI 读表、写入带公式的占比列、插入图表，保存后用 Excel 打开就能看到结果，不用再自己拉公式、调图表。"
+  }
 }
