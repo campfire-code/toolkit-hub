@@ -4,7 +4,7 @@
 
 面向电商运营、微信私域、内容生产、办公提效的开源小工具合集。每个工具是 [campfire-code](https://github.com/campfire-code) 组织下的独立仓库，提供源码与 Windows / macOS 安装包。
 
-- 计划做 107 个，已发布 102 个；另有 15 个后做，见 [docs/backlog.md](docs/backlog.md)
+- 计划做 107 个，已发布 103 个；另有 15 个后做，见 [docs/backlog.md](docs/backlog.md)
 - 总方案：[docs/00-总方案.md](docs/00-总方案.md)
 - 本页由 `node scripts/gen-docs.mjs` 根据 `catalog/tools.json` 生成，不要手改
 
@@ -63,7 +63,7 @@
 | w13 | 聊天截图转客户档案 | 截图 OCR 后抽取需求、预算、意向 | [chat-screenshot-to-crm](https://github.com/campfire-code/chat-screenshot-to-crm) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/chat-screenshot-to-crm/releases/tag/v0.1.0) |
 | w14 | 群欢迎语 / 群公告模板 | 模板编辑，输出标准文本 | [group-welcome-templates](https://github.com/campfire-code/script-quick-reply) | 从零写 | 低 | 已并入其他工具 | [下载](https://github.com/campfire-code/script-quick-reply/releases/tag/v0.2.0) |
 | w15 | 订单 / 库存告警推到微信 | 读库存表和订单表，异常时推到企微 / 钉钉 / 飞书群 | [wechat-alert-push](https://github.com/campfire-code/wechat-alert-push) | [easychen/wecomchan](https://github.com/easychen/wecomchan) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/wechat-alert-push/releases/tag/v0.1.0) |
-| w16 | 验证码 / 订单通知转发 | 手机短信和通知转发到企微、钉钉 | `sms-notify-forwarder` | 从零写 | 中 | 后做 | — |
+| w16 | 验证码 / 订单通知转发 | 手机短信和通知转发到企微、钉钉 | [sms-notify-forwarder](https://github.com/campfire-code/sms-notify-forwarder) | 从零写 | 中 | 已发布 | [下载](https://github.com/campfire-code/sms-notify-forwarder/releases/tag/v0.1.0) |
 | w17 | 机器人 Webhook 调试器 | 钉钉、飞书、企微机器人消息统一调试 | [bot-webhook-debugger](https://github.com/campfire-code/bot-webhook-debugger) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/bot-webhook-debugger/releases/tag/v0.1.0) |
 | w18 | 小程序订阅消息调试 | 批量配置和测试订阅消息模板 | [mp-subscribe-msg-tester](https://github.com/campfire-code/mp-subscribe-msg-tester) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/mp-subscribe-msg-tester/releases/tag/v0.1.0) |
 | w19 | 视频号直播话术生成 | 按商品生成直播讲解稿和互动话术 | [live-script-writer](https://github.com/campfire-code/live-script-writer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/live-script-writer/releases/tag/v0.1.0) |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T11:10:32.579Z",
+  "generatedAt": "2026-10-24T11:48:57.249Z",
   "note": "价格留空，由用户定",
   "items": [
     {
@@ -2287,6 +2287,28 @@
       ],
       "upstream": "easychen/wecomchan",
       "risk": "low"
+    },
+    {
+      "id": "w16",
+      "category": "微信私域",
+      "name": "验证码 / 订单通知转发",
+      "summary": "手机短信和通知转发到企微、钉钉",
+      "delivery": "android",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "- 版本 0.1.0\n\n---\n\n### 下载哪个\n\n| 手机 | 下载 |\n|---|---|\n| 安卓 8.0 及以上 | `sms-notify-forwarder_0.1.0_android.apk` |\n\n`SHA256SUMS.txt` 是安装包的校验值，想核对文件完整性时用。\n\n### 第一次安装\n\n- 用手机浏览器下载 APK 后点开安装。系统提示「不允许安装未知来源应用」时，按提示在设置里允许当前浏览器或文件管理器安装，装完可以再关掉。\n- 打开手机上的「短信通知转发」后，按首页提示逐项授权。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/sms-notify-forwarder",
+      "releaseUrl": "https://github.com/campfire-code/sms-notify-forwarder/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/sms-notify-forwarder/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "安卓",
+          "name": "sms-notify-forwarder_0.1.0_android.apk",
+          "url": "https://github.com/campfire-code/sms-notify-forwarder/releases/download/v0.1.0/sms-notify-forwarder_0.1.0_android.apk"
+        }
+      ],
+      "upstream": null,
+      "risk": "mid"
     },
     {
       "id": "w17",

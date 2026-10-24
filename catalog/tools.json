@@ -1308,10 +1308,10 @@
         "layout": "f",
         "palette": "rose"
       },
-      "status": "backlog",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/sms-notify-forwarder",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/sms-notify-forwarder/releases/tag/v0.1.0",
       "notes": ""
     },
     {
