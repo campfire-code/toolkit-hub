@@ -35,8 +35,12 @@ function badWords(text) {
 function userTexts(src, file) {
   const sf = ts.createSourceFile(file, src, ts.ScriptTarget.Latest, true, file.endsWith('x') ? ts.ScriptKind.TSX : ts.ScriptKind.TS);
   const out = [];
+  // 上一行写了「check-zh: 忽略」注释的语句跳过（只用于匹配数据、不显示给用户的字符串，例如导入表头的英文别名）
+  const ignored = new Set();
+  src.split('\n').forEach((l, i) => { if (l.includes('check-zh: 忽略')) ignored.add(i + 1); });
   const visit = (n) => {
     if (ts.isImportDeclaration(n) || ts.isExportDeclaration(n)) return;
+    if (ignored.size && ignored.has(sf.getLineAndCharacterOfPosition(n.getStart(sf)).line)) return;
     // 控制台输出用户看不到
     if (ts.isCallExpression(n) && /^console\./.test(n.expression.getText(sf))) return;
     if (ts.isJsxText(n)) {
