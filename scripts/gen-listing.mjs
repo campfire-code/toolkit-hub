@@ -51,7 +51,7 @@ for (const t of tools) {
 items.sort((a, b) => a.category.localeCompare(b.category, 'zh') || a.id.localeCompare(b.id));
 writeFileSync(root + 'catalog/store-listing.json', JSON.stringify({ generatedAt: new Date().toISOString(), note: '价格留空，由用户定', items }, null, 2) + '\n');
 
-const DELIVERY = { desktop: '桌面安装包', mirror: '上游安装包', launcher: '双击启动包', docker: 'Docker 部署', userscript: '油猴脚本' };
+const DELIVERY = { desktop: '桌面安装包', mirror: '上游安装包', launcher: '双击启动包', docker: 'Docker 部署', userscript: '油猴脚本', docs: '接入教程' };
 const lines = ['# 应用区上架材料', '', '> 由 `scripts/gen-listing.mjs` 生成，不要手改。价格留空，由用户定。交付方式在 campfire 后台选「资源链接」，填仓库地址和下载地址。', ''];
 for (const cat of [...new Set(items.map((i) => i.category))]) {
   const list = items.filter((i) => i.category === cat);

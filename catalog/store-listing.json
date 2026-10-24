@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T08:08:40.464Z",
+  "generatedAt": "2026-10-24T11:10:32.579Z",
   "note": "价格留空，由用户定",
   "items": [
     {
@@ -96,6 +96,28 @@
         }
       ],
       "upstream": "RapidAI/RapidOCR",
+      "risk": "low"
+    },
+    {
+      "id": "o06",
+      "category": "办公提效",
+      "name": "扫描 PDF 可搜索化",
+      "summary": "给扫描件加文字层",
+      "delivery": "launcher",
+      "price": null,
+      "version": "17.13.0-campfire.1",
+      "releaseNotes": "### 下载与启动\n\n下载 `searchable-pdf_17.13.0-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\searchable-pdf`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/searchable-pdf",
+      "releaseUrl": "https://github.com/campfire-code/searchable-pdf/releases/tag/v17.13.0-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/searchable-pdf/campfire/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "Windows / macOS 双击启动包",
+          "name": "searchable-pdf_17.13.0-campfire.1_portable.zip",
+          "url": "https://github.com/campfire-code/searchable-pdf/releases/download/v17.13.0-campfire.1/searchable-pdf_17.13.0-campfire.1_portable.zip"
+        }
+      ],
+      "upstream": "ocrmypdf/OCRmyPDF",
       "risk": "low"
     },
     {
@@ -446,6 +468,65 @@
       "risk": "low"
     },
     {
+      "id": "o19",
+      "category": "办公提效",
+      "name": "语音速记",
+      "summary": "按住快捷键说话，直接出文字",
+      "delivery": "mirror",
+      "price": null,
+      "version": "0.9.8-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [cjpais/Handy](https://github.com/cjpais/Handy) 的官方发布 [v0.9.8](https://github.com/cjpais/Handy/releases/tag/v0.9.8)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `voice-typing_0.9.8-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `voice-typing_0.9.8-campfire.1_Handy_0.9.8_aarch64.dmg`\n- `voice-typing_0.9.8-campfire.1_Handy_0.9.8_amd64.AppImage`\n- `voice-typing_0.9.8-campfire.1_Handy_0.9.8_arm64-setup.exe`\n- `voice-typing_0.9.8-campfire.1_Handy_0.9.8_x64-setup.exe`\n- `voice-typing_0.9.8-campfire.1_Handy_0.9.8_x64.dmg`\n",
+      "repoUrl": "https://github.com/campfire-code/voice-typing",
+      "releaseUrl": "https://github.com/campfire-code/voice-typing/releases/tag/v0.9.8-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/voice-typing/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "voice-typing_0.9.8-campfire.1_Handy_0.9.8_aarch64.dmg",
+          "url": "https://github.com/campfire-code/voice-typing/releases/download/v0.9.8-campfire.1/voice-typing_0.9.8-campfire.1_Handy_0.9.8_aarch64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "voice-typing_0.9.8-campfire.1_Handy_0.9.8_arm64-setup.exe",
+          "url": "https://github.com/campfire-code/voice-typing/releases/download/v0.9.8-campfire.1/voice-typing_0.9.8-campfire.1_Handy_0.9.8_arm64-setup.exe"
+        },
+        {
+          "platform": "Windows",
+          "name": "voice-typing_0.9.8-campfire.1_Handy_0.9.8_x64-setup.exe",
+          "url": "https://github.com/campfire-code/voice-typing/releases/download/v0.9.8-campfire.1/voice-typing_0.9.8-campfire.1_Handy_0.9.8_x64-setup.exe"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "voice-typing_0.9.8-campfire.1_Handy_0.9.8_x64.dmg",
+          "url": "https://github.com/campfire-code/voice-typing/releases/download/v0.9.8-campfire.1/voice-typing_0.9.8-campfire.1_Handy_0.9.8_x64.dmg"
+        }
+      ],
+      "upstream": "cjpais/Handy",
+      "risk": "low"
+    },
+    {
+      "id": "o20",
+      "category": "办公提效",
+      "name": "音视频转图文",
+      "summary": "录屏、课程转成图文笔记",
+      "delivery": "docker",
+      "price": null,
+      "version": "0.8.0-campfire.1",
+      "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir media-to-article && cd media-to-article\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/media-to-article:0.8.0-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/media-to-article",
+      "releaseUrl": "https://github.com/campfire-code/media-to-article/releases/tag/v0.8.0-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/media-to-article/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "Docker 部署文件",
+          "name": "docker-compose.yml",
+          "url": "https://github.com/campfire-code/media-to-article/releases/download/v0.8.0-campfire.1/docker-compose.yml"
+        }
+      ],
+      "upstream": "hanshuaikang/AI-Media2Doc",
+      "risk": "low"
+    },
+    {
       "id": "o21",
       "category": "办公提效",
       "name": "截图识字翻译",
@@ -475,6 +556,77 @@
         }
       ],
       "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "o22",
+      "category": "办公提效",
+      "name": "PDF 双语翻译（保版式）",
+      "summary": "论文、说明书保留排版翻译",
+      "delivery": "mirror",
+      "price": null,
+      "version": "1.9.11-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [PDFMathTranslate/PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) 的官方发布 [v1.9.11](https://github.com/PDFMathTranslate/PDFMathTranslate/releases/tag/v1.9.11)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `pdf-bilingual-translate_1.9.11-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `pdf-bilingual-translate_1.9.11-campfire.1_pdf2zh-v1.9.11-with-assets-win64.zip`\n",
+      "repoUrl": "https://github.com/campfire-code/pdf-bilingual-translate",
+      "releaseUrl": "https://github.com/campfire-code/pdf-bilingual-translate/releases/tag/v1.9.11-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/pdf-bilingual-translate/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "Windows",
+          "name": "pdf-bilingual-translate_1.9.11-campfire.1_pdf2zh-v1.9.11-with-assets-win64.zip",
+          "url": "https://github.com/campfire-code/pdf-bilingual-translate/releases/download/v1.9.11-campfire.1/pdf-bilingual-translate_1.9.11-campfire.1_pdf2zh-v1.9.11-with-assets-win64.zip"
+        }
+      ],
+      "upstream": "PDFMathTranslate/PDFMathTranslate",
+      "risk": "mid"
+    },
+    {
+      "id": "o23",
+      "category": "办公提效",
+      "name": "本地知识库问答",
+      "summary": "产品手册、话术库本地问答",
+      "delivery": "mirror",
+      "price": null,
+      "version": "1.18.0-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) 的官方发布 [v1.18.0](https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.18.0)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `local-knowledge-qa_1.18.0-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop-Arm64.exe`\n- `local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop-Silicon.dmg`\n- `local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop.AppImage`\n- `local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop.dmg`\n- `local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop.exe`\n",
+      "repoUrl": "https://github.com/campfire-code/local-knowledge-qa",
+      "releaseUrl": "https://github.com/campfire-code/local-knowledge-qa/releases/tag/v1.18.0-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/local-knowledge-qa/master/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "Windows",
+          "name": "local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop-Arm64.exe",
+          "url": "https://github.com/campfire-code/local-knowledge-qa/releases/download/v1.18.0-campfire.1/local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop-Arm64.exe"
+        },
+        {
+          "platform": "Windows",
+          "name": "local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop.exe",
+          "url": "https://github.com/campfire-code/local-knowledge-qa/releases/download/v1.18.0-campfire.1/local-knowledge-qa_1.18.0-campfire.1_AnythingLLMDesktop.exe"
+        }
+      ],
+      "upstream": "Mintplex-Labs/anything-llm",
+      "risk": "low"
+    },
+    {
+      "id": "o24",
+      "category": "办公提效",
+      "name": "小店记账",
+      "summary": "收支记账与报表",
+      "delivery": "docker",
+      "price": null,
+      "version": "2.1.1-campfire.1",
+      "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir shop-bookkeeping && cd shop-bookkeeping\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/shop-bookkeeping:2.1.1-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/shop-bookkeeping",
+      "releaseUrl": "https://github.com/campfire-code/shop-bookkeeping/releases/tag/v2.1.1-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/shop-bookkeeping/campfire/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "Docker 部署文件",
+          "name": "docker-compose.yml",
+          "url": "https://github.com/campfire-code/shop-bookkeeping/releases/download/v2.1.1-campfire.1/docker-compose.yml"
+        }
+      ],
+      "upstream": "mayswind/ezbookkeeping",
       "risk": "low"
     },
     {
@@ -1361,6 +1513,28 @@
       "risk": "mid"
     },
     {
+      "id": "c09",
+      "category": "内容生产",
+      "name": "字幕断句校对翻译",
+      "summary": "AI 断句、校对、翻译字幕",
+      "delivery": "launcher",
+      "price": null,
+      "version": "1.4.2-campfire.1",
+      "releaseNotes": "### 下载与启动\n\n下载 `subtitle-proofreader_1.4.2-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\subtitle-proofreader`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/subtitle-proofreader",
+      "releaseUrl": "https://github.com/campfire-code/subtitle-proofreader/releases/tag/v1.4.2-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/subtitle-proofreader/campfire/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "Windows / macOS 双击启动包",
+          "name": "subtitle-proofreader_1.4.2-campfire.1_portable.zip",
+          "url": "https://github.com/campfire-code/subtitle-proofreader/releases/download/v1.4.2-campfire.1/subtitle-proofreader_1.4.2-campfire.1_portable.zip"
+        }
+      ],
+      "upstream": "WEIFENG2333/VideoCaptioner",
+      "risk": "mid"
+    },
+    {
       "id": "c10",
       "category": "内容生产",
       "name": "文案转配音",
@@ -1417,6 +1591,43 @@
         }
       ],
       "upstream": "ihmily/StreamCap",
+      "risk": "mid"
+    },
+    {
+      "id": "c15",
+      "category": "内容生产",
+      "name": "直播边录边切",
+      "summary": "录制同时标记高光并切片",
+      "delivery": "mirror",
+      "price": null,
+      "version": "2.24.2-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [Xinrea/bili-shadowreplay](https://github.com/Xinrea/bili-shadowreplay) 的官方发布 [v2.24.2](https://github.com/Xinrea/bili-shadowreplay/releases/tag/v2.24.2)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `live-record-clipper_2.24.2-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `live-record-clipper_2.24.2-campfire.1_bili-shadowreplay-cpu_2.24.2_x64-setup.exe`\n- `live-record-clipper_2.24.2-campfire.1_bili-shadowreplay-cuda_2.24.2_x64-setup.exe`\n- `live-record-clipper_2.24.2-campfire.1_bili-shadowreplay_2.24.2_aarch64.dmg`\n- `live-record-clipper_2.24.2-campfire.1_bili-shadowreplay_2.24.2_amd64.AppImage`\n- `live-record-clipper_2.24.2-campfire.1_bili-shadowreplay_2.24.2_x64.dmg`\n",
+      "repoUrl": "https://github.com/campfire-code/live-record-clipper",
+      "releaseUrl": "https://github.com/campfire-code/live-record-clipper/releases/tag/v2.24.2-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/live-record-clipper/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "Windows",
+          "name": "live-record-clipper_2.24.2-campfire.1_bili-shadowreplay-cpu_2.24.2_x64-setup.exe",
+          "url": "https://github.com/campfire-code/live-record-clipper/releases/download/v2.24.2-campfire.1/live-record-clipper_2.24.2-campfire.1_bili-shadowreplay-cpu_2.24.2_x64-setup.exe"
+        },
+        {
+          "platform": "Windows",
+          "name": "live-record-clipper_2.24.2-campfire.1_bili-shadowreplay-cuda_2.24.2_x64-setup.exe",
+          "url": "https://github.com/campfire-code/live-record-clipper/releases/download/v2.24.2-campfire.1/live-record-clipper_2.24.2-campfire.1_bili-shadowreplay-cuda_2.24.2_x64-setup.exe"
+        },
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "live-record-clipper_2.24.2-campfire.1_bili-shadowreplay_2.24.2_aarch64.dmg",
+          "url": "https://github.com/campfire-code/live-record-clipper/releases/download/v2.24.2-campfire.1/live-record-clipper_2.24.2-campfire.1_bili-shadowreplay_2.24.2_aarch64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "live-record-clipper_2.24.2-campfire.1_bili-shadowreplay_2.24.2_x64.dmg",
+          "url": "https://github.com/campfire-code/live-record-clipper/releases/download/v2.24.2-campfire.1/live-record-clipper_2.24.2-campfire.1_bili-shadowreplay_2.24.2_x64.dmg"
+        }
+      ],
+      "upstream": "Xinrea/bili-shadowreplay",
       "risk": "mid"
     },
     {
@@ -1642,6 +1853,22 @@
       ],
       "upstream": null,
       "risk": "low"
+    },
+    {
+      "id": "c27",
+      "category": "内容生产",
+      "name": "多平台发布插件",
+      "summary": "浏览器里一键发到多个平台",
+      "delivery": "mirror",
+      "price": null,
+      "version": "1.5.0-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [leaperone/MultiPost-Extension](https://github.com/leaperone/MultiPost-Extension) 的官方发布 [extension-v1.5.0](https://github.com/leaperone/MultiPost-Extension/releases/tag/extension-v1.5.0)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `multipost-extension_1.5.0-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `multipost-extension_1.5.0-campfire.1_multipost-extension-community-1.5.0.zip`\n",
+      "repoUrl": "https://github.com/campfire-code/multipost-extension",
+      "releaseUrl": "https://github.com/campfire-code/multipost-extension/releases/tag/v1.5.0-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/multipost-extension/main/docs/screenshot.png",
+      "downloads": [],
+      "upstream": "leaperone/MultiPost-Extension",
+      "risk": "mid"
     },
     {
       "id": "c31",
@@ -1972,26 +2199,26 @@
       "summary": "桌面小窗，按场景搜话术一键复制",
       "delivery": "desktop",
       "price": null,
-      "version": "0.1.0",
-      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `script-quick-reply_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `script-quick-reply_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `script-quick-reply_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「私域话术库快捷回复」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "version": "0.2.0",
+      "releaseNotes": "\n- 新增内置分类「群欢迎语与公告」（入群欢迎、群规公告、活动通知、开课提醒共 8 条示例模板，可改可删），支持 `{群名}`、`{活动时间}` 等变量；复制前填写变量，输出的文本统一换行并去掉行尾空格。\n- 已有话术库升级后自动补入一次，不会覆盖、也不会在删除后再次出现。\n\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `script-quick-reply_0.2.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `script-quick-reply_0.2.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `script-quick-reply_0.2.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「私域话术库快捷回复」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/script-quick-reply",
-      "releaseUrl": "https://github.com/campfire-code/script-quick-reply/releases/tag/v0.1.0",
+      "releaseUrl": "https://github.com/campfire-code/script-quick-reply/releases/tag/v0.2.0",
       "screenshot": "https://raw.githubusercontent.com/campfire-code/script-quick-reply/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "macOS Apple 芯片",
-          "name": "script-quick-reply_0.1.0_mac-arm64.dmg",
-          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.1.0/script-quick-reply_0.1.0_mac-arm64.dmg"
+          "name": "script-quick-reply_0.2.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.2.0/script-quick-reply_0.2.0_mac-arm64.dmg"
         },
         {
           "platform": "macOS Intel",
-          "name": "script-quick-reply_0.1.0_mac-x64.dmg",
-          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.1.0/script-quick-reply_0.1.0_mac-x64.dmg"
+          "name": "script-quick-reply_0.2.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.2.0/script-quick-reply_0.2.0_mac-x64.dmg"
         },
         {
           "platform": "Windows",
-          "name": "script-quick-reply_0.1.0_windows-x64-setup.exe",
-          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.1.0/script-quick-reply_0.1.0_windows-x64-setup.exe"
+          "name": "script-quick-reply_0.2.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.2.0/script-quick-reply_0.2.0_windows-x64-setup.exe"
         }
       ],
       "upstream": null,
@@ -2088,6 +2315,38 @@
           "platform": "Windows",
           "name": "bot-webhook-debugger_0.1.0_windows-x64-setup.exe",
           "url": "https://github.com/campfire-code/bot-webhook-debugger/releases/download/v0.1.0/bot-webhook-debugger_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w18",
+      "category": "微信私域",
+      "name": "小程序订阅消息调试",
+      "summary": "批量配置和测试订阅消息模板",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `mp-subscribe-msg-tester_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `mp-subscribe-msg-tester_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `mp-subscribe-msg-tester_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「小程序订阅消息调试」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/mp-subscribe-msg-tester",
+      "releaseUrl": "https://github.com/campfire-code/mp-subscribe-msg-tester/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/mp-subscribe-msg-tester/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "mp-subscribe-msg-tester_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/mp-subscribe-msg-tester/releases/download/v0.1.0/mp-subscribe-msg-tester_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "mp-subscribe-msg-tester_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/mp-subscribe-msg-tester/releases/download/v0.1.0/mp-subscribe-msg-tester_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "mp-subscribe-msg-tester_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/mp-subscribe-msg-tester/releases/download/v0.1.0/mp-subscribe-msg-tester_0.1.0_windows-x64-setup.exe"
         }
       ],
       "upstream": null,
@@ -2197,6 +2456,60 @@
       "risk": "mid"
     },
     {
+      "id": "a02",
+      "category": "AI 助手",
+      "name": "后台批量操作机器人",
+      "summary": "自然语言驱动的后台批量操作",
+      "delivery": "mirror",
+      "price": null,
+      "version": "1.17.0-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [web-infra-dev/midscene](https://github.com/web-infra-dev/midscene) 的官方发布 [v1.17.0](https://github.com/web-infra-dev/midscene/releases/tag/v1.17.0)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `backend-batch-bot_1.17.0-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `backend-batch-bot_1.17.0-campfire.1_midscene-extension-v1.17.0.zip`\n- `backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-darwin-arm64.dmg`\n- `backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-darwin-x64.dmg`\n- `backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-win32-x64-setup.exe`\n",
+      "repoUrl": "https://github.com/campfire-code/backend-batch-bot",
+      "releaseUrl": "https://github.com/campfire-code/backend-batch-bot/releases/tag/v1.17.0-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/backend-batch-bot/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-darwin-arm64.dmg",
+          "url": "https://github.com/campfire-code/backend-batch-bot/releases/download/v1.17.0-campfire.1/backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-darwin-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-darwin-x64.dmg",
+          "url": "https://github.com/campfire-code/backend-batch-bot/releases/download/v1.17.0-campfire.1/backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-darwin-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-win32-x64-setup.exe",
+          "url": "https://github.com/campfire-code/backend-batch-bot/releases/download/v1.17.0-campfire.1/backend-batch-bot_1.17.0-campfire.1_midscene-studio-beta-v1.17.0-win32-x64-setup.exe"
+        }
+      ],
+      "upstream": "web-infra-dev/midscene",
+      "risk": "mid"
+    },
+    {
+      "id": "a03",
+      "category": "AI 助手",
+      "name": "竞品价格 / 资讯采集器",
+      "summary": "网页转结构化数据，定时采集",
+      "delivery": "docker",
+      "price": null,
+      "version": "0.9.5-campfire.1",
+      "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir web-data-collector && cd web-data-collector\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/web-data-collector:0.9.5-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/web-data-collector",
+      "releaseUrl": "https://github.com/campfire-code/web-data-collector/releases/tag/v0.9.5-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/web-data-collector/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "Docker 部署文件",
+          "name": "docker-compose.yml",
+          "url": "https://github.com/campfire-code/web-data-collector/releases/download/v0.9.5-campfire.1/docker-compose.yml"
+        }
+      ],
+      "upstream": "unclecode/crawl4ai",
+      "risk": "mid"
+    },
+    {
       "id": "a04",
       "category": "AI 助手",
       "name": "Excel AI 助手",
@@ -2216,6 +2529,22 @@
         }
       ],
       "upstream": "haris-musa/excel-mcp-server",
+      "risk": "low"
+    },
+    {
+      "id": "a05",
+      "category": "AI 助手",
+      "name": "浏览器助手（MCP）",
+      "summary": "让 AI 助手控制浏览器",
+      "delivery": "docs",
+      "price": null,
+      "version": "0.0.83-campfire.1",
+      "releaseNotes": "中文接入教程见仓库首页：https://github.com/campfire-code/browser-mcp#readme",
+      "repoUrl": "https://github.com/campfire-code/browser-mcp",
+      "releaseUrl": "https://github.com/campfire-code/browser-mcp/releases/tag/v0.0.83-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/browser-mcp/main/docs/screenshot.png",
+      "downloads": [],
+      "upstream": "microsoft/playwright-mcp",
       "risk": "low"
     }
   ]

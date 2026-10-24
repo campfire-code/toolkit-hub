@@ -30,6 +30,16 @@ const remote = remotes.includes('campfire') ? 'campfire' : 'origin';
 const remoteUrl = out('git', ['remote', 'get-url', remote]);
 if (!remoteUrl.includes(`github.com/${ORG}/`)) throw new Error(`远程 ${remote}（${remoteUrl}）不是 ${ORG} 组织的仓库，拒绝推送`);
 if (!out('git', ['tag', '-l', tag])) execFileSync('git', ['tag', tag], { cwd: dir });
+// docs 文档类条目没有出包流程：直接建一个只含说明的发布
+if (delivery === 'docs') {
+  execFileSync('git', ['push', '-q', remote, tag], { cwd: dir });
+  const url = out('gh', ['release', 'create', tag, '-R', repo, '--title', `${t.name} ${version}`, '--notes', `中文接入教程见仓库首页：https://github.com/${repo}#readme`]);
+  const fresh = JSON.parse(readFileSync(catalogPath, 'utf8'));
+  Object.assign(fresh.tools.find((x) => x.id === id), { status: 'released', version, release: url, repo });
+  writeFileSync(catalogPath, JSON.stringify(fresh, null, 2) + '\n');
+  console.log(`已发布 ${t.name} ${version}：${url}`);
+  process.exit(0);
+}
 // 只认推送之后新建的运行，避免把同一标签上一次失败的运行当成这次
 const pushedAt = new Date(Date.now() - 60_000).toISOString();
 execFileSync('git', ['push', '-q', remote, tag], { cwd: dir });
@@ -46,7 +56,7 @@ try {
   throw new Error(`出包失败，查看 https://github.com/${repo}/actions/runs/${runId}`);
 }
 const assets = JSON.parse(out('gh', ['release', 'view', tag, '-R', repo, '--json', 'assets,url,isDraft']));
-// 不同交付方式要求的产物：desktop 三个安装包；mirror 至少一个上游安装包；launcher 启动脚本包；docker 部署文件；userscript 油猴脚本
+// 不同交付方式要求的产物：desktop 三个安装包；mirror 至少一个上游安装包；launcher 启动脚本包；docker 部署文件；userscript 油猴脚本（docs 文档类在上面已单独处理）
 const WANT = {
   desktop: ['mac-arm64.dmg', 'mac-x64.dmg', 'windows-x64-setup.exe'],
   mirror: ['SHA256SUMS.txt'],

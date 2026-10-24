@@ -7,7 +7,7 @@ const { tools } = JSON.parse(readFileSync(root + 'catalog/tools.json', 'utf8'));
 const ORG = 'campfire-code';
 const CATS = ['电商运营', '微信私域', '内容生产', '办公提效', 'AI 助手'];
 const RISK = { low: '低', mid: '中', high: '高' };
-const STATUS = { todo: '待做', doing: '进行中', released: '已发布', backlog: '后做' };
+const STATUS = { todo: '待做', doing: '进行中', released: '已发布', backlog: '后做', merged: '已并入其他工具' };
 
 // 后做原因与重启时的第一步（2026-10-23 拍板时的判断）
 const LATER = {
