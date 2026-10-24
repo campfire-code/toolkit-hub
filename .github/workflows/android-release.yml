@@ -1,0 +1,111 @@
+# 复用出包工作流：安卓原生工具仓库打 v* 标签时调用。
+# 产物统一命名为 <slug>_<版本>_android.apk，并附 SHA256SUMS.txt。
+# 需要组织密钥：ANDROID_KEYSTORE_B64（keystore 文件的 base64）、ANDROID_KEYSTORE_PASSWORD、ANDROID_KEY_ALIAS、ANDROID_KEY_PASSWORD。
+name: android-release
+
+on:
+  workflow_call:
+    inputs:
+      test:
+        description: 出包前跑的测试命令，留空则不跑
+        type: string
+        default: ./gradlew testDebugUnitTest
+    secrets:
+      ANDROID_KEYSTORE_B64:
+        required: false
+      ANDROID_KEYSTORE_PASSWORD:
+        required: false
+      ANDROID_KEY_ALIAS:
+        required: false
+      ANDROID_KEY_PASSWORD:
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: 校验标签与版本
+        id: meta
+        run: |
+          slug=$(jq -r .slug tool.json); name=$(jq -r .name tool.json); version=$(jq -r .version tool.json)
+          tag="${GITHUB_REF_NAME#v}"
+          if [ "$GITHUB_REF_TYPE" = "tag" ] && [ "$tag" != "$version" ]; then
+            echo "::error::标签 $GITHUB_REF_NAME 与 tool.json 里的版本 $version 不一致"; exit 1
+          fi
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"; echo "name=$name" >> "$GITHUB_OUTPUT"; echo "version=$version" >> "$GITHUB_OUTPUT"
+      - name: 单元测试
+        if: inputs.test != ''
+        run: ${{ inputs.test }}
+      - name: 解码签名密钥
+        env:
+          KS_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
+        run: |
+          [ -n "$KS_B64" ] || { echo "::error::缺少组织密钥 ANDROID_KEYSTORE_B64，无法给安装包签名"; exit 1; }
+          ks="$RUNNER_TEMP/release.keystore"
+          echo "$KS_B64" | base64 -d > "$ks"
+          echo "ANDROID_KEYSTORE_FILE=$ks" >> "$GITHUB_ENV"
+      - name: 构建 release 包
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: ./gradlew assembleRelease
+      - name: 整理产物
+        env:
+          SLUG: ${{ steps.meta.outputs.slug }}
+          VERSION: ${{ steps.meta.outputs.version }}
+        run: |
+          apk=$(ls app/build/outputs/apk/release/*.apk | head -n 1)
+          [ -f "$apk" ] || { echo "::error::没有找到 release APK"; exit 1; }
+          case "$apk" in *unsigned*) echo "::error::APK 没有签名：$apk"; exit 1;; esac
+          mkdir -p out
+          cp "$apk" "out/${SLUG}_${VERSION}_android.apk"
+          (cd out && sha256sum * > SHA256SUMS.txt)
+      - name: 创建 Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SLUG: ${{ steps.meta.outputs.slug }}
+          NAME: ${{ steps.meta.outputs.name }}
+          VERSION: ${{ steps.meta.outputs.version }}
+        run: |
+          notes=$(mktemp)
+          if [ -f CHANGELOG.md ]; then
+            awk -v v="$VERSION" '$0 ~ "^## \\[?v?"v"\\]?" {f=1; next} /^## / && f {exit} f' CHANGELOG.md > "$notes"
+          fi
+          [ -s "$notes" ] || echo "- 版本 $VERSION" > "$notes"
+          cat >> "$notes" <<NOTES
+
+          ---
+
+          ### 下载哪个
+
+          | 手机 | 下载 |
+          |---|---|
+          | 安卓 8.0 及以上 | \`${SLUG}_${VERSION}_android.apk\` |
+
+          \`SHA256SUMS.txt\` 是安装包的校验值，想核对文件完整性时用。
+
+          ### 第一次安装
+
+          - 用手机浏览器下载 APK 后点开安装。系统提示「不允许安装未知来源应用」时，按提示在设置里允许当前浏览器或文件管理器安装，装完可以再关掉。
+          - 打开手机上的「短信通知转发」后，按首页提示逐项授权。
+
+          ---
+
+          篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub
+          NOTES
+          tag="v$VERSION"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release edit "$tag" --notes-file "$notes"
+            gh release upload "$tag" out/* --clobber
+          else
+            gh release create "$tag" out/* --title "$NAME $VERSION" --notes-file "$notes" --target "$GITHUB_SHA" --latest
+          fi

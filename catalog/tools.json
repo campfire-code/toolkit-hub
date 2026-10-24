@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T09:52:24.909Z",
+  "generatedAt": "2026-10-24T11:16:04.452Z",
   "decisionsSource": "https://claude.ai/artifact/5r6mavUV5zM6ptrAn5Zkfi decisions/plan v54",
   "engineering": {
     "q_batch": "20",
@@ -1294,21 +1294,20 @@
       "category": "微信私域",
       "name": "验证码 / 订单通知转发",
       "desc": "手机短信和通知转发到企微、钉钉",
-      "upstream": {
-        "repo": "pppscn/SmsForwarder",
-        "stars": "29k",
-        "license": "BSD-2"
-      },
+      "upstream": null,
       "form": "手机",
       "risk": "mid",
       "recommended": "later",
       "decision": "do",
       "firstBatch": false,
-      "track": "fork",
-      "trackLabel": "fork 中文化 + 安装包",
+      "track": "own",
+      "trackLabel": "从零写",
       "listing": "store",
-      "uiType": null,
-      "ui": null,
+      "uiType": "data",
+      "ui": {
+        "layout": "f",
+        "palette": "rose"
+      },
       "status": "backlog",
       "repo": null,
       "version": null,
