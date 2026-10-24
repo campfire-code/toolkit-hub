@@ -48,10 +48,12 @@ function shot(x, w, a, frame = 'desktop') {
     </div>`;
   }
   if (frame === 'phone') return `<div style="width:${w}px;border-radius:26px;padding:10px;background:#15151c;box-shadow:0 24px 60px rgba(10,10,30,.35)"><img src="${img(x)}" style="display:block;width:100%;border-radius:18px"></div>`;
-  if (frame === 'bare') return `<div style="width:${w}px;border-radius:12px;overflow:hidden;box-shadow:0 14px 40px rgba(20,20,40,.16),0 0 0 1px rgba(0,0,0,.06)"><img src="${img(x)}" style="display:block;width:100%"></div>`;
+  // 截图最高按 3:2 显示，加长截图从顶部裁切，免得把卡片撑得过长
+  const cap = `max-height:${Math.round(w / 1.5)}px;overflow:hidden`;
+  if (frame === 'bare') return `<div style="width:${w}px;border-radius:12px;overflow:hidden;box-shadow:0 14px 40px rgba(20,20,40,.16),0 0 0 1px rgba(0,0,0,.06)"><div style="${cap}"><img src="${img(x)}" style="display:block;width:100%"></div></div>`;
   return `<div style="width:${w}px;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 18px 50px rgba(20,20,40,.18),0 0 0 1px rgba(0,0,0,.06)">
       <div style="height:26px;background:#f1f1f4;display:flex;align-items:center;gap:7px;padding-left:12px"><i style="width:10px;height:10px;border-radius:50%;background:#ff5f57"></i><i style="width:10px;height:10px;border-radius:50%;background:#febc2e"></i><i style="width:10px;height:10px;border-radius:50%;background:#28c840"></i></div>
-      <img src="${img(x)}" style="display:block;width:100%">
+      <div style="${cap}"><img src="${img(x)}" style="display:block;width:100%"></div>
     </div>`;
 }
 const chips = (list, fg, bg) => `<div style="display:flex;flex-wrap:wrap;gap:8px">${list.map((s) => `<span style="font-size:16px;padding:5px 13px;border-radius:999px;background:${bg};color:${fg};font-weight:600">${esc(s)}</span>`).join('')}</div>`;
