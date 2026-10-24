@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T03:13:58.327Z",
+  "generatedAt": "2026-10-24T03:24:10.845Z",
   "note": "价格留空，由用户定",
   "items": [
     {
@@ -429,7 +429,7 @@
       "releaseNotes": "本版本的安装包来自上游项目 [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) 的官方发布 [v0.4.1](https://github.com/Zackriya-Solutions/meetily/releases/tag/v0.4.1)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `meeting-minutes_0.4.1-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `meeting-minutes_0.4.1-campfire.1_meetily_0.4.1_aarch64.dmg`\n- `meeting-minutes_0.4.1-campfire.1_meetily_0.4.1_x64-setup.exe`\n",
       "repoUrl": "https://github.com/campfire-code/meeting-minutes",
       "releaseUrl": "https://github.com/campfire-code/meeting-minutes/releases/tag/v0.4.1-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/meeting-minutes/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "macOS Apple 芯片",
@@ -1096,7 +1096,7 @@
       "releaseNotes": "### 安装\n\n1. 浏览器先装脚本管理器 Tampermonkey（Chrome、Edge、Firefox、Safari 均有）。\n2. 点击下面的 `TaoBao_BuyerOrdersExport.user.js`，Tampermonkey 会弹出安装页，点安装。\n3. 打开淘宝网页版「已买到的宝贝」页面使用，详细说明见仓库首页 README。\n\n脚本与上游一致，未做修改，附 `SHA256SUMS.txt` 可核对。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/purchase-order-export",
       "releaseUrl": "https://github.com/campfire-code/purchase-order-export/releases/tag/v2.0.4-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/purchase-order-export/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "油猴脚本",
@@ -1118,7 +1118,7 @@
       "releaseNotes": "### 下载与启动\n\n下载 `ecom-mcp-connector_0.1.6-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\ecom-mcp-connector`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/ecom-mcp-connector",
       "releaseUrl": "https://github.com/campfire-code/ecom-mcp-connector/releases/tag/v0.1.6-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/ecom-mcp-connector/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Windows / macOS 双击启动包",
@@ -1204,7 +1204,7 @@
       "releaseNotes": "### 下载与启动\n\n下载 `topic-to-short-video_1.3.9-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\topic-to-short-video`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/topic-to-short-video",
       "releaseUrl": "https://github.com/campfire-code/topic-to-short-video/releases/tag/v1.3.9-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/topic-to-short-video/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Windows / macOS 双击启动包",
@@ -1226,7 +1226,7 @@
       "releaseNotes": "本版本的安装包来自上游项目 [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) 的官方发布 [v1.5.6](https://github.com/zhouxiaoka/autoclip/releases/tag/v1.5.6)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `long-video-clipper_1.5.6-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `long-video-clipper_1.5.6-campfire.1_AutoClip.Desktop_1.5.6_aarch64.dmg`\n- `long-video-clipper_1.5.6-campfire.1_AutoClip.Desktop_1.5.6_x64-setup.exe`\n",
       "repoUrl": "https://github.com/campfire-code/long-video-clipper",
       "releaseUrl": "https://github.com/campfire-code/long-video-clipper/releases/tag/v1.5.6-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/long-video-clipper/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "macOS Apple 芯片",
@@ -1349,7 +1349,7 @@
       "releaseNotes": "### 下载与启动\n\n下载 `video-translate-dub_3.1.1-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\video-translate-dub`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/video-translate-dub",
       "releaseUrl": "https://github.com/campfire-code/video-translate-dub/releases/tag/v3.1.1-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/video-translate-dub/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Windows / macOS 双击启动包",
@@ -1403,7 +1403,7 @@
       "releaseNotes": "本版本的安装包来自上游项目 [ihmily/StreamCap](https://github.com/ihmily/StreamCap) 的官方发布 [v1.0.3](https://github.com/ihmily/StreamCap/releases/tag/v1.0.3)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `live-recorder_1.0.3-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `live-recorder_1.0.3-campfire.1_StreamCap_1.0.3_Win_x64.zip`\n- `live-recorder_1.0.3-campfire.1_StreamCap_1.0.3_mac_arm64.dmg`\n",
       "repoUrl": "https://github.com/campfire-code/live-recorder",
       "releaseUrl": "https://github.com/campfire-code/live-recorder/releases/tag/v1.0.3-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/live-recorder/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "macOS Apple 芯片",
@@ -1750,7 +1750,7 @@
       "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir wecom-group-ai-bot && cd wecom-group-ai-bot\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/wecom-group-ai-bot:0.3.4-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/wecom-group-ai-bot",
       "releaseUrl": "https://github.com/campfire-code/wecom-group-ai-bot/releases/tag/v0.3.4-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wecom-group-ai-bot/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Docker 部署文件",
@@ -1772,7 +1772,7 @@
       "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir wecom-ai-service && cd wecom-ai-service\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/wecom-ai-service:2.2.1-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/wecom-ai-service",
       "releaseUrl": "https://github.com/campfire-code/wecom-ai-service/releases/tag/v2.2.1-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wecom-ai-service/master/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Docker 部署文件",
@@ -1794,7 +1794,7 @@
       "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir dify-wecom-connector && cd dify-wecom-connector\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/dify-wecom-connector:0.1.26-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/dify-wecom-connector",
       "releaseUrl": "https://github.com/campfire-code/dify-wecom-connector/releases/tag/v0.1.26-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/dify-wecom-connector/master/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Docker 部署文件",
@@ -2136,7 +2136,7 @@
       "releaseNotes": "本版本的安装包来自上游项目 [BlueMatthew/WechatExporter](https://github.com/BlueMatthew/WechatExporter) 的官方发布 [v1.9.5.13](https://github.com/BlueMatthew/WechatExporter/releases/tag/v1.9.5.13)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `wechat-backup-exporter_1.9.5.13-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-macos-cmd.zip`\n- `wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-macos.zip`\n- `wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-win-cmd.zip`\n- `wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-win.zip`\n",
       "repoUrl": "https://github.com/campfire-code/wechat-backup-exporter",
       "releaseUrl": "https://github.com/campfire-code/wechat-backup-exporter/releases/tag/v1.9.5.13-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wechat-backup-exporter/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Windows",
@@ -2163,7 +2163,7 @@
       "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir bot-hub && cd bot-hub\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/bot-hub:0.1.36-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/bot-hub",
       "releaseUrl": "https://github.com/campfire-code/bot-hub/releases/tag/v0.1.36-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/bot-hub/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Docker 部署文件",
@@ -2185,7 +2185,7 @@
       "releaseNotes": "### 下载与启动\n\n下载 `browser-agent_3.0.0-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\browser-agent`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/browser-agent",
       "releaseUrl": "https://github.com/campfire-code/browser-agent/releases/tag/v3.0.0-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/browser-agent/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Windows / macOS 双击启动包",
@@ -2207,7 +2207,7 @@
       "releaseNotes": "本版本的安装包来自上游项目 [haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server) 的官方发布 [v2.2.2](https://github.com/haris-musa/excel-mcp-server/releases/tag/v2.2.2)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `excel-mcp_2.2.2-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `excel-mcp_2.2.2-campfire.1_excel-mcp-server-2.2.2.mcpb`\n",
       "repoUrl": "https://github.com/campfire-code/excel-mcp",
       "releaseUrl": "https://github.com/campfire-code/excel-mcp/releases/tag/v2.2.2-campfire.1",
-      "screenshot": null,
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/excel-mcp/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "Claude Desktop 扩展",
