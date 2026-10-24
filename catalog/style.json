@@ -1,0 +1,482 @@
+{
+  "o02": {
+    "accent": "#1E92B8",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "o04": {
+    "accent": "#275AB0",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "o05": {
+    "accent": "#1590C1",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "o06": {
+    "accent": "#1B4AA7",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "o07": {
+    "accent": "#23779F",
+    "cover": "split",
+    "cards": "story"
+  },
+  "o08": {
+    "accent": "#1342AE",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "o10": {
+    "accent": "#218DCA",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "o11": {
+    "accent": "#2A52C0",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "o12": {
+    "accent": "#1788D3",
+    "cover": "split",
+    "cards": "list"
+  },
+  "o13": {
+    "accent": "#1E41B8",
+    "cover": "poster",
+    "cards": "story"
+  },
+  "o14": {
+    "accent": "#2774B0",
+    "cover": "rise",
+    "cards": "bento"
+  },
+  "o15": {
+    "accent": "#1536C1",
+    "cover": "immersive",
+    "cards": "list"
+  },
+  "o16": {
+    "accent": "#1B64A7",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "o17": {
+    "accent": "#23359F",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "o18": {
+    "accent": "#135FAE",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "o19": {
+    "accent": "#2134CA",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "o20": {
+    "accent": "#2A6EC0",
+    "cover": "split",
+    "cards": "story"
+  },
+  "o21": {
+    "accent": "#1726D3",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "o22": {
+    "accent": "#1E5EB8",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "o23": {
+    "accent": "#272CB0",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "o24": {
+    "accent": "#1556C1",
+    "cover": "split",
+    "cards": "list"
+  },
+  "e03": {
+    "accent": "#B81E45",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "e04": {
+    "accent": "#B03D27",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "e05": {
+    "accent": "#C1153A",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "e06": {
+    "accent": "#A7381B",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "e07": {
+    "accent": "#9F2338",
+    "cover": "split",
+    "cards": "story"
+  },
+  "e08": {
+    "accent": "#AE3913",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "e09": {
+    "accent": "#CA2138",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "e10": {
+    "accent": "#C0542A",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "e11": {
+    "accent": "#D3172A",
+    "cover": "split",
+    "cards": "list"
+  },
+  "e12": {
+    "accent": "#B84F1E",
+    "cover": "poster",
+    "cards": "story"
+  },
+  "e13": {
+    "accent": "#B0272F",
+    "cover": "rise",
+    "cards": "bento"
+  },
+  "e14": {
+    "accent": "#C15215",
+    "cover": "immersive",
+    "cards": "list"
+  },
+  "e15": {
+    "accent": "#A71B1E",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "e16": {
+    "accent": "#9F5423",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "e17": {
+    "accent": "#AE1613",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "e18": {
+    "accent": "#CA6A21",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "e19": {
+    "accent": "#C0322A",
+    "cover": "split",
+    "cards": "story"
+  },
+  "e20": {
+    "accent": "#D37017",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "e21": {
+    "accent": "#B82C1E",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "e22": {
+    "accent": "#B06C27",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "e30": {
+    "accent": "#C12B15",
+    "cover": "split",
+    "cards": "list"
+  },
+  "e31": {
+    "accent": "#A7671B",
+    "cover": "poster",
+    "cards": "story"
+  },
+  "e32": {
+    "accent": "#9F3823",
+    "cover": "rise",
+    "cards": "bento"
+  },
+  "c01": {
+    "accent": "#451EB8",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "c03": {
+    "accent": "#9927B0",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "c04": {
+    "accent": "#4B15C1",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "c05": {
+    "accent": "#981BA7",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "c06": {
+    "accent": "#52239F",
+    "cover": "split",
+    "cards": "story"
+  },
+  "c08": {
+    "accent": "#A913AE",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "c09": {
+    "accent": "#6C21CA",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "c10": {
+    "accent": "#C02ABC",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "c14": {
+    "accent": "#7717D3",
+    "cover": "split",
+    "cards": "list"
+  },
+  "c15": {
+    "accent": "#B81EAA",
+    "cover": "poster",
+    "cards": "story"
+  },
+  "c17": {
+    "accent": "#7527B0",
+    "cover": "rise",
+    "cards": "bento"
+  },
+  "c18": {
+    "accent": "#C115A6",
+    "cover": "immersive",
+    "cards": "list"
+  },
+  "c19": {
+    "accent": "#741BA7",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "c20": {
+    "accent": "#9F2383",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "c21": {
+    "accent": "#8013AE",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "c23": {
+    "accent": "#CA2199",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "c24": {
+    "accent": "#9E2AC0",
+    "cover": "split",
+    "cards": "story"
+  },
+  "c27": {
+    "accent": "#D31791",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "c31": {
+    "accent": "#9F1EB8",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "w01": {
+    "accent": "#51B81E",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "w02": {
+    "accent": "#27B043",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "w03": {
+    "accent": "#44C115",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "w04": {
+    "accent": "#1BA741",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "w05": {
+    "accent": "#3D9F23",
+    "cover": "split",
+    "cards": "story"
+  },
+  "w06": {
+    "accent": "#13AE46",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "w08": {
+    "accent": "#3BCA21",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "w09": {
+    "accent": "#2AC065",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "w10": {
+    "accent": "#29D317",
+    "cover": "split",
+    "cards": "list"
+  },
+  "w11": {
+    "accent": "#1EB863",
+    "cover": "poster",
+    "cards": "story"
+  },
+  "w12": {
+    "accent": "#2BB027",
+    "cover": "rise",
+    "cards": "bento"
+  },
+  "w13": {
+    "accent": "#15C16D",
+    "cover": "immersive",
+    "cards": "list"
+  },
+  "w15": {
+    "accent": "#1BA71F",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "w16": {
+    "accent": "#239F6A",
+    "cover": "phone",
+    "cards": "list"
+  },
+  "w17": {
+    "accent": "#13AE21",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "w18": {
+    "accent": "#21CA8B",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "w19": {
+    "accent": "#2AC040",
+    "cover": "split",
+    "cards": "story"
+  },
+  "w20": {
+    "accent": "#17D399",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "w28": {
+    "accent": "#1EB83E",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "a01": {
+    "accent": "#1EB899",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "a02": {
+    "accent": "#27A7B0",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "a03": {
+    "accent": "#15C1B5",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "a04": {
+    "accent": "#1B8BA7",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "a05": {
+    "accent": "#23979F",
+    "cover": "split",
+    "cards": "story"
+  },
+  "s01": {
+    "accent": "#B8511E",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "s02": {
+    "accent": "#B07727",
+    "cover": "poster",
+    "cards": "list"
+  },
+  "s03": {
+    "accent": "#C15915",
+    "cover": "rise",
+    "cards": "story"
+  },
+  "s04": {
+    "accent": "#A7751B",
+    "cover": "immersive",
+    "cards": "bento"
+  },
+  "s05": {
+    "accent": "#9F5C23",
+    "cover": "split",
+    "cards": "story"
+  },
+  "s06": {
+    "accent": "#AE8113",
+    "cover": "poster",
+    "cards": "bento"
+  },
+  "s07": {
+    "accent": "#CA7921",
+    "cover": "rise",
+    "cards": "list"
+  },
+  "s08": {
+    "accent": "#C09E2A",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "s09": {
+    "accent": "#D38517",
+    "cover": "split",
+    "cards": "list"
+  }
+}

@@ -7,7 +7,7 @@ const root = new URL('..', import.meta.url).pathname;
 const tpl = root + 'tools/toolkit-template';
 const { tools } = JSON.parse(readFileSync(root + 'catalog/tools.json', 'utf8'));
 const ids = process.argv.slice(2);
-const targets = tools.filter((t) => t.track !== 'fork' && existsSync(`${root}tools/${t.slug}/tool.json`) && (!ids.length || ids.includes(t.id)));
+const targets = tools.filter((t) => t.track !== 'fork' && existsSync(`${root}tools/${t.slug}/tool.json`) && existsSync(`${root}tools/${t.slug}/src-tauri/tauri.conf.json`) && (!ids.length || ids.includes(t.id)));
 
 const FILES = ['src/main.tsx', 'src/preview.tsx', 'preview.html', '.github/workflows/release.yml', '.github/workflows/check.yml', 'scripts/fetch-ffmpeg.mjs', 'src-tauri/capabilities/default.json'];
 const tplConf = JSON.parse(readFileSync(`${tpl}/src-tauri/tauri.conf.json`, 'utf8'));
