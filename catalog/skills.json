@@ -1,0 +1,265 @@
+{
+  "items": [
+    {
+      "id": "s01",
+      "slug": "ui-ux-pro-max-skill",
+      "name": "界面设计智能助手",
+      "category": "设计",
+      "summary": "让 AI 先选风格配色字体再写界面，告别模板味丑页面",
+      "features": [
+        "79 种界面风格、192 套配色、74 组字体搭配可检索",
+        "输入产品类型，一键生成完整设计系统",
+        "覆盖 React、Vue、SwiftUI、Flutter 等 22 种技术栈",
+        "交付前按对比度、键盘焦点、响应式清单自查",
+        "附带品牌、幻灯片、横幅等 6 个配套技能"
+      ],
+      "audience": "用 AI 做网页、App 界面但缺设计感的开发者和创业者",
+      "steps": [
+        "下载 zip 并解压",
+        "把 skills 里的全部文件夹复制到 ~/.claude/skills/",
+        "对 Claude Code 说：给我的 SaaS 产品做一个落地页"
+      ],
+      "requires": "需要 Python 3（只用标准库）",
+      "upstream": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstreamStars": 139555,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/ui-ux-pro-max-skill",
+      "releaseUrl": "https://github.com/campfire-code/ui-ux-pro-max-skill/releases/tag/v2.15.0-campfire.1",
+      "zip": "ui-ux-pro-max-skill-campfire.zip",
+      "version": "v2.15.0",
+      "install": "1. 到 Release 页下载 ui-ux-pro-max-skill-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/* ~/.claude/skills/\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/ui-ux-pro-max/SKILL.md 存在，重启 Claude Code。\n如提示找不到 search.py，请告诉 AI 脚本在 ~/.claude/skills/ui-ux-pro-max/scripts/search.py。需要 Python 3。"
+    },
+    {
+      "id": "s02",
+      "slug": "taste-skill",
+      "name": "设计品味技能",
+      "category": "设计",
+      "summary": "让 AI 做出有艺术指导的网页，而不是千篇一律的模板页",
+      "features": [
+        "从 20 套研究过的设计方向中发牌并择优",
+        "用真实浏览器检查三种宽度，打回俗套设计",
+        "从开放图库找可用图片并标注来源",
+        "做完自己看截图，最多三轮修正",
+        "也能做仪表盘、后台等应用界面"
+      ],
+      "audience": "想让 AI 生成有设计感官网或产品页的开发者、设计师",
+      "steps": [
+        "下载 zip 并解压",
+        "把 skills/design-taste-frontend 复制到 ~/.claude/skills/",
+        "说：给我的咖啡店做一个有设计感的官网首页"
+      ],
+      "requires": "Node 22+，已装 Chrome/Edge；找图需联网；完整运行约 30 到 45 分钟、消耗较多 token",
+      "upstream": "Leonxlnx/taste-skill",
+      "upstreamStars": 101719,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/taste-skill",
+      "releaseUrl": "https://github.com/campfire-code/taste-skill/releases/tag/v2.1.4-campfire.1",
+      "zip": "taste-skill-campfire.zip",
+      "version": "v2.1.4",
+      "install": "1. 到 Release 页下载 taste-skill-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/design-taste-frontend ~/.claude/skills/\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/design-taste-frontend/SKILL.md 存在，重启 Claude Code。\n需要 Node 22+ 和 Chrome/Edge，不需要密钥。"
+    },
+    {
+      "id": "s03",
+      "slug": "archify",
+      "name": "交互式图解生成器",
+      "category": "设计",
+      "summary": "一句话让 AI 画出可点击探索的架构图、流程图和时序图",
+      "features": [
+        "支持架构、流程、时序、数据流、ER、类图、时间线等 10 类图",
+        "只给文字描述即可画，也可读代码仓库出图",
+        "输出单个 HTML，深浅色主题，可导出图片与动画",
+        "对话式修改，如加 Redis、高亮某条路径",
+        "生成后自动做结构校验"
+      ],
+      "audience": "需要画系统图、做方案说明或学习路线图的开发者和产品人员",
+      "steps": [
+        "下载 zip 并解压",
+        "把 skills/archify 复制到 ~/.claude/skills/",
+        "说：用 Archify 画一个浏览器经 API 查 Redis 再回源数据库的流程"
+      ],
+      "requires": "Node 18+；交付时会联网读取版本清单仅用于更新提示",
+      "upstream": "tt-a1i/archify",
+      "upstreamStars": 88410,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/archify",
+      "releaseUrl": "https://github.com/campfire-code/archify/releases/tag/v3.2.0-campfire.1",
+      "zip": "archify-campfire.zip",
+      "version": "v3.2.0",
+      "install": "1. 到 Release 页下载 archify-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/archify ~/.claude/skills/\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/archify/SKILL.md 存在，重启 Claude Code。\n需要 Node 18+，不需要密钥。"
+    },
+    {
+      "id": "s04",
+      "slug": "ppt-master",
+      "name": "AI 做 PPT 大师",
+      "category": "PPT",
+      "summary": "把 PDF、Word 或文字变成能在 PowerPoint 里继续编辑的演示文稿",
+      "features": [
+        "从 PDF、DOCX、图片或粘贴文字生成原生 .pptx",
+        "输出母版、形状、可选数据图表，不是图片",
+        "可从参考资料提炼品牌、风格、模板",
+        "可把新内容填进已有 pptx 并保留原设计",
+        "配图可 AI 生成或联网搜图"
+      ],
+      "audience": "经常要做汇报、课件、方案 PPT 的职场人和教师",
+      "steps": [
+        "下载 zip 并解压，复制 skills/ppt-master 到 ~/.claude/skills/",
+        "运行 pip install -r ~/.claude/skills/ppt-master/requirements.txt",
+        "说：请根据这份 PDF 做一份 PPT"
+      ],
+      "requires": "Python 3.10+ 并安装依赖；需要大模型账号；AI 生图、Pexels 等密钥可选",
+      "upstream": "hugohe3/ppt-master",
+      "upstreamStars": 66991,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/ppt-master",
+      "releaseUrl": "https://github.com/campfire-code/ppt-master/releases/tag/v6.7.3-campfire.1",
+      "zip": "ppt-master-campfire.zip",
+      "version": "v6.7.3",
+      "install": "1. 到 Release 页下载 ppt-master-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/ppt-master ~/.claude/skills/\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/ppt-master/SKILL.md 存在，重启 Claude Code。\n然后运行：pip install -r ~/.claude/skills/ppt-master/requirements.txt。需要 Python 3.10+。Windows 用户请先看上游 docs/windows-installation.md。"
+    },
+    {
+      "id": "s05",
+      "slug": "html-ppt-skill",
+      "name": "HTML 演示文稿工坊",
+      "category": "PPT",
+      "summary": "让 AI 做网页版幻灯片，浏览器直接打开演讲，带演讲者模式",
+      "features": [
+        "36 套主题、15 套整套模板、36 种单页版式",
+        "47 种动画效果",
+        "演讲者模式：下一页预览、逐字稿、计时器",
+        "可用 Chrome 导出 PNG",
+        "纯静态 HTML，不需要构建"
+      ],
+      "audience": "做技术分享、路演、小红书图文的人",
+      "steps": [
+        "下载 zip 并解压",
+        "把 skills/html-ppt 复制到 ~/.claude/skills/",
+        "说：做一份 8 页的技术分享 slides，用 cyberpunk 主题"
+      ],
+      "requires": "只需浏览器；导出 PNG 需要 Chrome",
+      "upstream": "lewislulu/html-ppt-skill",
+      "upstreamStars": 8813,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/html-ppt-skill",
+      "releaseUrl": "https://github.com/campfire-code/html-ppt-skill/releases/tag/v20260914-campfire.1",
+      "zip": "html-ppt-skill-campfire.zip",
+      "version": "20260914",
+      "install": "1. 到 Release 页下载 html-ppt-skill-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/html-ppt ~/.claude/skills/\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/html-ppt/SKILL.md 存在，重启 Claude Code。\n生成的 HTML 用浏览器打开，按 S 进入演讲者模式。字体来自 Google Fonts，离线会换成系统字体。"
+    },
+    {
+      "id": "s06",
+      "slug": "superpowers-zh",
+      "name": "AI 编程超能力",
+      "category": "编码",
+      "summary": "让 AI 先想清楚再写代码，TDD、调试、审查一整套中文工作方法",
+      "features": [
+        "头脑风暴、编写计划、执行计划等 15 个翻译技能",
+        "测试驱动开发与四阶段系统化调试",
+        "完成前必须验证，拒绝空口声称做完",
+        "4 个国内向技能：代码审查、Git 工作流、文档、提交规范",
+        "另含 MCP 构建与工作流执行两个技能"
+      ],
+      "audience": "用 AI 写代码、希望过程更规范可靠的开发者",
+      "steps": [
+        "下载 zip 并解压",
+        "把 skills 里的全部文件夹复制到 ~/.claude/skills/",
+        "说：用头脑风暴技能，先帮我想清楚这个功能再动手"
+      ],
+      "requires": "手动安装无依赖；要完整自动引导需 Node 20+ 并运行 npx superpowers-zh",
+      "upstream": "jnMetaCode/superpowers-zh",
+      "upstreamStars": 8377,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/superpowers-zh",
+      "releaseUrl": "https://github.com/campfire-code/superpowers-zh/releases/tag/v1.8.0-campfire.1",
+      "zip": "superpowers-zh-campfire.zip",
+      "version": "v1.8.0",
+      "install": "1. 到 Release 页下载 superpowers-zh-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/* ~/.claude/skills/\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/brainstorming/SKILL.md 存在，重启 Claude Code。\n说明：仅复制技能是简化安装，AI 可能不会自动调用，需要你点名技能。要完整效果可运行 npx superpowers-zh --global --tool claude（Node 20+）。"
+    },
+    {
+      "id": "s07",
+      "slug": "agent-skills",
+      "name": "工程师技能包",
+      "category": "编码",
+      "summary": "25 个覆盖需求到上线的工程技能，让 AI 按资深工程师流程干活",
+      "features": [
+        "需求访谈、规格驱动、任务拆解、增量实现",
+        "测试驱动、调试、代码审查",
+        "安全加固、性能优化、CI/CD",
+        "文档与架构决策记录、发布上线",
+        "附 7 份共用检查清单"
+      ],
+      "audience": "想让 AI 编码过程更规范、质量更稳的开发者和团队",
+      "steps": [
+        "下载 zip 并解压",
+        "skills 里的文件夹复制到 ~/.claude/skills/，references 复制到 ~/.claude/references/",
+        "说：先写规格再动手，给订单系统加退款功能"
+      ],
+      "requires": "",
+      "upstream": "addyosmani/agent-skills",
+      "upstreamStars": 110041,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/agent-skills",
+      "releaseUrl": "https://github.com/campfire-code/agent-skills/releases/tag/v0.6.13-campfire.1",
+      "zip": "agent-skills-campfire.zip",
+      "version": "v0.6.13",
+      "install": "1. 到 Release 页下载 agent-skills-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/* ~/.claude/skills/ && cp -R references ~/.claude/references\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/spec-driven-development/SKILL.md 存在，重启 Claude Code。\nreferences 必须放在 ~/.claude/references/，技能里用 ../../references 引用它。斜杠命令 /spec、/plan 等需改用插件方式安装，见仓库 README。"
+    },
+    {
+      "id": "s08",
+      "slug": "prompt-master",
+      "name": "提示词大师",
+      "category": "提示词",
+      "summary": "说出想让 AI 做什么，自动写出适配目标工具的高质量提示词",
+      "features": [
+        "自动识别 Claude、ChatGPT、Cursor、Midjourney 等目标工具",
+        "把需求拆成 9 个维度，缺信息最多追问 3 个",
+        "修改、优化已有提示词，或改写适配别的工具",
+        "输出前瘦身，附一句策略说明",
+        "覆盖文本、图像、视频、编程助手等场景"
+      ],
+      "audience": "经常给各类 AI 工具写提示词、想少走弯路的人",
+      "steps": [
+        "下载 zip 并解压",
+        "把 skills/prompt-master 复制到 ~/.claude/skills/",
+        "说：帮我写一个给 Cursor 的提示词，重构登录模块"
+      ],
+      "requires": "",
+      "upstream": "nidhinjs/prompt-master",
+      "upstreamStars": 14960,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/prompt-master",
+      "releaseUrl": "https://github.com/campfire-code/prompt-master/releases/tag/v1.8.2-campfire.1",
+      "zip": "prompt-master-campfire.zip",
+      "version": "v1.8.2",
+      "install": "1. 到 Release 页下载 prompt-master-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/prompt-master ~/.claude/skills/\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/prompt-master/SKILL.md 存在，重启 Claude Code。\n无其他依赖，也可用 /prompt-master 手动调用。"
+    },
+    {
+      "id": "s09",
+      "slug": "last30days-skill",
+      "name": "近30天热点研究",
+      "category": "调研",
+      "summary": "搜遍 Reddit、HN、YouTube 等近 30 天真实讨论，按互动量出简报",
+      "features": [
+        "并行搜索多个平台，按真实互动量排序",
+        "Reddit、Hacker News、Polymarket、GitHub 开箱即用",
+        "会前查人物近况，对比多个工具",
+        "发现模式：找出正在爆发的话题",
+        "招聘页面作为公司动向证据"
+      ],
+      "audience": "需要快速了解某个话题、人物、产品最新动态的研究者和运营",
+      "steps": [
+        "下载 zip 并解压",
+        "把 skills/last30days 复制到 ~/.claude/skills/",
+        "输入：/last30days OpenClaw vs Hermes"
+      ],
+      "requires": "Python 3.12+；需联网；X、YouTube、TikTok 等来源需按设置向导配置密钥或登录",
+      "upstream": "mvanhorn/last30days-skill",
+      "upstreamStars": 65240,
+      "license": "MIT",
+      "repoUrl": "https://github.com/campfire-code/last30days-skill",
+      "releaseUrl": "https://github.com/campfire-code/last30days-skill/releases/tag/v3.30.0-campfire.1",
+      "zip": "last30days-skill-campfire.zip",
+      "version": "v3.30.0",
+      "install": "1. 到 Release 页下载 last30days-skill-campfire.zip 并解压。\n2. 复制到 Claude Code 的技能目录：cp -R skills/last30days ~/.claude/skills/\n   Windows 请复制到 C:\\Users\\你的用户名\\.claude\\skills\\ 下对应位置。\n3. 确认 ~/.claude/skills/last30days/SKILL.md 存在，重启 Claude Code。\n需要 Python 3.12+ 和网络。首次运行 /last30days 会出现设置向导。不要同时用插件方式再装一份。"
+    }
+  ]
+}

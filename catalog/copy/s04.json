@@ -1,0 +1,42 @@
+{
+  "id": "s04",
+  "summary": "把 PDF、Word 或文字变成能在 PowerPoint 里继续改的 PPT",
+  "slogan": "资料丢进来，PPT 拿出去",
+  "intro": "给 AI 一份 PDF、Word、图片或一段文字，生成原生 .pptx：母版、形状、图表都能在 PowerPoint 里继续编辑，不是一张张图片。",
+  "features": [
+    {
+      "title": "多种资料输入",
+      "desc": "PDF、DOCX、图片或粘贴文字"
+    },
+    {
+      "title": "原生可编辑",
+      "desc": "母版、形状、数据图表，不是图片"
+    },
+    {
+      "title": "提炼品牌风格",
+      "desc": "从参考资料提取品牌、风格、模板"
+    },
+    {
+      "title": "填进已有 PPT",
+      "desc": "把新内容填入旧 pptx，保留原设计"
+    },
+    {
+      "title": "配图两种来源",
+      "desc": "AI 生成或联网搜图"
+    }
+  ],
+  "audience": [
+    "经常做汇报和方案的职场人",
+    "要做课件的老师和培训师",
+    "需要批量出 PPT 的运营"
+  ],
+  "steps": [
+    "解压后把 ppt-master 复制到 ~/.claude/skills/",
+    "按说明用 pip 安装依赖",
+    "对 AI 说：根据这份 PDF 做一份 PPT"
+  ],
+  "limits": [
+    "需要 Python 3.10+ 并安装依赖",
+    "需要大模型账号；AI 生图、图库密钥可选"
+  ]
+}

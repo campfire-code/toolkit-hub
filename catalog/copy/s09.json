@@ -1,0 +1,42 @@
+{
+  "id": "s09",
+  "summary": "搜 Reddit、HN、YouTube 等近 30 天真实讨论，按互动量出简报",
+  "slogan": "30 天热点，一份简报",
+  "intro": "输入一个话题、人物或产品，它并行搜多个平台近 30 天的真实讨论，按互动量排序整理成简报，还能发现正在爆发的话题。",
+  "features": [
+    {
+      "title": "多平台并行搜",
+      "desc": "按真实互动量排序"
+    },
+    {
+      "title": "开箱即用来源",
+      "desc": "Reddit、HN、Polymarket、GitHub"
+    },
+    {
+      "title": "人物与产品",
+      "desc": "会前查近况，对比多个工具"
+    },
+    {
+      "title": "发现模式",
+      "desc": "找出正在爆发的话题"
+    },
+    {
+      "title": "公司动向",
+      "desc": "招聘页作为动向证据"
+    }
+  ],
+  "audience": [
+    "要快速了解行业动态的研究者",
+    "追热点选题的运营和编辑",
+    "做竞品调研的产品经理"
+  ],
+  "steps": [
+    "下载 zip 并解压",
+    "把 skills 里的 last30days 复制到 ~/.claude/skills/",
+    "输入：/last30days 加你想查的话题"
+  ],
+  "limits": [
+    "需要 Python 3.12+ 并联网",
+    "X、YouTube、TikTok 等来源需按向导配置密钥或登录"
+  ]
+}

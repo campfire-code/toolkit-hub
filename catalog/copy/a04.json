@@ -1,0 +1,47 @@
+{
+  "id": "a04",
+  "summary": "让 Claude 等 MCP 客户端直接创建、读取、编辑本机 Excel 文件",
+  "slogan": "对话里直接改 Excel",
+  "intro": "MCP 服务：接入 Claude Desktop、Cursor 等客户端后，让 AI 直接创建、读取、编辑本机 xlsx 和 xlsm，支持公式、图表、透视表，不需装 Excel。",
+  "features": [
+    {
+      "title": "创建读取编辑",
+      "desc": "直接操作本机 xlsx、xlsm 文件"
+    },
+    {
+      "title": "公式和图表",
+      "desc": "公式、图表、数据透视表"
+    },
+    {
+      "title": "条件格式和验证",
+      "desc": "条件格式、数据验证都支持"
+    },
+    {
+      "title": "不需要装 Excel",
+      "desc": "基于 openpyxl"
+    },
+    {
+      "title": "限定文件夹",
+      "desc": "--allow-dir 只允许读写指定目录"
+    },
+    {
+      "title": "可设只读",
+      "desc": "--read-only 只读模式"
+    }
+  ],
+  "audience": [
+    "想用 AI 整理报表的财务、运营",
+    "用 Claude Desktop 整理表格的白领",
+    "在 Cursor 等客户端里做数据任务的开发"
+  ],
+  "steps": [
+    "装 uv，Claude Desktop 双击安装",
+    "选好允许读写的文件夹",
+    "在对话里让 AI 操作该文件夹里的 Excel"
+  ],
+  "limits": [
+    "本身没有图形界面，要配合 AI 客户端，账号和模型自备",
+    "需要先装 uv；工具说明和日志是英文",
+    "写 VBA 宏默认关闭，需 --allow-vba-write 开启"
+  ]
+}
