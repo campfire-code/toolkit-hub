@@ -16,6 +16,10 @@ on:
         description: Dockerfile 路径
         type: string
         default: Dockerfile
+      platforms:
+        description: 镜像平台；构建时要跑浏览器等在 arm64 模拟下会崩溃的步骤时，只传 linux/amd64
+        type: string
+        default: linux/amd64,linux/arm64
 
 permissions:
   contents: write
@@ -44,7 +48,7 @@ jobs:
         with:
           context: ${{ inputs.context }}
           file: ${{ inputs.dockerfile }}
-          platforms: linux/amd64,linux/arm64
+          platforms: ${{ inputs.platforms }}
           push: true
           tags: |
             ghcr.io/campfire-code/${{ steps.m.outputs.slug }}:${{ steps.m.outputs.version }}
