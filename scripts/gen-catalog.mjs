@@ -95,12 +95,14 @@ const DESC_FIX = {
   e16: '导入各店订单表和库存表，出多店汇总与 SKU 跨店对照',
   e17: '导入商品表，按利润、需求、竞争、口碑打分排名并出选品报告',
   e19: '批量 ASIN 走亚马逊官方 Creators API 查标题、价格，导出 Excel',
+  c10: '离线合成中英混读配音（Kokoro 多音色），导出 MP3 / WAV 和对齐字幕',
+  o16: '本机离线转写录音，导出带时间戳的 TXT / Word / SRT（不区分说话人）',
   e22: '油猴脚本：导出淘宝「已买到的宝贝」订单（不含 1688），用来和入库对账',
 };
 // 调研时列的上游最后没用（例如出于合规改走官方接口），按自研处理
 // e28 w23 w24 e25 e27 e29 c05：上游附加了非商用 / 商业需授权声明，2026-10-23 用户定为只借思路自研
 const NO_UPSTREAM = new Set(['e16', 'e17', 'e19', 'w08', 'e28', 'w23', 'w24', 'e25', 'e27', 'e29', 'c05']);
-const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' }, a01: { repo: 'browser-use/web-ui', stars: '16.6k', license: 'MIT' }, c06: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, e05: { repo: 'danielgatis/rembg', stars: '', license: 'MIT' } };
+const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' }, a01: { repo: 'browser-use/web-ui', stars: '16.6k', license: 'MIT' }, c06: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, e05: { repo: 'danielgatis/rembg', stars: '', license: 'MIT' }, o16: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, o17: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, c29: { repo: 'yt-dlp/yt-dlp', stars: '', license: 'Unlicense' }, c10: { repo: 'k2-fsa/sherpa-onnx', stars: '', license: 'Apache-2.0' } };
 
 const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec, first]) => {
   const decision = decisions.tools[id] ?? rec;

@@ -1,0 +1,2222 @@
+{
+  "generatedAt": "2026-10-24T03:13:58.327Z",
+  "note": "价格留空，由用户定",
+  "items": [
+    {
+      "id": "o02",
+      "category": "办公提效",
+      "name": "PDF 百宝箱",
+      "summary": "合并、拆分、压缩、加水印、转图",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `pdf-toolbox_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `pdf-toolbox_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `pdf-toolbox_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「PDF 百宝箱」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/pdf-toolbox",
+      "releaseUrl": "https://github.com/campfire-code/pdf-toolbox/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/pdf-toolbox/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "pdf-toolbox_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/pdf-toolbox/releases/download/v0.1.0/pdf-toolbox_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "pdf-toolbox_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/pdf-toolbox/releases/download/v0.1.0/pdf-toolbox_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "pdf-toolbox_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/pdf-toolbox/releases/download/v0.1.0/pdf-toolbox_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "Hopding/pdf-lib",
+      "risk": "low"
+    },
+    {
+      "id": "o04",
+      "category": "办公提效",
+      "name": "文档转 Markdown",
+      "summary": "Word、PPT、Excel、PDF 转成 AI 能读的文本",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `doc-to-markdown_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `doc-to-markdown_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `doc-to-markdown_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「文档转 Markdown」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/doc-to-markdown",
+      "releaseUrl": "https://github.com/campfire-code/doc-to-markdown/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/doc-to-markdown/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "doc-to-markdown_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/doc-to-markdown/releases/download/v0.1.0/doc-to-markdown_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "doc-to-markdown_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/doc-to-markdown/releases/download/v0.1.0/doc-to-markdown_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "doc-to-markdown_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/doc-to-markdown/releases/download/v0.1.0/doc-to-markdown_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "mwilliamson/mammoth.js",
+      "risk": "low"
+    },
+    {
+      "id": "o05",
+      "category": "办公提效",
+      "name": "批量图片 OCR",
+      "summary": "离线识别，结果导出 Excel / TXT",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `batch-ocr_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `batch-ocr_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `batch-ocr_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「批量图片 OCR」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/batch-ocr",
+      "releaseUrl": "https://github.com/campfire-code/batch-ocr/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/batch-ocr/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "batch-ocr_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/batch-ocr/releases/download/v0.1.0/batch-ocr_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "batch-ocr_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/batch-ocr/releases/download/v0.1.0/batch-ocr_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "batch-ocr_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/batch-ocr/releases/download/v0.1.0/batch-ocr_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "RapidAI/RapidOCR",
+      "risk": "low"
+    },
+    {
+      "id": "o07",
+      "category": "办公提效",
+      "name": "Excel 拆分与合并",
+      "summary": "按列拆成多个文件（如按门店），多表合并",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.1",
+      "releaseNotes": "\n- 换成篝火图标，界面加入「篝火出品」归属标识。\n- 结果说明鼠标悬停可看全文；写文件时自动建好文件夹。\n- 界面框架升级到第二版（多选参数、表格横向滚动、收尾进度等）。\n\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `excel-split-merge_0.1.1_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `excel-split-merge_0.1.1_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `excel-split-merge_0.1.1_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「Excel 拆分与合并」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/excel-split-merge",
+      "releaseUrl": "https://github.com/campfire-code/excel-split-merge/releases/tag/v0.1.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/excel-split-merge/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "excel-split-merge_0.1.1_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/excel-split-merge/releases/download/v0.1.1/excel-split-merge_0.1.1_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "excel-split-merge_0.1.1_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/excel-split-merge/releases/download/v0.1.1/excel-split-merge_0.1.1_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "excel-split-merge_0.1.1_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/excel-split-merge/releases/download/v0.1.1/excel-split-merge_0.1.1_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "o08",
+      "category": "办公提效",
+      "name": "Excel 批量套 Word 模板",
+      "summary": "批量生成合同、证书、通知",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `excel-to-word-batch_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `excel-to-word-batch_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `excel-to-word-batch_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「Excel 批量套 Word 模板」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/excel-to-word-batch",
+      "releaseUrl": "https://github.com/campfire-code/excel-to-word-batch/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/excel-to-word-batch/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "excel-to-word-batch_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/excel-to-word-batch/releases/download/v0.1.0/excel-to-word-batch_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "excel-to-word-batch_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/excel-to-word-batch/releases/download/v0.1.0/excel-to-word-batch_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "excel-to-word-batch_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/excel-to-word-batch/releases/download/v0.1.0/excel-to-word-batch_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "o10",
+      "category": "办公提效",
+      "name": "微信 / 支付宝账单对账",
+      "summary": "多份账单合并、分类、汇总",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `bill-reconciler_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `bill-reconciler_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `bill-reconciler_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「微信 / 支付宝账单对账」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/bill-reconciler",
+      "releaseUrl": "https://github.com/campfire-code/bill-reconciler/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/bill-reconciler/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "bill-reconciler_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/bill-reconciler/releases/download/v0.1.0/bill-reconciler_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "bill-reconciler_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/bill-reconciler/releases/download/v0.1.0/bill-reconciler_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "bill-reconciler_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/bill-reconciler/releases/download/v0.1.0/bill-reconciler_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "o11",
+      "category": "办公提效",
+      "name": "OFD 转 PDF",
+      "summary": "国产版式文件转 PDF",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `ofd-to-pdf_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `ofd-to-pdf_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `ofd-to-pdf_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「OFD 转 PDF」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/ofd-to-pdf",
+      "releaseUrl": "https://github.com/campfire-code/ofd-to-pdf/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/ofd-to-pdf/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "ofd-to-pdf_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/ofd-to-pdf/releases/download/v0.1.0/ofd-to-pdf_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "ofd-to-pdf_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/ofd-to-pdf/releases/download/v0.1.0/ofd-to-pdf_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "ofd-to-pdf_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/ofd-to-pdf/releases/download/v0.1.0/ofd-to-pdf_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "o12",
+      "category": "办公提效",
+      "name": "按表格批量改文件名",
+      "summary": "按 Excel 映射表批量重命名",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `batch-rename_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `batch-rename_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `batch-rename_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「按表格批量改文件名」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/batch-rename",
+      "releaseUrl": "https://github.com/campfire-code/batch-rename/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/batch-rename/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "batch-rename_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/batch-rename/releases/download/v0.1.0/batch-rename_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "batch-rename_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/batch-rename/releases/download/v0.1.0/batch-rename_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "batch-rename_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/batch-rename/releases/download/v0.1.0/batch-rename_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "ayoisaiah/f2",
+      "risk": "low"
+    },
+    {
+      "id": "o13",
+      "category": "办公提效",
+      "name": "图片批量压缩转格式",
+      "summary": "压缩、转 WebP / JPG，保持清晰",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.1",
+      "releaseNotes": "\n- 换成篝火图标，界面加入「篝火出品」归属标识。\n- 结果说明鼠标悬停可看全文；写文件时自动建好文件夹。\n- 界面框架升级到第二版（多选参数、表格横向滚动、收尾进度等）。\n\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `image-compressor_0.1.1_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `image-compressor_0.1.1_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `image-compressor_0.1.1_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「图片批量压缩转格式」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/image-compressor",
+      "releaseUrl": "https://github.com/campfire-code/image-compressor/releases/tag/v0.1.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/image-compressor/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "image-compressor_0.1.1_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/image-compressor/releases/download/v0.1.1/image-compressor_0.1.1_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "image-compressor_0.1.1_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/image-compressor/releases/download/v0.1.1/image-compressor_0.1.1_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "image-compressor_0.1.1_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/image-compressor/releases/download/v0.1.1/image-compressor_0.1.1_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "GoogleChromeLabs/squoosh",
+      "risk": "low"
+    },
+    {
+      "id": "o14",
+      "category": "办公提效",
+      "name": "证件照换底排版",
+      "summary": "AI 证件照，换底色、排版打印",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `id-photo_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `id-photo_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `id-photo_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「证件照换底排版」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/id-photo",
+      "releaseUrl": "https://github.com/campfire-code/id-photo/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/id-photo/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "id-photo_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/id-photo/releases/download/v0.1.0/id-photo_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "id-photo_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/id-photo/releases/download/v0.1.0/id-photo_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "id-photo_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/id-photo/releases/download/v0.1.0/id-photo_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "Zeyi-Lin/HivisionIDPhotos",
+      "risk": "low"
+    },
+    {
+      "id": "o15",
+      "category": "办公提效",
+      "name": "批量二维码标签",
+      "summary": "带编号的二维码批量生成，排版成可打印 PDF",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `batch-qrcode-labels_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `batch-qrcode-labels_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `batch-qrcode-labels_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「批量二维码标签」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/batch-qrcode-labels",
+      "releaseUrl": "https://github.com/campfire-code/batch-qrcode-labels/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/batch-qrcode-labels/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "batch-qrcode-labels_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/batch-qrcode-labels/releases/download/v0.1.0/batch-qrcode-labels_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "batch-qrcode-labels_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/batch-qrcode-labels/releases/download/v0.1.0/batch-qrcode-labels_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "batch-qrcode-labels_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/batch-qrcode-labels/releases/download/v0.1.0/batch-qrcode-labels_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "soldair/node-qrcode",
+      "risk": "low"
+    },
+    {
+      "id": "o16",
+      "category": "办公提效",
+      "name": "录音转文字",
+      "summary": "本机离线转写录音，导出带时间戳的 TXT / Word / SRT（不区分说话人）",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `speech-to-text_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `speech-to-text_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `speech-to-text_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「录音转文字」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/speech-to-text",
+      "releaseUrl": "https://github.com/campfire-code/speech-to-text/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/speech-to-text/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "speech-to-text_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/speech-to-text/releases/download/v0.1.0/speech-to-text_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "speech-to-text_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/speech-to-text/releases/download/v0.1.0/speech-to-text_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "speech-to-text_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/speech-to-text/releases/download/v0.1.0/speech-to-text_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "huggingface/transformers.js",
+      "risk": "low"
+    },
+    {
+      "id": "o17",
+      "category": "办公提效",
+      "name": "电话录音质检",
+      "summary": "转写后检查话术命中、违禁词",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `call-qa_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `call-qa_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `call-qa_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「电话录音质检」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/call-qa",
+      "releaseUrl": "https://github.com/campfire-code/call-qa/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/call-qa/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "call-qa_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/call-qa/releases/download/v0.1.0/call-qa_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "call-qa_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/call-qa/releases/download/v0.1.0/call-qa_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "call-qa_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/call-qa/releases/download/v0.1.0/call-qa_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "huggingface/transformers.js",
+      "risk": "low"
+    },
+    {
+      "id": "o18",
+      "category": "办公提效",
+      "name": "会议纪要助手",
+      "summary": "本地录音生成纪要和待办",
+      "delivery": "mirror",
+      "price": null,
+      "version": "0.4.1-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) 的官方发布 [v0.4.1](https://github.com/Zackriya-Solutions/meetily/releases/tag/v0.4.1)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `meeting-minutes_0.4.1-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `meeting-minutes_0.4.1-campfire.1_meetily_0.4.1_aarch64.dmg`\n- `meeting-minutes_0.4.1-campfire.1_meetily_0.4.1_x64-setup.exe`\n",
+      "repoUrl": "https://github.com/campfire-code/meeting-minutes",
+      "releaseUrl": "https://github.com/campfire-code/meeting-minutes/releases/tag/v0.4.1-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "meeting-minutes_0.4.1-campfire.1_meetily_0.4.1_aarch64.dmg",
+          "url": "https://github.com/campfire-code/meeting-minutes/releases/download/v0.4.1-campfire.1/meeting-minutes_0.4.1-campfire.1_meetily_0.4.1_aarch64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "meeting-minutes_0.4.1-campfire.1_meetily_0.4.1_x64-setup.exe",
+          "url": "https://github.com/campfire-code/meeting-minutes/releases/download/v0.4.1-campfire.1/meeting-minutes_0.4.1-campfire.1_meetily_0.4.1_x64-setup.exe"
+        }
+      ],
+      "upstream": "Zackriya-Solutions/meetily",
+      "risk": "low"
+    },
+    {
+      "id": "o21",
+      "category": "办公提效",
+      "name": "截图识字翻译",
+      "summary": "截图 OCR 后用大模型翻译",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `screenshot-translate_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `screenshot-translate_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `screenshot-translate_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「截图识字翻译」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/screenshot-translate",
+      "releaseUrl": "https://github.com/campfire-code/screenshot-translate/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/screenshot-translate/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "screenshot-translate_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/screenshot-translate/releases/download/v0.1.0/screenshot-translate_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "screenshot-translate_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/screenshot-translate/releases/download/v0.1.0/screenshot-translate_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "screenshot-translate_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/screenshot-translate/releases/download/v0.1.0/screenshot-translate_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e03",
+      "category": "电商运营",
+      "name": "主图一键白底（批量）",
+      "summary": "本地抠图，整个文件夹一次处理",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.1",
+      "releaseNotes": "\n- 换成篝火图标，界面加入「篝火出品」归属标识。\n- 结果说明鼠标悬停可看全文；写文件时自动建好文件夹。\n- 界面框架升级到第二版（多选参数、表格横向滚动、收尾进度等）。\n\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `bg-remover-batch_0.1.1_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `bg-remover-batch_0.1.1_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `bg-remover-batch_0.1.1_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「主图一键白底（批量）」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/bg-remover-batch",
+      "releaseUrl": "https://github.com/campfire-code/bg-remover-batch/releases/tag/v0.1.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/bg-remover-batch/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "bg-remover-batch_0.1.1_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/bg-remover-batch/releases/download/v0.1.1/bg-remover-batch_0.1.1_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "bg-remover-batch_0.1.1_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/bg-remover-batch/releases/download/v0.1.1/bg-remover-batch_0.1.1_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "bg-remover-batch_0.1.1_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/bg-remover-batch/releases/download/v0.1.1/bg-remover-batch_0.1.1_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "danielgatis/rembg",
+      "risk": "low"
+    },
+    {
+      "id": "e04",
+      "category": "电商运营",
+      "name": "高清商品抠图",
+      "summary": "发丝、透明件等难抠的商品",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `hd-product-cutout_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `hd-product-cutout_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `hd-product-cutout_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「高清商品抠图」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/hd-product-cutout",
+      "releaseUrl": "https://github.com/campfire-code/hd-product-cutout/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/hd-product-cutout/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "hd-product-cutout_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/hd-product-cutout/releases/download/v0.1.0/hd-product-cutout_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "hd-product-cutout_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/hd-product-cutout/releases/download/v0.1.0/hd-product-cutout_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "hd-product-cutout_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/hd-product-cutout/releases/download/v0.1.0/hd-product-cutout_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "ZhengPeng7/BiRefNet",
+      "risk": "low"
+    },
+    {
+      "id": "e05",
+      "category": "电商运营",
+      "name": "商品短视频去背景",
+      "summary": "视频逐帧去背景",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `video-bg-remover_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `video-bg-remover_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `video-bg-remover_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「商品短视频去背景」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/video-bg-remover",
+      "releaseUrl": "https://github.com/campfire-code/video-bg-remover/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/video-bg-remover/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "video-bg-remover_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/video-bg-remover/releases/download/v0.1.0/video-bg-remover_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "video-bg-remover_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/video-bg-remover/releases/download/v0.1.0/video-bg-remover_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "video-bg-remover_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/video-bg-remover/releases/download/v0.1.0/video-bg-remover_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "danielgatis/rembg",
+      "risk": "low"
+    },
+    {
+      "id": "e06",
+      "category": "电商运营",
+      "name": "详情图多语种翻译",
+      "summary": "识别图里的中文，翻译成英 / 泰 / 越文后回填",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `detail-image-translator_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `detail-image-translator_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `detail-image-translator_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「详情图多语种翻译」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/detail-image-translator",
+      "releaseUrl": "https://github.com/campfire-code/detail-image-translator/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/detail-image-translator/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "detail-image-translator_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/detail-image-translator/releases/download/v0.1.0/detail-image-translator_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "detail-image-translator_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/detail-image-translator/releases/download/v0.1.0/detail-image-translator_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "detail-image-translator_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/detail-image-translator/releases/download/v0.1.0/detail-image-translator_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "zyddnys/manga-image-translator",
+      "risk": "mid"
+    },
+    {
+      "id": "e07",
+      "category": "电商运营",
+      "name": "主图多平台尺寸导出",
+      "summary": "一张图按各平台尺寸和大小要求一键导出",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `main-image-resizer_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `main-image-resizer_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `main-image-resizer_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「主图多平台尺寸导出」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/main-image-resizer",
+      "releaseUrl": "https://github.com/campfire-code/main-image-resizer/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/main-image-resizer/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "main-image-resizer_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/main-image-resizer/releases/download/v0.1.0/main-image-resizer_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "main-image-resizer_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/main-image-resizer/releases/download/v0.1.0/main-image-resizer_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "main-image-resizer_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/main-image-resizer/releases/download/v0.1.0/main-image-resizer_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e08",
+      "category": "电商运营",
+      "name": "SKU 规格图拼图加水印",
+      "summary": "色卡、规格图自动排版加水印",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `sku-image-composer_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `sku-image-composer_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `sku-image-composer_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「SKU 规格图拼图加水印」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/sku-image-composer",
+      "releaseUrl": "https://github.com/campfire-code/sku-image-composer/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/sku-image-composer/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "sku-image-composer_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/sku-image-composer/releases/download/v0.1.0/sku-image-composer_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "sku-image-composer_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/sku-image-composer/releases/download/v0.1.0/sku-image-composer_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "sku-image-composer_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/sku-image-composer/releases/download/v0.1.0/sku-image-composer_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e09",
+      "category": "电商运营",
+      "name": "AI 标题卖点批量生成",
+      "summary": "Excel 进、Excel 出，可指定平台字数规则",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `ai-title-writer_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `ai-title-writer_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `ai-title-writer_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「AI 标题卖点批量生成」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/ai-title-writer",
+      "releaseUrl": "https://github.com/campfire-code/ai-title-writer/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/ai-title-writer/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "ai-title-writer_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/ai-title-writer/releases/download/v0.1.0/ai-title-writer_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "ai-title-writer_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/ai-title-writer/releases/download/v0.1.0/ai-title-writer_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "ai-title-writer_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/ai-title-writer/releases/download/v0.1.0/ai-title-writer_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e10",
+      "category": "电商运营",
+      "name": "广告法违禁词检测",
+      "summary": "标题、详情、文案、字幕上架前自检，标出极限词",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `banned-words-checker_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `banned-words-checker_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `banned-words-checker_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「广告法违禁词检测」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/banned-words-checker",
+      "releaseUrl": "https://github.com/campfire-code/banned-words-checker/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/banned-words-checker/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "banned-words-checker_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/banned-words-checker/releases/download/v0.1.0/banned-words-checker_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "banned-words-checker_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/banned-words-checker/releases/download/v0.1.0/banned-words-checker_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "banned-words-checker_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/banned-words-checker/releases/download/v0.1.0/banned-words-checker_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e11",
+      "category": "电商运营",
+      "name": "多平台订单利润对账",
+      "summary": "导入各平台账单，扣成本、运费、佣金后算真实利润",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `order-profit-reconciler_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `order-profit-reconciler_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `order-profit-reconciler_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「多平台订单利润对账」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/order-profit-reconciler",
+      "releaseUrl": "https://github.com/campfire-code/order-profit-reconciler/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/order-profit-reconciler/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "order-profit-reconciler_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/order-profit-reconciler/releases/download/v0.1.0/order-profit-reconciler_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "order-profit-reconciler_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/order-profit-reconciler/releases/download/v0.1.0/order-profit-reconciler_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "order-profit-reconciler_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/order-profit-reconciler/releases/download/v0.1.0/order-profit-reconciler_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e12",
+      "category": "电商运营",
+      "name": "抖店批量改价改库存",
+      "summary": "一张表批量改多个店，走抖店官方接口",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `doudian-batch-price_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `doudian-batch-price_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `doudian-batch-price_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「抖店批量改价改库存」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/doudian-batch-price",
+      "releaseUrl": "https://github.com/campfire-code/doudian-batch-price/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/doudian-batch-price/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "doudian-batch-price_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/doudian-batch-price/releases/download/v0.1.0/doudian-batch-price_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "doudian-batch-price_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/doudian-batch-price/releases/download/v0.1.0/doudian-batch-price_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "doudian-batch-price_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/doudian-batch-price/releases/download/v0.1.0/doudian-batch-price_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "whalesky-labs/doudian-sdk",
+      "risk": "mid"
+    },
+    {
+      "id": "e13",
+      "category": "电商运营",
+      "name": "虾皮批量改价改库存",
+      "summary": "走 Shopee 官方接口",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `shopee-batch-price_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `shopee-batch-price_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `shopee-batch-price_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「虾皮批量改价改库存」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/shopee-batch-price",
+      "releaseUrl": "https://github.com/campfire-code/shopee-batch-price/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/shopee-batch-price/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "shopee-batch-price_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/shopee-batch-price/releases/download/v0.1.0/shopee-batch-price_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "shopee-batch-price_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/shopee-batch-price/releases/download/v0.1.0/shopee-batch-price_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "shopee-batch-price_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/shopee-batch-price/releases/download/v0.1.0/shopee-batch-price_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "congminh1254/shopee-sdk",
+      "risk": "mid"
+    },
+    {
+      "id": "e14",
+      "category": "电商运营",
+      "name": "亚马逊订单库存导出",
+      "summary": "走亚马逊 SP-API",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `amazon-order-export_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `amazon-order-export_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `amazon-order-export_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「亚马逊订单库存导出」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/amazon-order-export",
+      "releaseUrl": "https://github.com/campfire-code/amazon-order-export/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/amazon-order-export/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "amazon-order-export_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/amazon-order-export/releases/download/v0.1.0/amazon-order-export_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "amazon-order-export_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/amazon-order-export/releases/download/v0.1.0/amazon-order-export_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "amazon-order-export_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/amazon-order-export/releases/download/v0.1.0/amazon-order-export_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "saleweaver/python-amazon-sp-api",
+      "risk": "mid"
+    },
+    {
+      "id": "e15",
+      "category": "电商运营",
+      "name": "TikTok Shop 批量上品",
+      "summary": "走 TikTok Shop 官方接口",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `tiktokshop-listing_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `tiktokshop-listing_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `tiktokshop-listing_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「TikTok Shop 批量上品」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/tiktokshop-listing",
+      "releaseUrl": "https://github.com/campfire-code/tiktokshop-listing/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/tiktokshop-listing/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "tiktokshop-listing_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/tiktokshop-listing/releases/download/v0.1.0/tiktokshop-listing_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "tiktokshop-listing_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/tiktokshop-listing/releases/download/v0.1.0/tiktokshop-listing_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "tiktokshop-listing_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/tiktokshop-listing/releases/download/v0.1.0/tiktokshop-listing_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "EcomPHP/tiktokshop-php",
+      "risk": "mid"
+    },
+    {
+      "id": "e16",
+      "category": "电商运营",
+      "name": "东南亚多店调度",
+      "summary": "导入各店订单表和库存表，出多店汇总与 SKU 跨店对照",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `sea-multistore_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `sea-multistore_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `sea-multistore_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「东南亚多店调度」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/sea-multistore",
+      "releaseUrl": "https://github.com/campfire-code/sea-multistore/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/sea-multistore/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "sea-multistore_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/sea-multistore/releases/download/v0.1.0/sea-multistore_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "sea-multistore_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/sea-multistore/releases/download/v0.1.0/sea-multistore_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "sea-multistore_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/sea-multistore/releases/download/v0.1.0/sea-multistore_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "mid"
+    },
+    {
+      "id": "e17",
+      "category": "电商运营",
+      "name": "跨境选品报告",
+      "summary": "导入商品表，按利润、需求、竞争、口碑打分排名并出选品报告",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `crossborder-product-research_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `crossborder-product-research_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `crossborder-product-research_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「跨境选品报告」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/crossborder-product-research",
+      "releaseUrl": "https://github.com/campfire-code/crossborder-product-research/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/crossborder-product-research/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "crossborder-product-research_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/crossborder-product-research/releases/download/v0.1.0/crossborder-product-research_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "crossborder-product-research_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/crossborder-product-research/releases/download/v0.1.0/crossborder-product-research_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "crossborder-product-research_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/crossborder-product-research/releases/download/v0.1.0/crossborder-product-research_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e18",
+      "category": "电商运营",
+      "name": "虾皮选品利润计算器",
+      "summary": "商品页一键算毛利、佣金和运费",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `shopee-profit-calculator_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `shopee-profit-calculator_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `shopee-profit-calculator_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「虾皮选品利润计算器」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/shopee-profit-calculator",
+      "releaseUrl": "https://github.com/campfire-code/shopee-profit-calculator/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/shopee-profit-calculator/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "shopee-profit-calculator_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/shopee-profit-calculator/releases/download/v0.1.0/shopee-profit-calculator_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "shopee-profit-calculator_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/shopee-profit-calculator/releases/download/v0.1.0/shopee-profit-calculator_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "shopee-profit-calculator_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/shopee-profit-calculator/releases/download/v0.1.0/shopee-profit-calculator_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e19",
+      "category": "电商运营",
+      "name": "亚马逊 ASIN 批量查询",
+      "summary": "批量 ASIN 走亚马逊官方 Creators API 查标题、价格，导出 Excel",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `amazon-asin-lookup_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `amazon-asin-lookup_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `amazon-asin-lookup_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「亚马逊 ASIN 批量查询」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/amazon-asin-lookup",
+      "releaseUrl": "https://github.com/campfire-code/amazon-asin-lookup/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/amazon-asin-lookup/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "amazon-asin-lookup_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/amazon-asin-lookup/releases/download/v0.1.0/amazon-asin-lookup_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "amazon-asin-lookup_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/amazon-asin-lookup/releases/download/v0.1.0/amazon-asin-lookup_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "amazon-asin-lookup_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/amazon-asin-lookup/releases/download/v0.1.0/amazon-asin-lookup_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "mid"
+    },
+    {
+      "id": "e20",
+      "category": "电商运营",
+      "name": "差评归因分析",
+      "summary": "导入评论表格，AI 聚类出问题点和改进建议",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `review-insight_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `review-insight_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `review-insight_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「差评归因分析」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/review-insight",
+      "releaseUrl": "https://github.com/campfire-code/review-insight/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/review-insight/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "review-insight_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/review-insight/releases/download/v0.1.0/review-insight_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "review-insight_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/review-insight/releases/download/v0.1.0/review-insight_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "review-insight_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/review-insight/releases/download/v0.1.0/review-insight_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e21",
+      "category": "电商运营",
+      "name": "快递异常件看板",
+      "summary": "导入运单表或用快递100 接口，列出停滞件、退回件并导出",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `express-exception-board_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `express-exception-board_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `express-exception-board_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「快递异常件看板」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/express-exception-board",
+      "releaseUrl": "https://github.com/campfire-code/express-exception-board/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/express-exception-board/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "express-exception-board_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/express-exception-board/releases/download/v0.1.0/express-exception-board_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "express-exception-board_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/express-exception-board/releases/download/v0.1.0/express-exception-board_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "express-exception-board_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/express-exception-board/releases/download/v0.1.0/express-exception-board_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e22",
+      "category": "电商运营",
+      "name": "采购单对账",
+      "summary": "油猴脚本：导出淘宝「已买到的宝贝」订单（不含 1688），用来和入库对账",
+      "delivery": "userscript",
+      "price": null,
+      "version": "2.0.4-campfire.1",
+      "releaseNotes": "### 安装\n\n1. 浏览器先装脚本管理器 Tampermonkey（Chrome、Edge、Firefox、Safari 均有）。\n2. 点击下面的 `TaoBao_BuyerOrdersExport.user.js`，Tampermonkey 会弹出安装页，点安装。\n3. 打开淘宝网页版「已买到的宝贝」页面使用，详细说明见仓库首页 README。\n\n脚本与上游一致，未做修改，附 `SHA256SUMS.txt` 可核对。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/purchase-order-export",
+      "releaseUrl": "https://github.com/campfire-code/purchase-order-export/releases/tag/v2.0.4-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "油猴脚本",
+          "name": "TaoBao_BuyerOrdersExport.user.js",
+          "url": "https://github.com/campfire-code/purchase-order-export/releases/download/v2.0.4-campfire.1/TaoBao_BuyerOrdersExport.user.js"
+        }
+      ],
+      "upstream": "Sky-seeker/BuyerOrdersExport",
+      "risk": "low"
+    },
+    {
+      "id": "e30",
+      "category": "电商运营",
+      "name": "电商多店 AI 连接器",
+      "summary": "让 AI 助手直接查多个国内平台店铺数据（MCP）",
+      "delivery": "launcher",
+      "price": null,
+      "version": "0.1.6-campfire.1",
+      "releaseNotes": "### 下载与启动\n\n下载 `ecom-mcp-connector_0.1.6-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\ecom-mcp-connector`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/ecom-mcp-connector",
+      "releaseUrl": "https://github.com/campfire-code/ecom-mcp-connector/releases/tag/v0.1.6-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Windows / macOS 双击启动包",
+          "name": "ecom-mcp-connector_0.1.6-campfire.1_portable.zip",
+          "url": "https://github.com/campfire-code/ecom-mcp-connector/releases/download/v0.1.6-campfire.1/ecom-mcp-connector_0.1.6-campfire.1_portable.zip"
+        }
+      ],
+      "upstream": "TonyWang-hub/mcp-cn-commerce",
+      "risk": "mid"
+    },
+    {
+      "id": "e31",
+      "category": "电商运营",
+      "name": "AI 详情页一键生成",
+      "summary": "输入卖点和商品图，生成整套详情页",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `ai-detail-page_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `ai-detail-page_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `ai-detail-page_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「AI 详情页一键生成」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/ai-detail-page",
+      "releaseUrl": "https://github.com/campfire-code/ai-detail-page/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/ai-detail-page/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "ai-detail-page_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/ai-detail-page/releases/download/v0.1.0/ai-detail-page_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "ai-detail-page_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/ai-detail-page/releases/download/v0.1.0/ai-detail-page_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "ai-detail-page_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/ai-detail-page/releases/download/v0.1.0/ai-detail-page_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "e32",
+      "category": "电商运营",
+      "name": "商品主图转短视频",
+      "summary": "多张图自动运镜、配字幕和配音",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `product-image-to-video_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `product-image-to-video_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `product-image-to-video_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「商品主图转短视频」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/product-image-to-video",
+      "releaseUrl": "https://github.com/campfire-code/product-image-to-video/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/product-image-to-video/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "product-image-to-video_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/product-image-to-video/releases/download/v0.1.0/product-image-to-video_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "product-image-to-video_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/product-image-to-video/releases/download/v0.1.0/product-image-to-video_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "product-image-to-video_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/product-image-to-video/releases/download/v0.1.0/product-image-to-video_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "c01",
+      "category": "内容生产",
+      "name": "主题一键出短视频",
+      "summary": "输入主题，自动写文案、配音、配素材、合成成片",
+      "delivery": "launcher",
+      "price": null,
+      "version": "1.3.9-campfire.1",
+      "releaseNotes": "### 下载与启动\n\n下载 `topic-to-short-video_1.3.9-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\topic-to-short-video`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/topic-to-short-video",
+      "releaseUrl": "https://github.com/campfire-code/topic-to-short-video/releases/tag/v1.3.9-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Windows / macOS 双击启动包",
+          "name": "topic-to-short-video_1.3.9-campfire.1_portable.zip",
+          "url": "https://github.com/campfire-code/topic-to-short-video/releases/download/v1.3.9-campfire.1/topic-to-short-video_1.3.9-campfire.1_portable.zip"
+        }
+      ],
+      "upstream": "harry0703/MoneyPrinterTurbo",
+      "risk": "mid"
+    },
+    {
+      "id": "c03",
+      "category": "内容生产",
+      "name": "长视频一键切爆点",
+      "summary": "长视频自动切成多条短视频",
+      "delivery": "mirror",
+      "price": null,
+      "version": "1.5.6-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) 的官方发布 [v1.5.6](https://github.com/zhouxiaoka/autoclip/releases/tag/v1.5.6)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `long-video-clipper_1.5.6-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `long-video-clipper_1.5.6-campfire.1_AutoClip.Desktop_1.5.6_aarch64.dmg`\n- `long-video-clipper_1.5.6-campfire.1_AutoClip.Desktop_1.5.6_x64-setup.exe`\n",
+      "repoUrl": "https://github.com/campfire-code/long-video-clipper",
+      "releaseUrl": "https://github.com/campfire-code/long-video-clipper/releases/tag/v1.5.6-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "long-video-clipper_1.5.6-campfire.1_AutoClip.Desktop_1.5.6_aarch64.dmg",
+          "url": "https://github.com/campfire-code/long-video-clipper/releases/download/v1.5.6-campfire.1/long-video-clipper_1.5.6-campfire.1_AutoClip.Desktop_1.5.6_aarch64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "long-video-clipper_1.5.6-campfire.1_AutoClip.Desktop_1.5.6_x64-setup.exe",
+          "url": "https://github.com/campfire-code/long-video-clipper/releases/download/v1.5.6-campfire.1/long-video-clipper_1.5.6-campfire.1_AutoClip.Desktop_1.5.6_x64-setup.exe"
+        }
+      ],
+      "upstream": "zhouxiaoka/autoclip",
+      "risk": "mid"
+    },
+    {
+      "id": "c04",
+      "category": "内容生产",
+      "name": "剪映草稿批量生成器",
+      "summary": "批量生成剪映草稿，打开剪映即可微调",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `jianying-draft-generator_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `jianying-draft-generator_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `jianying-draft-generator_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「剪映草稿批量生成器」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/jianying-draft-generator",
+      "releaseUrl": "https://github.com/campfire-code/jianying-draft-generator/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/jianying-draft-generator/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "jianying-draft-generator_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/jianying-draft-generator/releases/download/v0.1.0/jianying-draft-generator_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "jianying-draft-generator_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/jianying-draft-generator/releases/download/v0.1.0/jianying-draft-generator_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "jianying-draft-generator_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/jianying-draft-generator/releases/download/v0.1.0/jianying-draft-generator_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "GuanYixuan/pyJianYingDraft",
+      "risk": "mid"
+    },
+    {
+      "id": "c05",
+      "category": "内容生产",
+      "name": "批量混剪工厂",
+      "summary": "素材批量混剪出多条视频",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `batch-video-remix_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `batch-video-remix_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `batch-video-remix_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「批量混剪工厂」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/batch-video-remix",
+      "releaseUrl": "https://github.com/campfire-code/batch-video-remix/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/batch-video-remix/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "batch-video-remix_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/batch-video-remix/releases/download/v0.1.0/batch-video-remix_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "batch-video-remix_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/batch-video-remix/releases/download/v0.1.0/batch-video-remix_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "batch-video-remix_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/batch-video-remix/releases/download/v0.1.0/batch-video-remix_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "mid"
+    },
+    {
+      "id": "c06",
+      "category": "内容生产",
+      "name": "离线视频转字幕",
+      "summary": "不联网、不用显卡，Mac 和 Windows 都能跑",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `offline-subtitle_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `offline-subtitle_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `offline-subtitle_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「离线视频转字幕」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/offline-subtitle",
+      "releaseUrl": "https://github.com/campfire-code/offline-subtitle/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/offline-subtitle/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "offline-subtitle_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/offline-subtitle/releases/download/v0.1.0/offline-subtitle_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "offline-subtitle_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/offline-subtitle/releases/download/v0.1.0/offline-subtitle_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "offline-subtitle_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/offline-subtitle/releases/download/v0.1.0/offline-subtitle_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "huggingface/transformers.js",
+      "risk": "low"
+    },
+    {
+      "id": "c08",
+      "category": "内容生产",
+      "name": "视频出海翻译配音",
+      "summary": "字幕翻译 + 配音一条龙",
+      "delivery": "launcher",
+      "price": null,
+      "version": "3.1.1-campfire.1",
+      "releaseNotes": "### 下载与启动\n\n下载 `video-translate-dub_3.1.1-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\video-translate-dub`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/video-translate-dub",
+      "releaseUrl": "https://github.com/campfire-code/video-translate-dub/releases/tag/v3.1.1-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Windows / macOS 双击启动包",
+          "name": "video-translate-dub_3.1.1-campfire.1_portable.zip",
+          "url": "https://github.com/campfire-code/video-translate-dub/releases/download/v3.1.1-campfire.1/video-translate-dub_3.1.1-campfire.1_portable.zip"
+        }
+      ],
+      "upstream": "Huanshere/VideoLingo",
+      "risk": "mid"
+    },
+    {
+      "id": "c10",
+      "category": "内容生产",
+      "name": "文案转配音",
+      "summary": "离线合成中英混读配音（Kokoro 多音色），导出 MP3 / WAV 和对齐字幕",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `text-to-speech_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `text-to-speech_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `text-to-speech_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「文案转配音」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/text-to-speech",
+      "releaseUrl": "https://github.com/campfire-code/text-to-speech/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/text-to-speech/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "text-to-speech_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/text-to-speech/releases/download/v0.1.0/text-to-speech_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "text-to-speech_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/text-to-speech/releases/download/v0.1.0/text-to-speech_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "text-to-speech_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/text-to-speech/releases/download/v0.1.0/text-to-speech_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "k2-fsa/sherpa-onnx",
+      "risk": "mid"
+    },
+    {
+      "id": "c14",
+      "category": "内容生产",
+      "name": "自家直播自动录制存档",
+      "summary": "直播开播自动录制，用于自家回放和切片",
+      "delivery": "mirror",
+      "price": null,
+      "version": "1.0.3-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [ihmily/StreamCap](https://github.com/ihmily/StreamCap) 的官方发布 [v1.0.3](https://github.com/ihmily/StreamCap/releases/tag/v1.0.3)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `live-recorder_1.0.3-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `live-recorder_1.0.3-campfire.1_StreamCap_1.0.3_Win_x64.zip`\n- `live-recorder_1.0.3-campfire.1_StreamCap_1.0.3_mac_arm64.dmg`\n",
+      "repoUrl": "https://github.com/campfire-code/live-recorder",
+      "releaseUrl": "https://github.com/campfire-code/live-recorder/releases/tag/v1.0.3-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "live-recorder_1.0.3-campfire.1_StreamCap_1.0.3_mac_arm64.dmg",
+          "url": "https://github.com/campfire-code/live-recorder/releases/download/v1.0.3-campfire.1/live-recorder_1.0.3-campfire.1_StreamCap_1.0.3_mac_arm64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "live-recorder_1.0.3-campfire.1_StreamCap_1.0.3_Win_x64.zip",
+          "url": "https://github.com/campfire-code/live-recorder/releases/download/v1.0.3-campfire.1/live-recorder_1.0.3-campfire.1_StreamCap_1.0.3_Win_x64.zip"
+        }
+      ],
+      "upstream": "ihmily/StreamCap",
+      "risk": "mid"
+    },
+    {
+      "id": "c17",
+      "category": "内容生产",
+      "name": "小红书图文卡片生成",
+      "summary": "输入主题生成整套图文卡片（参考项目为非商用，代码自己写）",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `xhs-card-maker_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `xhs-card-maker_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `xhs-card-maker_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「小红书图文卡片生成」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/xhs-card-maker",
+      "releaseUrl": "https://github.com/campfire-code/xhs-card-maker/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/xhs-card-maker/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "xhs-card-maker_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/xhs-card-maker/releases/download/v0.1.0/xhs-card-maker_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "xhs-card-maker_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/xhs-card-maker/releases/download/v0.1.0/xhs-card-maker_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "xhs-card-maker_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/xhs-card-maker/releases/download/v0.1.0/xhs-card-maker_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "c18",
+      "category": "内容生产",
+      "name": "封面工坊",
+      "summary": "公众号、视频封面模板批量出图",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `cover-studio_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `cover-studio_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `cover-studio_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「封面工坊」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/cover-studio",
+      "releaseUrl": "https://github.com/campfire-code/cover-studio/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/cover-studio/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "cover-studio_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/cover-studio/releases/download/v0.1.0/cover-studio_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "cover-studio_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/cover-studio/releases/download/v0.1.0/cover-studio_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "cover-studio_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/cover-studio/releases/download/v0.1.0/cover-studio_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "weizwz/cover",
+      "risk": "low"
+    },
+    {
+      "id": "c19",
+      "category": "内容生产",
+      "name": "全网热点雷达",
+      "summary": "聚合各平台热榜，按关键词提醒",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `trending-radar_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `trending-radar_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `trending-radar_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「全网热点雷达」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/trending-radar",
+      "releaseUrl": "https://github.com/campfire-code/trending-radar/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/trending-radar/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "trending-radar_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/trending-radar/releases/download/v0.1.0/trending-radar_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "trending-radar_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/trending-radar/releases/download/v0.1.0/trending-radar_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "trending-radar_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/trending-radar/releases/download/v0.1.0/trending-radar_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "newsnext/newsnow",
+      "risk": "low"
+    },
+    {
+      "id": "c20",
+      "category": "内容生产",
+      "name": "爆款标题 A/B 生成",
+      "summary": "按平台风格批量出标题并打分",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `title-ab-generator_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `title-ab-generator_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `title-ab-generator_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「爆款标题 A/B 生成」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/title-ab-generator",
+      "releaseUrl": "https://github.com/campfire-code/title-ab-generator/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/title-ab-generator/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "title-ab-generator_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/title-ab-generator/releases/download/v0.1.0/title-ab-generator_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "title-ab-generator_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/title-ab-generator/releases/download/v0.1.0/title-ab-generator_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "title-ab-generator_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/title-ab-generator/releases/download/v0.1.0/title-ab-generator_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "c21",
+      "category": "内容生产",
+      "name": "竞品视频拆解卡",
+      "summary": "粘贴文案或导入字幕，AI 拆成钩子、分镜、话术节奏表",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `video-breakdown_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `video-breakdown_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `video-breakdown_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「竞品视频拆解卡」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/video-breakdown",
+      "releaseUrl": "https://github.com/campfire-code/video-breakdown/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/video-breakdown/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "video-breakdown_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/video-breakdown/releases/download/v0.1.0/video-breakdown_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "video-breakdown_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/video-breakdown/releases/download/v0.1.0/video-breakdown_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "video-breakdown_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/video-breakdown/releases/download/v0.1.0/video-breakdown_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "mid"
+    },
+    {
+      "id": "c23",
+      "category": "内容生产",
+      "name": "AI 内容标识器",
+      "summary": "按《人工智能生成合成内容标识办法》一键加显式标识和元数据",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `ai-content-labeler_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `ai-content-labeler_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `ai-content-labeler_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「AI 内容标识器」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/ai-content-labeler",
+      "releaseUrl": "https://github.com/campfire-code/ai-content-labeler/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/ai-content-labeler/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "ai-content-labeler_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/ai-content-labeler/releases/download/v0.1.0/ai-content-labeler_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "ai-content-labeler_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/ai-content-labeler/releases/download/v0.1.0/ai-content-labeler_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "ai-content-labeler_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/ai-content-labeler/releases/download/v0.1.0/ai-content-labeler_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "c24",
+      "category": "内容生产",
+      "name": "素材库查重",
+      "summary": "图片 / 视频指纹比对，避免重复发布被判搬运",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `asset-dedup_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `asset-dedup_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `asset-dedup_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「素材库查重」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/asset-dedup",
+      "releaseUrl": "https://github.com/campfire-code/asset-dedup/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/asset-dedup/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "asset-dedup_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/asset-dedup/releases/download/v0.1.0/asset-dedup_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "asset-dedup_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/asset-dedup/releases/download/v0.1.0/asset-dedup_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "asset-dedup_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/asset-dedup/releases/download/v0.1.0/asset-dedup_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "c31",
+      "category": "内容生产",
+      "name": "评论情绪与需求分析",
+      "summary": "分析自有账号导出的评论数据",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `comment-insight_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `comment-insight_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `comment-insight_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「评论情绪与需求分析」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/comment-insight",
+      "releaseUrl": "https://github.com/campfire-code/comment-insight/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/comment-insight/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "comment-insight_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/comment-insight/releases/download/v0.1.0/comment-insight_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "comment-insight_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/comment-insight/releases/download/v0.1.0/comment-insight_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "comment-insight_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/comment-insight/releases/download/v0.1.0/comment-insight_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w01",
+      "category": "微信私域",
+      "name": "公众号一键排版器",
+      "summary": "Markdown 转公众号样式，多套主题",
+      "delivery": "desktop",
+      "price": null,
+      "version": "2.1.0-campfire.1",
+      "releaseNotes": "- 版本 2.1.0-campfire.1\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `wechat-md-formatter_2.1.0-campfire.1_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `wechat-md-formatter_2.1.0-campfire.1_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `wechat-md-formatter_2.1.0-campfire.1_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「公众号一键排版器」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/wechat-md-formatter",
+      "releaseUrl": "https://github.com/campfire-code/wechat-md-formatter/releases/tag/v2.1.0-campfire.1",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wechat-md-formatter/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "wechat-md-formatter_2.1.0-campfire.1_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/wechat-md-formatter/releases/download/v2.1.0-campfire.1/wechat-md-formatter_2.1.0-campfire.1_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "wechat-md-formatter_2.1.0-campfire.1_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/wechat-md-formatter/releases/download/v2.1.0-campfire.1/wechat-md-formatter_2.1.0-campfire.1_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "wechat-md-formatter_2.1.0-campfire.1_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/wechat-md-formatter/releases/download/v2.1.0-campfire.1/wechat-md-formatter_2.1.0-campfire.1_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "doocs/md",
+      "risk": "low"
+    },
+    {
+      "id": "w02",
+      "category": "微信私域",
+      "name": "AI 写稿直发公众号草稿箱",
+      "summary": "写稿、排版后推到草稿箱，走公众号官方接口",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `wechat-draft-publisher_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `wechat-draft-publisher_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `wechat-draft-publisher_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「AI 写稿直发公众号草稿箱」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/wechat-draft-publisher",
+      "releaseUrl": "https://github.com/campfire-code/wechat-draft-publisher/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wechat-draft-publisher/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "wechat-draft-publisher_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/wechat-draft-publisher/releases/download/v0.1.0/wechat-draft-publisher_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "wechat-draft-publisher_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/wechat-draft-publisher/releases/download/v0.1.0/wechat-draft-publisher_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "wechat-draft-publisher_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/wechat-draft-publisher/releases/download/v0.1.0/wechat-draft-publisher_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "caol64/wenyan-mcp",
+      "risk": "low"
+    },
+    {
+      "id": "w03",
+      "category": "微信私域",
+      "name": "企微群 AI 答疑机器人",
+      "summary": "企业微信群机器人接大模型 + 知识库",
+      "delivery": "docker",
+      "price": null,
+      "version": "0.3.4-campfire.1",
+      "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir wecom-group-ai-bot && cd wecom-group-ai-bot\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/wecom-group-ai-bot:0.3.4-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/wecom-group-ai-bot",
+      "releaseUrl": "https://github.com/campfire-code/wecom-group-ai-bot/releases/tag/v0.3.4-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Docker 部署文件",
+          "name": "docker-compose.yml",
+          "url": "https://github.com/campfire-code/wecom-group-ai-bot/releases/download/v0.3.4-campfire.1/docker-compose.yml"
+        }
+      ],
+      "upstream": "easy-wx/wecom-bot-svr",
+      "risk": "low"
+    },
+    {
+      "id": "w04",
+      "category": "微信私域",
+      "name": "企微 / 公众号 AI 客服",
+      "summary": "多渠道 AI 客服，只启用官方通道",
+      "delivery": "docker",
+      "price": null,
+      "version": "2.2.1-campfire.1",
+      "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir wecom-ai-service && cd wecom-ai-service\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/wecom-ai-service:2.2.1-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/wecom-ai-service",
+      "releaseUrl": "https://github.com/campfire-code/wecom-ai-service/releases/tag/v2.2.1-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Docker 部署文件",
+          "name": "docker-compose.yml",
+          "url": "https://github.com/campfire-code/wecom-ai-service/releases/download/v2.2.1-campfire.1/docker-compose.yml"
+        }
+      ],
+      "upstream": "zhayujie/CowAgent",
+      "risk": "low"
+    },
+    {
+      "id": "w05",
+      "category": "微信私域",
+      "name": "Dify 知识库客服接入器",
+      "summary": "把 Dify 知识库接到企微",
+      "delivery": "docker",
+      "price": null,
+      "version": "0.1.26-campfire.1",
+      "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir dify-wecom-connector && cd dify-wecom-connector\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/dify-wecom-connector:0.1.26-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/dify-wecom-connector",
+      "releaseUrl": "https://github.com/campfire-code/dify-wecom-connector/releases/tag/v0.1.26-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Docker 部署文件",
+          "name": "docker-compose.yml",
+          "url": "https://github.com/campfire-code/dify-wecom-connector/releases/download/v0.1.26-campfire.1/docker-compose.yml"
+        }
+      ],
+      "upstream": "hanfangyuan4396/dify-on-wechat",
+      "risk": "mid"
+    },
+    {
+      "id": "w06",
+      "category": "微信私域",
+      "name": "企微客户标签批量整理",
+      "summary": "官方接口拉客户，按规则或 AI 批量打标签",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `wecom-customer-tagger_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `wecom-customer-tagger_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `wecom-customer-tagger_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「企微客户标签批量整理」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/wecom-customer-tagger",
+      "releaseUrl": "https://github.com/campfire-code/wecom-customer-tagger/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wecom-customer-tagger/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "wecom-customer-tagger_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/wecom-customer-tagger/releases/download/v0.1.0/wecom-customer-tagger_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "wecom-customer-tagger_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/wecom-customer-tagger/releases/download/v0.1.0/wecom-customer-tagger_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "wecom-customer-tagger_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/wecom-customer-tagger/releases/download/v0.1.0/wecom-customer-tagger_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w08",
+      "category": "微信私域",
+      "name": "渠道活码与加粉统计",
+      "summary": "用官方「联系我」接口统计每个渠道的加粉来源",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `wecom-channel-qrcode_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `wecom-channel-qrcode_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `wecom-channel-qrcode_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「渠道活码与加粉统计」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/wecom-channel-qrcode",
+      "releaseUrl": "https://github.com/campfire-code/wecom-channel-qrcode/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wecom-channel-qrcode/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "wecom-channel-qrcode_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/wecom-channel-qrcode/releases/download/v0.1.0/wecom-channel-qrcode_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "wecom-channel-qrcode_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/wecom-channel-qrcode/releases/download/v0.1.0/wecom-channel-qrcode_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "wecom-channel-qrcode_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/wecom-channel-qrcode/releases/download/v0.1.0/wecom-channel-qrcode_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w09",
+      "category": "微信私域",
+      "name": "客户流失预警清单",
+      "summary": "按最后互动时间（导入）或添加时间分级列出沉睡客户，同步对比发现流失",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `wecom-churn-alert_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `wecom-churn-alert_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `wecom-churn-alert_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「客户流失预警清单」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/wecom-churn-alert",
+      "releaseUrl": "https://github.com/campfire-code/wecom-churn-alert/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wecom-churn-alert/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "wecom-churn-alert_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/wecom-churn-alert/releases/download/v0.1.0/wecom-churn-alert_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "wecom-churn-alert_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/wecom-churn-alert/releases/download/v0.1.0/wecom-churn-alert_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "wecom-churn-alert_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/wecom-churn-alert/releases/download/v0.1.0/wecom-churn-alert_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w10",
+      "category": "微信私域",
+      "name": "公众号数据周报",
+      "summary": "官方数据接口，自动出阅读、涨粉图表",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `mp-weekly-report_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `mp-weekly-report_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `mp-weekly-report_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「公众号数据周报」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/mp-weekly-report",
+      "releaseUrl": "https://github.com/campfire-code/mp-weekly-report/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/mp-weekly-report/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "mp-weekly-report_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/mp-weekly-report/releases/download/v0.1.0/mp-weekly-report_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "mp-weekly-report_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/mp-weekly-report/releases/download/v0.1.0/mp-weekly-report_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "mp-weekly-report_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/mp-weekly-report/releases/download/v0.1.0/mp-weekly-report_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w11",
+      "category": "微信私域",
+      "name": "朋友圈文案日更",
+      "summary": "按商品库和节日日历生成一周文案和九宫格配图，手动发布",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `moments-daily-writer_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `moments-daily-writer_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `moments-daily-writer_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「朋友圈文案日更」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/moments-daily-writer",
+      "releaseUrl": "https://github.com/campfire-code/moments-daily-writer/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/moments-daily-writer/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "moments-daily-writer_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/moments-daily-writer/releases/download/v0.1.0/moments-daily-writer_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "moments-daily-writer_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/moments-daily-writer/releases/download/v0.1.0/moments-daily-writer_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "moments-daily-writer_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/moments-daily-writer/releases/download/v0.1.0/moments-daily-writer_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w12",
+      "category": "微信私域",
+      "name": "私域话术库快捷回复",
+      "summary": "桌面小窗，按场景搜话术一键复制",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `script-quick-reply_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `script-quick-reply_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `script-quick-reply_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「私域话术库快捷回复」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/script-quick-reply",
+      "releaseUrl": "https://github.com/campfire-code/script-quick-reply/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/script-quick-reply/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "script-quick-reply_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.1.0/script-quick-reply_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "script-quick-reply_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.1.0/script-quick-reply_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "script-quick-reply_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/script-quick-reply/releases/download/v0.1.0/script-quick-reply_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w13",
+      "category": "微信私域",
+      "name": "聊天截图转客户档案",
+      "summary": "截图 OCR 后抽取需求、预算、意向",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `chat-screenshot-to-crm_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `chat-screenshot-to-crm_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `chat-screenshot-to-crm_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「聊天截图转客户档案」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/chat-screenshot-to-crm",
+      "releaseUrl": "https://github.com/campfire-code/chat-screenshot-to-crm/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/chat-screenshot-to-crm/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "chat-screenshot-to-crm_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/chat-screenshot-to-crm/releases/download/v0.1.0/chat-screenshot-to-crm_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "chat-screenshot-to-crm_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/chat-screenshot-to-crm/releases/download/v0.1.0/chat-screenshot-to-crm_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "chat-screenshot-to-crm_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/chat-screenshot-to-crm/releases/download/v0.1.0/chat-screenshot-to-crm_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w15",
+      "category": "微信私域",
+      "name": "订单 / 库存告警推到微信",
+      "summary": "读库存表和订单表，异常时推到企微 / 钉钉 / 飞书群",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `wechat-alert-push_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `wechat-alert-push_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `wechat-alert-push_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「订单 / 库存告警推到微信」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/wechat-alert-push",
+      "releaseUrl": "https://github.com/campfire-code/wechat-alert-push/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/wechat-alert-push/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "wechat-alert-push_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/wechat-alert-push/releases/download/v0.1.0/wechat-alert-push_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "wechat-alert-push_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/wechat-alert-push/releases/download/v0.1.0/wechat-alert-push_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "wechat-alert-push_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/wechat-alert-push/releases/download/v0.1.0/wechat-alert-push_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": "easychen/wecomchan",
+      "risk": "low"
+    },
+    {
+      "id": "w17",
+      "category": "微信私域",
+      "name": "机器人 Webhook 调试器",
+      "summary": "钉钉、飞书、企微机器人消息统一调试",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `bot-webhook-debugger_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `bot-webhook-debugger_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `bot-webhook-debugger_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「机器人 Webhook 调试器」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/bot-webhook-debugger",
+      "releaseUrl": "https://github.com/campfire-code/bot-webhook-debugger/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/bot-webhook-debugger/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "bot-webhook-debugger_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/bot-webhook-debugger/releases/download/v0.1.0/bot-webhook-debugger_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "bot-webhook-debugger_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/bot-webhook-debugger/releases/download/v0.1.0/bot-webhook-debugger_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "bot-webhook-debugger_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/bot-webhook-debugger/releases/download/v0.1.0/bot-webhook-debugger_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w19",
+      "category": "微信私域",
+      "name": "视频号直播话术生成",
+      "summary": "按商品生成直播讲解稿和互动话术",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `live-script-writer_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `live-script-writer_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `live-script-writer_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「视频号直播话术生成」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/live-script-writer",
+      "releaseUrl": "https://github.com/campfire-code/live-script-writer/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/live-script-writer/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "live-script-writer_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/live-script-writer/releases/download/v0.1.0/live-script-writer_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "live-script-writer_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/live-script-writer/releases/download/v0.1.0/live-script-writer_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "live-script-writer_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/live-script-writer/releases/download/v0.1.0/live-script-writer_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "low"
+    },
+    {
+      "id": "w20",
+      "category": "微信私域",
+      "name": "手机备份聊天导出（本人数据）",
+      "summary": "从手机备份导出本人聊天记录，全程本地",
+      "delivery": "mirror",
+      "price": null,
+      "version": "1.9.5.13-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [BlueMatthew/WechatExporter](https://github.com/BlueMatthew/WechatExporter) 的官方发布 [v1.9.5.13](https://github.com/BlueMatthew/WechatExporter/releases/tag/v1.9.5.13)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `wechat-backup-exporter_1.9.5.13-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-macos-cmd.zip`\n- `wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-macos.zip`\n- `wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-win-cmd.zip`\n- `wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-win.zip`\n",
+      "repoUrl": "https://github.com/campfire-code/wechat-backup-exporter",
+      "releaseUrl": "https://github.com/campfire-code/wechat-backup-exporter/releases/tag/v1.9.5.13-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Windows",
+          "name": "wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-win-cmd.zip",
+          "url": "https://github.com/campfire-code/wechat-backup-exporter/releases/download/v1.9.5.13-campfire.1/wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-win-cmd.zip"
+        },
+        {
+          "platform": "Windows",
+          "name": "wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-win.zip",
+          "url": "https://github.com/campfire-code/wechat-backup-exporter/releases/download/v1.9.5.13-campfire.1/wechat-backup-exporter_1.9.5.13-campfire.1_v1.9.5.13-x64-win.zip"
+        }
+      ],
+      "upstream": "BlueMatthew/WechatExporter",
+      "risk": "mid"
+    },
+    {
+      "id": "w28",
+      "category": "微信私域",
+      "name": "机器人多账号管理后台",
+      "summary": "多个机器人账号集中管理",
+      "delivery": "docker",
+      "price": null,
+      "version": "0.1.36-campfire.1",
+      "releaseNotes": "### 一键部署（需要一台装好 Docker 的服务器或电脑）\n\n```bash\nmkdir bot-hub && cd bot-hub\n# 下载本页附件 docker-compose.yml（以及 .env.example，改名为 .env 并按说明填写）\ndocker compose up -d\n```\n\n镜像：`ghcr.io/campfire-code/bot-hub:0.1.36-campfire.1`（同时提供 `latest`），支持 x86 与 ARM 服务器。\n\n完整的中文部署教程、需要准备的账号与配置见仓库首页 README。\n\n> `.env` 里是你的密钥：只放在自己的服务器上，不要提交到公开仓库，也不要把容器日志公开发出来。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/bot-hub",
+      "releaseUrl": "https://github.com/campfire-code/bot-hub/releases/tag/v0.1.36-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Docker 部署文件",
+          "name": "docker-compose.yml",
+          "url": "https://github.com/campfire-code/bot-hub/releases/download/v0.1.36-campfire.1/docker-compose.yml"
+        }
+      ],
+      "upstream": "openilink/openilink-hub",
+      "risk": "mid"
+    },
+    {
+      "id": "a01",
+      "category": "AI 助手",
+      "name": "网页自动填表 / 采集助手",
+      "summary": "用一句话让 AI 操作浏览器完成重复操作",
+      "delivery": "launcher",
+      "price": null,
+      "version": "3.0.0-campfire.1",
+      "releaseNotes": "### 下载与启动\n\n下载 `browser-agent_3.0.0-campfire.1_portable.zip`，解压到一个**路径里没有中文和空格**的文件夹（例如 `D:\\tools\\browser-agent`）。\n\n- **Windows**：双击「启动（Windows 双击）.bat」。\n- **Mac**：右键「启动（Mac 双击）.command」→「打开」。直接双击被拦时，到「系统设置 → 隐私与安全性」点「仍要打开」。\n\n第一次启动会自动下载 Python 和依赖，可以选国内镜像加速，耗时几分钟到十几分钟；以后再启动就很快。详细说明见仓库首页 README。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具基于上游开源项目，版权归原作者所有，按上游许可证分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/browser-agent",
+      "releaseUrl": "https://github.com/campfire-code/browser-agent/releases/tag/v3.0.0-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Windows / macOS 双击启动包",
+          "name": "browser-agent_3.0.0-campfire.1_portable.zip",
+          "url": "https://github.com/campfire-code/browser-agent/releases/download/v3.0.0-campfire.1/browser-agent_3.0.0-campfire.1_portable.zip"
+        }
+      ],
+      "upstream": "browser-use/web-ui",
+      "risk": "mid"
+    },
+    {
+      "id": "a04",
+      "category": "AI 助手",
+      "name": "Excel AI 助手",
+      "summary": "让 Claude 等 AI 助手直接读写 Excel（MCP）",
+      "delivery": "mirror",
+      "price": null,
+      "version": "2.2.2-campfire.1",
+      "releaseNotes": "本版本的安装包来自上游项目 [haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server) 的官方发布 [v2.2.2](https://github.com/haris-musa/excel-mcp-server/releases/tag/v2.2.2)，**篝火没有修改其中任何文件**，只统一了文件名（前缀 `excel-mcp_2.2.2-campfire.1_`），并附上 `SHA256SUMS.txt` 供核对。\n\n使用方法、常见问题和中文说明见本仓库首页 README。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：如果提示「无法验证开发者」或「已损坏」，打开「系统设置 → 隐私与安全性」点「仍要打开」；仍打不开时参考 README 的说明。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。软件版权归上游作者所有，按上游许可证再分发。全部工具见 https://github.com/campfire-code/toolkit-hub\n\n### 本次附件\n\n- `SHA256SUMS.txt`\n- `excel-mcp_2.2.2-campfire.1_excel-mcp-server-2.2.2.mcpb`\n",
+      "repoUrl": "https://github.com/campfire-code/excel-mcp",
+      "releaseUrl": "https://github.com/campfire-code/excel-mcp/releases/tag/v2.2.2-campfire.1",
+      "screenshot": null,
+      "downloads": [
+        {
+          "platform": "Claude Desktop 扩展",
+          "name": "excel-mcp_2.2.2-campfire.1_excel-mcp-server-2.2.2.mcpb",
+          "url": "https://github.com/campfire-code/excel-mcp/releases/download/v2.2.2-campfire.1/excel-mcp_2.2.2-campfire.1_excel-mcp-server-2.2.2.mcpb"
+        }
+      ],
+      "upstream": "haris-musa/excel-mcp-server",
+      "risk": "low"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T01:31:25.942Z",
+  "generatedAt": "2026-10-24T03:06:56.292Z",
   "decisionsSource": "https://claude.ai/artifact/5r6mavUV5zM6ptrAn5Zkfi decisions/plan v54",
   "engineering": {
     "q_batch": "20",
@@ -153,10 +153,10 @@
         "layout": "a",
         "palette": "teal"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/video-bg-remover",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/video-bg-remover/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -696,10 +696,10 @@
         "layout": "e",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/ecom-ai-customer-service",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ecom-ai-customer-service/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -749,10 +749,10 @@
         "layout": "c",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/douyin-danmaku-stats",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/douyin-danmaku-stats/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -775,10 +775,10 @@
         "layout": "e",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/price-compare-crawler",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/price-compare-crawler/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -801,10 +801,10 @@
         "layout": "a",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/image-search-1688",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/image-search-1688/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1484,7 +1484,7 @@
       "form": "桌面",
       "risk": "high",
       "recommended": "no",
-      "decision": "do",
+      "decision": "no",
       "firstBatch": false,
       "track": "own",
       "trackLabel": "从零写",
@@ -1510,7 +1510,7 @@
       "form": "桌面",
       "risk": "high",
       "recommended": "no",
-      "decision": "do",
+      "decision": "no",
       "firstBatch": false,
       "track": "own",
       "trackLabel": "从零写",
@@ -1765,10 +1765,10 @@
         "layout": "e",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/batch-video-remix",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/batch-video-remix/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1795,10 +1795,10 @@
         "layout": "b",
         "palette": "amber"
       },
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/offline-subtitle",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/offline-subtitle/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1860,11 +1860,11 @@
       "slug": "text-to-speech",
       "category": "内容生产",
       "name": "文案转配音",
-      "desc": "多音色配音，免费（使用微软非官方接口，可能失效）",
+      "desc": "离线合成中英混读配音（Kokoro 多音色），导出 MP3 / WAV 和对齐字幕",
       "upstream": {
-        "repo": "rany2/edge-tts",
-        "stars": "12k",
-        "license": "LGPL-3.0"
+        "repo": "k2-fsa/sherpa-onnx",
+        "stars": "",
+        "license": "Apache-2.0"
       },
       "form": "桌面",
       "risk": "mid",
@@ -1879,10 +1879,10 @@
         "layout": "c",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/text-to-speech",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/text-to-speech/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1899,7 +1899,7 @@
       "form": "手机",
       "risk": "low",
       "recommended": "later",
-      "decision": "do",
+      "decision": "no",
       "firstBatch": false,
       "track": "wrap",
       "trackLabel": "自研界面 + 开源库",
@@ -2381,7 +2381,7 @@
       "desc": "各平台视频下载",
       "upstream": {
         "repo": "yt-dlp/yt-dlp",
-        "stars": "200k",
+        "stars": "",
         "license": "Unlicense"
       },
       "form": "桌面",
@@ -2397,10 +2397,10 @@
         "layout": "a",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/video-downloader",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/video-downloader/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2907,11 +2907,11 @@
       "slug": "speech-to-text",
       "category": "办公提效",
       "name": "录音转文字",
-      "desc": "中文识别准，支持说话人区分",
+      "desc": "本机离线转写录音，导出带时间戳的 TXT / Word / SRT（不区分说话人）",
       "upstream": {
-        "repo": "SYSTRAN/faster-whisper",
-        "stars": "26k",
-        "license": "MIT"
+        "repo": "huggingface/transformers.js",
+        "stars": "",
+        "license": "Apache-2.0"
       },
       "form": "桌面",
       "risk": "low",
@@ -2926,10 +2926,10 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/speech-to-text",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/speech-to-text/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -2939,9 +2939,9 @@
       "name": "电话录音质检",
       "desc": "转写后检查话术命中、违禁词",
       "upstream": {
-        "repo": "modelscope/FunASR",
-        "stars": "21k",
-        "license": "MIT"
+        "repo": "huggingface/transformers.js",
+        "stars": "",
+        "license": "Apache-2.0"
       },
       "form": "桌面",
       "risk": "low",
@@ -2956,10 +2956,10 @@
         "layout": "f",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/call-qa",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/call-qa/releases/tag/v0.1.0",
       "notes": ""
     },
     {

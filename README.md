@@ -4,7 +4,7 @@
 
 面向电商运营、微信私域、内容生产、办公提效的开源小工具合集。每个工具是 [campfire-code](https://github.com/campfire-code) 组织下的独立仓库，提供源码与 Windows / macOS 安装包。
 
-- 计划做 95 个，已发布 78 个；另有 27 个后做，见 [docs/backlog.md](docs/backlog.md)
+- 计划做 92 个，已发布 89 个；另有 30 个后做，见 [docs/backlog.md](docs/backlog.md)
 - 总方案：[docs/00-总方案.md](docs/00-总方案.md)
 - 本页由 `node scripts/gen-docs.mjs` 根据 `catalog/tools.json` 生成，不要手改
 
@@ -16,7 +16,7 @@
 | e02 | Temu 半托管上品表格 | 按 Temu 模板批量生成核价表、属性表 | `temu-listing-sheet` | 从零写 | 低 | 待做 | — |
 | e03 | 主图一键白底（批量） | 本地抠图，整个文件夹一次处理 | [bg-remover-batch](https://github.com/campfire-code/bg-remover-batch) | [danielgatis/rembg](https://github.com/danielgatis/rembg) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/bg-remover-batch/releases/tag/v0.1.1) |
 | e04 | 高清商品抠图 | 发丝、透明件等难抠的商品 | [hd-product-cutout](https://github.com/campfire-code/hd-product-cutout) | [ZhengPeng7/BiRefNet](https://github.com/ZhengPeng7/BiRefNet) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/hd-product-cutout/releases/tag/v0.1.0) |
-| e05 | 商品短视频去背景 | 视频逐帧去背景 | [video-bg-remover](https://github.com/campfire-code/video-bg-remover) | [danielgatis/rembg](https://github.com/danielgatis/rembg) · MIT | 低 | 进行中 | — |
+| e05 | 商品短视频去背景 | 视频逐帧去背景 | [video-bg-remover](https://github.com/campfire-code/video-bg-remover) | [danielgatis/rembg](https://github.com/danielgatis/rembg) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/video-bg-remover/releases/tag/v0.1.0) |
 | e06 | 详情图多语种翻译 | 识别图里的中文，翻译成英 / 泰 / 越文后回填 | [detail-image-translator](https://github.com/campfire-code/detail-image-translator) | [zyddnys/manga-image-translator](https://github.com/zyddnys/manga-image-translator) · GPL-3.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/detail-image-translator/releases/tag/v0.1.0) |
 | e07 | 主图多平台尺寸导出 | 一张图按各平台尺寸和大小要求一键导出 | [main-image-resizer](https://github.com/campfire-code/main-image-resizer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/main-image-resizer/releases/tag/v0.1.0) |
 | e08 | SKU 规格图拼图加水印 | 色卡、规格图自动排版加水印 | [sku-image-composer](https://github.com/campfire-code/sku-image-composer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/sku-image-composer/releases/tag/v0.1.0) |
@@ -36,16 +36,16 @@
 | e22 | 采购单对账 | 油猴脚本：导出淘宝「已买到的宝贝」订单（不含 1688），用来和入库对账 | [purchase-order-export](https://github.com/campfire-code/purchase-order-export) | [Sky-seeker/BuyerOrdersExport](https://github.com/Sky-seeker/BuyerOrdersExport) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/purchase-order-export/releases/tag/v2.0.4-campfire.1) |
 | e23 | 闲鱼捡漏 / 竞品监控（仅开源） | 关键词监控新上架商品，AI 筛选 | [xianyu-monitor](https://github.com/campfire-code/xianyu-monitor) | [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) · MIT | 高 | 已发布 | [下载](https://github.com/campfire-code/xianyu-monitor/releases/tag/v2.5-campfire.1) |
 | e24 | 闲鱼自动发货（仅开源） | 多账号自动发货、自动回复 | [xianyu-auto-delivery](https://github.com/campfire-code/xianyu-auto-delivery) | [Christ9038/Ydisks-Xianyu-Helper](https://github.com/Christ9038/Ydisks-Xianyu-Helper) · Apache-2.0 | 高 | 已发布 | [下载](https://github.com/campfire-code/xianyu-auto-delivery/releases/tag/v1.0.14-campfire.1) |
-| e25 | 多平台 AI 客服（仅开源） | 拼多多 / 千牛 / 抖店客服窗口自动回复 | `ecom-ai-customer-service` | 从零写 | 高 | 待做 | — |
+| e25 | 多平台 AI 客服（仅开源） | 拼多多 / 千牛 / 抖店客服窗口自动回复 | [ecom-ai-customer-service](https://github.com/campfire-code/ecom-ai-customer-service) | 从零写 | 高 | 已发布 | [下载](https://github.com/campfire-code/ecom-ai-customer-service/releases/tag/v0.1.0) |
 | e26 | 直播间自动讲解 + 弹幕回复（仅开源） | 抖店 / 视频号 / 快手直播辅助 | [live-room-assistant](https://github.com/campfire-code/live-room-assistant) | [qiutongxue/oba-live-tool](https://github.com/qiutongxue/oba-live-tool) · MIT（附声明） | 高 | 已发布 | [下载](https://github.com/campfire-code/live-room-assistant/releases/tag/v1.6.3-campfire.1) |
-| e27 | 直播弹幕关键词统计（仅开源） | 抓抖音弹幕统计下单意向 | `douyin-danmaku-stats` | 从零写 | 高 | 待做 | — |
-| e28 | 淘宝 / 京东 / 1688 比价采集（仅开源） | 关键词批量采集价格 | `price-compare-crawler` | 从零写 | 高 | 待做 | — |
-| e29 | 以图找同款货源（仅开源） | 上传图片在 1688 找同款 | `image-search-1688` | 从零写 | 高 | 待做 | — |
+| e27 | 直播弹幕关键词统计（仅开源） | 抓抖音弹幕统计下单意向 | [douyin-danmaku-stats](https://github.com/campfire-code/douyin-danmaku-stats) | 从零写 | 高 | 已发布 | [下载](https://github.com/campfire-code/douyin-danmaku-stats/releases/tag/v0.1.0) |
+| e28 | 淘宝 / 京东 / 1688 比价采集（仅开源） | 关键词批量采集价格 | [price-compare-crawler](https://github.com/campfire-code/price-compare-crawler) | 从零写 | 高 | 已发布 | [下载](https://github.com/campfire-code/price-compare-crawler/releases/tag/v0.1.0) |
+| e29 | 以图找同款货源（仅开源） | 上传图片在 1688 找同款 | [image-search-1688](https://github.com/campfire-code/image-search-1688) | 从零写 | 高 | 已发布 | [下载](https://github.com/campfire-code/image-search-1688/releases/tag/v0.1.0) |
 | e30 | 电商多店 AI 连接器 | 让 AI 助手直接查多个国内平台店铺数据（MCP） | [ecom-mcp-connector](https://github.com/campfire-code/ecom-mcp-connector) | [TonyWang-hub/mcp-cn-commerce](https://github.com/TonyWang-hub/mcp-cn-commerce) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/ecom-mcp-connector/releases/tag/v0.1.6-campfire.1) |
 | e31 | AI 详情页一键生成 | 输入卖点和商品图，生成整套详情页 | [ai-detail-page](https://github.com/campfire-code/ai-detail-page) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/ai-detail-page/releases/tag/v0.1.0) |
 | e32 | 商品主图转短视频 | 多张图自动运镜、配字幕和配音 | [product-image-to-video](https://github.com/campfire-code/product-image-to-video) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/product-image-to-video/releases/tag/v0.1.0) |
 
-## 微信私域（22）
+## 微信私域（20）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
@@ -65,14 +65,12 @@
 | w17 | 机器人 Webhook 调试器 | 钉钉、飞书、企微机器人消息统一调试 | [bot-webhook-debugger](https://github.com/campfire-code/bot-webhook-debugger) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/bot-webhook-debugger/releases/tag/v0.1.0) |
 | w19 | 视频号直播话术生成 | 按商品生成直播讲解稿和互动话术 | [live-script-writer](https://github.com/campfire-code/live-script-writer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/live-script-writer/releases/tag/v0.1.0) |
 | w20 | 手机备份聊天导出（本人数据） | 从手机备份导出本人聊天记录，全程本地 | [wechat-backup-exporter](https://github.com/campfire-code/wechat-backup-exporter) | [BlueMatthew/WechatExporter](https://github.com/BlueMatthew/WechatExporter) · GPL-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/wechat-backup-exporter/releases/tag/v1.9.5.13-campfire.1) |
-| w23 | 个微自动回复（桌面）（仅开源） | 操作 Windows 微信界面自动回复 | `wechat-auto-reply-rpa` | 从零写 | 高 | 待做 | — |
-| w24 | 个微 Hook 机器人（仅开源） | 注入微信进程收发消息 | `wechat-hook-bot` | 从零写 | 高 | 待做 | — |
 | w25 | 批量加好友 / 群发（仅开源） | 微信 4.0 界面自动化 | [wechat-bulk-rpa](https://github.com/campfire-code/wechat-bulk-rpa) | [Hello-Mr-Crab/pywechat](https://github.com/Hello-Mr-Crab/pywechat) · LGPL-2.1 | 高 | 已发布 | [下载](https://github.com/campfire-code/wechat-bulk-rpa/releases/tag/v1.9.8-campfire.1) |
 | w26 | 企微群管家（安卓）（仅开源） | 安卓无障碍控制企微做群管理 | [wecom-group-manager-android](https://github.com/campfire-code/wecom-group-manager-android) | [gallonyin/worktool](https://github.com/gallonyin/worktool) · Apache-2.0 | 高 | 已发布 | [下载](https://github.com/campfire-code/wecom-group-manager-android/releases/tag/v2.8.0-campfire.1) |
 | w27 | 视频号视频下载（仅开源） | 下载视频号视频 | [channels-video-downloader](https://github.com/campfire-code/channels-video-downloader) | [nobiyou/wx_channel](https://github.com/nobiyou/wx_channel) · MIT | 高 | 已发布 | [下载](https://github.com/campfire-code/channels-video-downloader/releases/tag/v5.7.13-campfire.1) |
 | w28 | 机器人多账号管理后台 | 多个机器人账号集中管理 | [bot-hub](https://github.com/campfire-code/bot-hub) | [openilink/openilink-hub](https://github.com/openilink/openilink-hub) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/bot-hub/releases/tag/v0.1.36-campfire.1) |
 
-## 内容生产（23）
+## 内容生产（22）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
@@ -80,11 +78,10 @@
 | c02 | 影视解说一键成片（仅开源） | 解说文案 + 自动剪辑（影视素材版权风险高） | [film-commentary-maker](https://github.com/campfire-code/film-commentary-maker) | [linyqh/NarratoAI](https://github.com/linyqh/NarratoAI) · MIT | 高 | 已发布 | [下载](https://github.com/campfire-code/film-commentary-maker/releases/tag/v0.8.7-campfire.1) |
 | c03 | 长视频一键切爆点 | 长视频自动切成多条短视频 | [long-video-clipper](https://github.com/campfire-code/long-video-clipper) | [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/long-video-clipper/releases/tag/v1.5.6-campfire.1) |
 | c04 | 剪映草稿批量生成器 | 批量生成剪映草稿，打开剪映即可微调 | [jianying-draft-generator](https://github.com/campfire-code/jianying-draft-generator) | [GuanYixuan/pyJianYingDraft](https://github.com/GuanYixuan/pyJianYingDraft) · Apache-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/jianying-draft-generator/releases/tag/v0.1.0) |
-| c05 | 批量混剪工厂 | 素材批量混剪出多条视频 | `batch-video-remix` | 从零写 | 中 | 待做 | — |
-| c06 | 离线视频转字幕 | 不联网、不用显卡，Mac 和 Windows 都能跑 | [offline-subtitle](https://github.com/campfire-code/offline-subtitle) | [huggingface/transformers.js](https://github.com/huggingface/transformers.js) · Apache-2.0 | 低 | 进行中 | — |
+| c05 | 批量混剪工厂 | 素材批量混剪出多条视频 | [batch-video-remix](https://github.com/campfire-code/batch-video-remix) | 从零写 | 中 | 已发布 | [下载](https://github.com/campfire-code/batch-video-remix/releases/tag/v0.1.0) |
+| c06 | 离线视频转字幕 | 不联网、不用显卡，Mac 和 Windows 都能跑 | [offline-subtitle](https://github.com/campfire-code/offline-subtitle) | [huggingface/transformers.js](https://github.com/huggingface/transformers.js) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/offline-subtitle/releases/tag/v0.1.0) |
 | c08 | 视频出海翻译配音 | 字幕翻译 + 配音一条龙 | [video-translate-dub](https://github.com/campfire-code/video-translate-dub) | [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo) · Apache-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/video-translate-dub/releases/tag/v3.1.1-campfire.1) |
-| c10 | 文案转配音 | 多音色配音，免费（使用微软非官方接口，可能失效） | `text-to-speech` | [rany2/edge-tts](https://github.com/rany2/edge-tts) · LGPL-3.0 | 中 | 待做 | — |
-| c11 | 手机离线配音 / 识别 | 手机上离线语音识别和合成 | `offline-voice` | [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) · Apache-2.0 | 低 | 待做 | — |
+| c10 | 文案转配音 | 离线合成中英混读配音（Kokoro 多音色），导出 MP3 / WAV 和对齐字幕 | [text-to-speech](https://github.com/campfire-code/text-to-speech) | [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) · Apache-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/text-to-speech/releases/tag/v0.1.0) |
 | c12 | 声音克隆配音（仅开源） | 少量样本克隆声音（需显卡、需本人授权、需加 AI 标识） | [voice-clone](https://github.com/campfire-code/voice-clone) | [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) · MIT | 高 | 已发布 | [下载](https://github.com/campfire-code/voice-clone/releases/tag/v20250606v2pro-campfire.1) |
 | c14 | 自家直播自动录制存档 | 直播开播自动录制，用于自家回放和切片 | [live-recorder](https://github.com/campfire-code/live-recorder) | [ihmily/StreamCap](https://github.com/ihmily/StreamCap) · Apache-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/live-recorder/releases/tag/v1.0.3-campfire.1) |
 | c16 | 去硬字幕 / 去水印（仅开源） | 视频去字幕和水印（需显卡，侵权风险） | [subtitle-watermark-remover](https://github.com/campfire-code/subtitle-watermark-remover) | [YaoFANGUK/video-subtitle-remover](https://github.com/YaoFANGUK/video-subtitle-remover) · Apache-2.0 | 高 | 已发布 | [下载](https://github.com/campfire-code/subtitle-watermark-remover/releases/tag/v1.4.0-campfire.1) |
@@ -96,7 +93,7 @@
 | c23 | AI 内容标识器 | 按《人工智能生成合成内容标识办法》一键加显式标识和元数据 | [ai-content-labeler](https://github.com/campfire-code/ai-content-labeler) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/ai-content-labeler/releases/tag/v0.1.0) |
 | c24 | 素材库查重 | 图片 / 视频指纹比对，避免重复发布被判搬运 | [asset-dedup](https://github.com/campfire-code/asset-dedup) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/asset-dedup/releases/tag/v0.1.0) |
 | c26 | 一键多平台发布（仅开源） | 抖音、视频号、小红书、快手、B 站自动上传 | [social-auto-upload](https://github.com/campfire-code/social-auto-upload) | [dreammis/social-auto-upload](https://github.com/dreammis/social-auto-upload) · MIT | 高 | 已发布 | [下载](https://github.com/campfire-code/social-auto-upload/releases/tag/v1.0.0-campfire.1) |
-| c29 | 全网视频下载器（仅开源） | 各平台视频下载 | `video-downloader` | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) · Unlicense | 高 | 待做 | — |
+| c29 | 全网视频下载器（仅开源） | 各平台视频下载 | [video-downloader](https://github.com/campfire-code/video-downloader) | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) · Unlicense | 高 | 已发布 | [下载](https://github.com/campfire-code/video-downloader/releases/tag/v0.1.0) |
 | c30 | 抖音无水印下载（仅开源） | 解析抖音 / TikTok 无水印视频 | [douyin-downloader](https://github.com/campfire-code/douyin-downloader) | [Evil0ctal/Douyin_TikTok_Download_API](https://github.com/Evil0ctal/Douyin_TikTok_Download_API) · Apache-2.0 | 高 | 已发布 | [下载](https://github.com/campfire-code/douyin-downloader/releases/tag/v5.1.7-campfire.1) |
 | c31 | 评论情绪与需求分析 | 分析自有账号导出的评论数据 | [comment-insight](https://github.com/campfire-code/comment-insight) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/comment-insight/releases/tag/v0.1.0) |
 
@@ -116,8 +113,8 @@
 | o13 | 图片批量压缩转格式 | 压缩、转 WebP / JPG，保持清晰 | [image-compressor](https://github.com/campfire-code/image-compressor) | [GoogleChromeLabs/squoosh](https://github.com/GoogleChromeLabs/squoosh) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/image-compressor/releases/tag/v0.1.1) |
 | o14 | 证件照换底排版 | AI 证件照，换底色、排版打印 | [id-photo](https://github.com/campfire-code/id-photo) | [Zeyi-Lin/HivisionIDPhotos](https://github.com/Zeyi-Lin/HivisionIDPhotos) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/id-photo/releases/tag/v0.1.0) |
 | o15 | 批量二维码标签 | 带编号的二维码批量生成，排版成可打印 PDF | [batch-qrcode-labels](https://github.com/campfire-code/batch-qrcode-labels) | [soldair/node-qrcode](https://github.com/soldair/node-qrcode) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/batch-qrcode-labels/releases/tag/v0.1.0) |
-| o16 | 录音转文字 | 中文识别准，支持说话人区分 | `speech-to-text` | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) · MIT | 低 | 待做 | — |
-| o17 | 电话录音质检 | 转写后检查话术命中、违禁词 | `call-qa` | [modelscope/FunASR](https://github.com/modelscope/FunASR) · MIT | 低 | 待做 | — |
+| o16 | 录音转文字 | 本机离线转写录音，导出带时间戳的 TXT / Word / SRT（不区分说话人） | [speech-to-text](https://github.com/campfire-code/speech-to-text) | [huggingface/transformers.js](https://github.com/huggingface/transformers.js) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/speech-to-text/releases/tag/v0.1.0) |
+| o17 | 电话录音质检 | 转写后检查话术命中、违禁词 | [call-qa](https://github.com/campfire-code/call-qa) | [huggingface/transformers.js](https://github.com/huggingface/transformers.js) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/call-qa/releases/tag/v0.1.0) |
 | o18 | 会议纪要助手 | 本地录音生成纪要和待办 | [meeting-minutes](https://github.com/campfire-code/meeting-minutes) | [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/meeting-minutes/releases/tag/v0.4.1-campfire.1) |
 | o21 | 截图识字翻译 | 截图 OCR 后用大模型翻译 | [screenshot-translate](https://github.com/campfire-code/screenshot-translate) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/screenshot-translate/releases/tag/v0.1.0) |
 
