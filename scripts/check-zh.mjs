@@ -33,6 +33,8 @@ function badWords(text) {
 
 /** 从源码里取给用户看的文字（用 TypeScript 语法树）：JSX 文本、JSX 的 title / placeholder / aria-label / label / alt 属性、含中文的字符串 */
 function userTexts(src, file) {
+  // 文件开头写了「check-zh: 整个文件忽略」的跳过（例如平台消息格式说明，字段名必须照抄平台文档）
+  if (/check-zh: 整个文件忽略/.test(src.slice(0, 400))) return [];
   const sf = ts.createSourceFile(file, src, ts.ScriptTarget.Latest, true, file.endsWith('x') ? ts.ScriptKind.TSX : ts.ScriptKind.TS);
   const out = [];
   // 上一行写了「check-zh: 忽略」注释的语句跳过（只用于匹配数据、不显示给用户的字符串，例如导入表头的英文别名）

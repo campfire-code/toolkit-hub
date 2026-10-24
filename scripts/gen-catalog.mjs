@@ -117,13 +117,16 @@ const DESC_FIX = {
 const NO_UPSTREAM = new Set(['e16', 'e17', 'e19', 'w08', 'e28', 'w23', 'w24', 'e25', 'e27', 'e29', 'c05', 'w16']);
 const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' }, a01: { repo: 'browser-use/web-ui', stars: '16.6k', license: 'MIT' }, c06: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, e05: { repo: 'danielgatis/rembg', stars: '', license: 'MIT' }, o16: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, o17: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, c29: { repo: 'yt-dlp/yt-dlp', stars: '', license: 'Unlicense' }, c10: { repo: 'k2-fsa/sherpa-onnx', stars: '', license: 'Apache-2.0' } };
 
+// 改名：用户 2026-10-24 要求产品里只能有中文（术语表允许的原文除外）
+const NAME_FIX = { w17: '群机器人调试器', a05: '浏览器助手（AI 接入教程）' };
+
 const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec, first]) => {
   const decision = decisions.tools[id] ?? rec;
   if (NO_UPSTREAM.has(id)) base = '';
   const track = !base ? 'own' : FORK.has(id) ? 'fork' : 'wrap';
   const p = prev[id] ?? {};
   return {
-    id, slug: SLUG[id], category: CATS[cat], name, desc: DESC_FIX[id] ?? desc,
+    id, slug: SLUG[id], category: CATS[cat], name: NAME_FIX[id] ?? name, desc: DESC_FIX[id] ?? desc,
     upstream: UPSTREAM_FIX[id] ?? (base ? { repo: base, stars: star, license } : null),
     form, risk, recommended: rec, decision,
     firstBatch: Boolean(first) && decision === 'do',

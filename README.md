@@ -64,7 +64,7 @@
 | w14 | 群欢迎语 / 群公告模板 | 模板编辑，输出标准文本 | [group-welcome-templates](https://github.com/campfire-code/script-quick-reply) | 从零写 | 低 | 已并入其他工具 | [下载](https://github.com/campfire-code/script-quick-reply/releases/tag/v0.2.0) |
 | w15 | 订单 / 库存告警推到微信 | 读库存表和订单表，异常时推到企微 / 钉钉 / 飞书群 | [wechat-alert-push](https://github.com/campfire-code/wechat-alert-push) | [easychen/wecomchan](https://github.com/easychen/wecomchan) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/wechat-alert-push/releases/tag/v0.1.0) |
 | w16 | 验证码 / 订单通知转发 | 手机短信和通知转发到企微、钉钉 | [sms-notify-forwarder](https://github.com/campfire-code/sms-notify-forwarder) | 从零写 | 中 | 已发布 | [下载](https://github.com/campfire-code/sms-notify-forwarder/releases/tag/v0.1.0) |
-| w17 | 机器人 Webhook 调试器 | 钉钉、飞书、企微机器人消息统一调试 | [bot-webhook-debugger](https://github.com/campfire-code/bot-webhook-debugger) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/bot-webhook-debugger/releases/tag/v0.1.0) |
+| w17 | 群机器人调试器 | 钉钉、飞书、企微机器人消息统一调试 | [bot-webhook-debugger](https://github.com/campfire-code/bot-webhook-debugger) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/bot-webhook-debugger/releases/tag/v0.1.0) |
 | w18 | 小程序订阅消息调试 | 批量配置和测试订阅消息模板 | [mp-subscribe-msg-tester](https://github.com/campfire-code/mp-subscribe-msg-tester) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/mp-subscribe-msg-tester/releases/tag/v0.1.0) |
 | w19 | 视频号直播话术生成 | 按商品生成直播讲解稿和互动话术 | [live-script-writer](https://github.com/campfire-code/live-script-writer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/live-script-writer/releases/tag/v0.1.0) |
 | w20 | 手机备份聊天导出（本人数据） | 把自己 iPhone 备份里的微信聊天记录，导出成 HTML、PDF 或文本 | [wechat-backup-exporter](https://github.com/campfire-code/wechat-backup-exporter) | [BlueMatthew/WechatExporter](https://github.com/BlueMatthew/WechatExporter) · GPL-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/wechat-backup-exporter/releases/tag/v1.9.5.13-campfire.1) |
@@ -138,7 +138,7 @@
 | a02 | 后台批量操作机器人 | 自然语言驱动的后台批量操作 | [backend-batch-bot](https://github.com/campfire-code/backend-batch-bot) | [web-infra-dev/midscene](https://github.com/web-infra-dev/midscene) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/backend-batch-bot/releases/tag/v1.17.0-campfire.1) |
 | a03 | 竞品价格 / 资讯采集器 | 网页转结构化数据，定时采集 | [web-data-collector](https://github.com/campfire-code/web-data-collector) | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) · Apache-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/web-data-collector/releases/tag/v0.9.5-campfire.1) |
 | a04 | Excel AI 助手 | 让 Claude 等 AI 助手直接读写 Excel（MCP） | [excel-mcp](https://github.com/campfire-code/excel-mcp) | [haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/excel-mcp/releases/tag/v2.2.2-campfire.1) |
-| a05 | 浏览器助手（MCP） | 让 AI 助手控制浏览器 | [browser-mcp](https://github.com/campfire-code/browser-mcp) | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/browser-mcp/releases/tag/v0.0.83-campfire.1) |
+| a05 | 浏览器助手（AI 接入教程） | 让 AI 助手控制浏览器 | [browser-mcp](https://github.com/campfire-code/browser-mcp) | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/browser-mcp/releases/tag/v0.0.83-campfire.1) |
 
 ## 许可证
 

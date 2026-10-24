@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T11:48:57.249Z",
+  "generatedAt": "2026-10-24T18:43:31.604Z",
   "note": "价格留空，由用户定",
   "items": [
     {
@@ -2313,7 +2313,7 @@
     {
       "id": "w17",
       "category": "微信私域",
-      "name": "机器人 Webhook 调试器",
+      "name": "群机器人调试器",
       "summary": "钉钉、飞书、企微机器人消息统一调试",
       "delivery": "desktop",
       "price": null,
@@ -2556,7 +2556,7 @@
     {
       "id": "a05",
       "category": "AI 助手",
-      "name": "浏览器助手（MCP）",
+      "name": "浏览器助手（AI 接入教程）",
       "summary": "让 AI 助手控制浏览器",
       "delivery": "docs",
       "price": null,
