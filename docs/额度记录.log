@@ -17,3 +17,4 @@
 2026-10-24 04:12:30 第二批 15 个：13 个发布并上架生产（在售 97），w14 并入 w12，w16 待拍板 {"five_hour":{"used_percentage":29,"resets_at":1792844400},"seven_day":{"used_percentage":40,"resets_at":1793073600},"saved_at":1792840347854}
 2026-10-24 04:49:23 w16 自研安卓发布并上架（在售 98） {"five_hour":{"used_percentage":59,"resets_at":1792844400},"seven_day":{"used_percentage":44,"resets_at":1793073600},"saved_at":1792842562961}
 2026-10-24 产品打磨：5 小时窗口 4% → 78%（自研 60 个打磨、fork 24 个打磨、上架图 96 套），7 天 45% → 53%。停手等重置（resets_at=1792881000）。
+2026-10-25 产品打磨收尾：o18 o22 a02 汉化自出包、c01 o24 中文名、生产 96 个商品更新核对。新窗口 5 小时读数缺失（tap 只有 seven_day），7 天 44%→56%。 {"seven_day":{"used_percentage":44,"resets_at":1793073600},"saved_at":1792917572245}
