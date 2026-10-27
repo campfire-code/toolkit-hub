@@ -19,6 +19,7 @@ const PLATFORM = [
   [/docker-compose\.yml$/i, 'Docker 部署文件'],
   [/\.user\.js$/i, '油猴脚本'],
   [/\.mcpb$/i, 'Claude Desktop 扩展'],
+  [/\.pdf$/i, '手册 PDF'],
 ];
 const platformOf = (name) => PLATFORM.find(([re]) => re.test(name))?.[1] ?? null;
 

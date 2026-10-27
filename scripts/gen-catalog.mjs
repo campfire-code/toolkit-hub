@@ -88,6 +88,7 @@ const prev = existsSync(root + 'catalog/tools.json')
 // 实际使用的上游与拍板页候选不同时，以实际为准
 // 做出来的功能和调研时的一句话不同，以实际为准
 const DESC_FIX = {
+  e01: '浏览器插件采集 1688 / 淘宝 / 天猫商品，整理类目与规格，自动填拼多多后台草稿或导出上架数据包',
   // 2026-10-24 写应用区文案时按 README 核对出的不准确说法（夸大或缺失），改用 catalog/copy 里的 summary
   e18: '按你填的费率，算 Shopee 商品的佣金、物流、毛利、利润率和保本售价，可批量',
   e10: '上架前自检标题、详情、文案里的广告法违禁词，标出风险并给修改建议',
@@ -118,7 +119,7 @@ const NO_UPSTREAM = new Set(['e16', 'e17', 'e19', 'w08', 'e28', 'w23', 'w24', 'e
 const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' }, a01: { repo: 'browser-use/web-ui', stars: '16.6k', license: 'MIT' }, c06: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, e05: { repo: 'danielgatis/rembg', stars: '', license: 'MIT' }, o16: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, o17: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, c29: { repo: 'yt-dlp/yt-dlp', stars: '', license: 'Unlicense' }, c10: { repo: 'k2-fsa/sherpa-onnx', stars: '', license: 'Apache-2.0' } };
 
 // 改名：用户 2026-10-24 要求产品里只能有中文（术语表允许的原文除外）
-const NAME_FIX = { w17: '群机器人调试器', a05: '浏览器助手（AI 接入教程）' };
+const NAME_FIX = { e01: '1688 拼多多铺货助手', w17: '群机器人调试器', a05: '浏览器助手（AI 接入教程）' };
 
 const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec, first]) => {
   const decision = decisions.tools[id] ?? rec;
@@ -163,7 +164,7 @@ const PERSONAL = [
   ['a08', 'android-automation-base', 'AI 助手', '安卓自动化底座', '装在安卓手机上，电脑配对后远程点击、滑动、截图，每步留日志', null, 'personal'],
   ['a09', 'ai-adoption-handbook', 'AI 助手', 'AI 落地方法论手册', 'AI 工具安装、上手与落地方法论资料包（已脱敏）', null, 'personal'],
   ['e34', 'waimai-ops-handbook', '电商运营', '外卖经营方法论手册', '外卖、选址、抖音同城、开店的经营方法论资料包（已脱敏）', null, 'personal'],
-  ['x01', 'ocean-trade-voyage', '休闲游戏', '原创航海经商游戏', '原创世界的像素风航海经商游戏：航行、靠港、贸易、造船、海战', null, 'personal'],
+  ['x01', 'ocean-trade-voyage', '休闲游戏', '原创航海经商游戏', '原创世界的像素风航海经商游戏：航行、靠港、贸易、造船、海战', 'media', 'personal'],
   ['e35', 'meituan-bid-pacer', '电商运营', '美团点金调价助手', '按昨日曝光分配每小时推广预算，给出点金出价建议，自动保存默认关闭', 'data', 'personal'],
   ['e36', 'meituan-store-collector', '电商运营', '美团门店数据采集（安卓）', '在手机上读取美团商家后台的订单、商品、评价数据存本机，写操作默认关闭', null, 'personal'],
   ['c36', 'zsxq-post-helper', '内容生产', '知识星球发帖助手', '扫码登录知识星球后，一篇篇发图文帖并存档，可 AI 配图', 'text', 'personal'],

@@ -32,7 +32,7 @@
 | o28 | [笔记知识星图](https://github.com/campfire-code/notes-star-map) | 导入自己的笔记，生成能点能拖的知识星空图，看清知识之间的联系 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/notes-star-map/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/notes-star-map/releases/tag/v0.1.0) |  |
 | o29 | [定时任务看板](https://github.com/campfire-code/cron-task-board) | 监控本机定时脚本的运行日志与产出文件，30 天运行热力图 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/cron-task-board/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/cron-task-board/releases/tag/v0.1.0) |  |
 
-## 电商运营（25 个）
+## 电商运营（27 个）
 
 | 编号 | 名称 | 一句话简介 | 交付形式 | 版本 | 截图 | 下载 | 价格 |
 |---|---|---|---|---|---|---|---|
@@ -46,7 +46,7 @@
 | e10 | [广告法违禁词检测](https://github.com/campfire-code/banned-words-checker) | 上架前自检标题、详情、文案里的广告法违禁词，标出风险并给修改建议 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/banned-words-checker/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/banned-words-checker/releases/tag/v0.2.0) |  |
 | e11 | [多平台订单利润对账](https://github.com/campfire-code/order-profit-reconciler) | 导入各平台账单，扣成本、运费、佣金后算真实利润 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/order-profit-reconciler/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/order-profit-reconciler/releases/tag/v0.2.0) |  |
 | e12 | [抖店批量改价改库存](https://github.com/campfire-code/doudian-batch-price) | 一张表批量改多个店，走抖店官方接口 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/doudian-batch-price/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/doudian-batch-price/releases/tag/v0.2.0) |  |
-| e13 | [虾皮批量改价改库存](https://github.com/campfire-code/shopee-batch-price) | 走 Shopee 官方接口 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/shopee-batch-price/main/docs/screenshot.png) | [发布页](https://github.com/campfire-code/shopee-batch-price/releases/tag/v0.2.0) |  |
+| e13 | [虾皮批量改价改库存](https://github.com/campfire-code/shopee-batch-price) | 走 Shopee 官方接口 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/shopee-batch-price/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/shopee-batch-price/releases/tag/v0.2.0) |  |
 | e14 | [亚马逊订单库存导出](https://github.com/campfire-code/amazon-order-export) | 走亚马逊 SP-API | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/amazon-order-export/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/amazon-order-export/releases/tag/v0.2.0) |  |
 | e15 | [TikTok Shop 批量上品](https://github.com/campfire-code/tiktokshop-listing) | 走 TikTok Shop 官方接口 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/tiktokshop-listing/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/tiktokshop-listing/releases/tag/v0.2.0) |  |
 | e16 | [东南亚多店调度](https://github.com/campfire-code/sea-multistore) | 导入各店订单表和库存表，出多店汇总与 SKU 跨店对照 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/sea-multistore/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/sea-multistore/releases/tag/v0.2.0) |  |
@@ -60,7 +60,9 @@
 | e31 | [AI 详情页一键生成](https://github.com/campfire-code/ai-detail-page) | 输入卖点和商品图，生成整套详情页 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/ai-detail-page/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/ai-detail-page/releases/tag/v0.2.0) |  |
 | e32 | [商品主图转短视频](https://github.com/campfire-code/product-image-to-video) | 多张商品图自动推拉运镜、加转场和标题，合成一条短视频 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/product-image-to-video/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/product-image-to-video/releases/tag/v0.2.0) |  |
 | e33 | [一达通报关单填写助手](https://github.com/campfire-code/alibaba-customs-filler) | 选客户 Excel，自动在阿里一达通填好报关草稿并校验，正式申报留给人工 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/alibaba-customs-filler/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/alibaba-customs-filler/releases/tag/v0.1.0) |  |
+| e34 | [外卖经营方法论手册](https://github.com/campfire-code/waimai-ops-handbook) | 外卖、选址、抖音同城、开店的经营方法论资料包（已脱敏） | 接入教程 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/waimai-ops-handbook/main/docs/screenshot.png) | [手册 PDF](https://github.com/campfire-code/waimai-ops-handbook/releases/tag/v0.1.0) |  |
 | e35 | [美团点金调价助手](https://github.com/campfire-code/meituan-bid-pacer) | 按昨日曝光分配每小时推广预算，给出点金出价建议，自动保存默认关闭 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/meituan-bid-pacer/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/meituan-bid-pacer/releases/tag/v0.1.0) |  |
+| e36 | [美团门店数据采集（安卓）](https://github.com/campfire-code/meituan-store-collector) | 在手机上读取美团商家后台的订单、商品、评价数据存本机，写操作默认关闭 | 安卓 APK | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/meituan-store-collector/main/docs/screenshot.png) | [安卓](https://github.com/campfire-code/meituan-store-collector/releases/tag/v0.1.0) |  |
 
 ## 内容生产（23 个）
 
@@ -90,12 +92,12 @@
 | c35 | [AI 装修效果图](https://github.com/campfire-code/ai-room-render) | 上传房间照片，选材质和风格，用自填的图像模型生成装修效果图 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/ai-room-render/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/ai-room-render/releases/tag/v0.1.0) |  |
 | c36 | [知识星球发帖助手](https://github.com/campfire-code/zsxq-post-helper) | 扫码登录知识星球后，一篇篇发图文帖并存档，可 AI 配图 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/zsxq-post-helper/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/zsxq-post-helper/releases/tag/v0.1.0) |  |
 
-## 微信私域（20 个）
+## 微信私域（22 个）
 
 | 编号 | 名称 | 一句话简介 | 交付形式 | 版本 | 截图 | 下载 | 价格 |
 |---|---|---|---|---|---|---|---|
 | w01 | [公众号一键排版器](https://github.com/campfire-code/wechat-md-formatter) | Markdown 转公众号样式，多套主题 | 桌面安装包 | 2.1.0-campfire.2 | [看图](https://raw.githubusercontent.com/campfire-code/wechat-md-formatter/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/wechat-md-formatter/releases/tag/v2.1.0-campfire.2) |  |
-| w02 | [AI 写稿直发公众号草稿箱](https://github.com/campfire-code/wechat-draft-publisher) | 写稿、排版后推到草稿箱，走公众号官方接口 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/wechat-draft-publisher/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/wechat-draft-publisher/releases/tag/v0.2.0) |  |
+| w02 | [AI 写稿直发公众号草稿箱](https://github.com/campfire-code/wechat-draft-publisher) | 写稿、排版后推到草稿箱，走公众号官方接口 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/wechat-draft-publisher/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/wechat-draft-publisher/releases/tag/v0.3.0) |  |
 | w03 | [企微群 AI 答疑机器人](https://github.com/campfire-code/wecom-group-ai-bot) | 企业微信群机器人接大模型 + 知识库 | Docker 部署 | 0.3.4-campfire.1 | [看图](https://raw.githubusercontent.com/campfire-code/wecom-group-ai-bot/main/docs/screenshot.png) | [Docker 部署文件](https://github.com/campfire-code/wecom-group-ai-bot/releases/tag/v0.3.4-campfire.1) |  |
 | w04 | [企微 / 公众号 AI 客服](https://github.com/campfire-code/wecom-ai-service) | 多渠道 AI 客服，只启用官方通道 | Docker 部署 | 2.2.1-campfire.2 | [看图](https://raw.githubusercontent.com/campfire-code/wecom-ai-service/master/docs/screenshot.png) | [Docker 部署文件](https://github.com/campfire-code/wecom-ai-service/releases/tag/v2.2.1-campfire.2) |  |
 | w05 | [Dify 知识库客服接入器](https://github.com/campfire-code/dify-wecom-connector) | 把 Dify 知识库接到企微 | Docker 部署 | 0.1.26-campfire.1 | [看图](https://raw.githubusercontent.com/campfire-code/dify-wecom-connector/master/docs/screenshot.png) | [Docker 部署文件](https://github.com/campfire-code/dify-wecom-connector/releases/tag/v0.1.26-campfire.1) |  |
@@ -113,9 +115,17 @@
 | w19 | [视频号直播话术生成](https://github.com/campfire-code/live-script-writer) | 按商品生成直播讲解稿和互动话术 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/live-script-writer/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/live-script-writer/releases/tag/v0.2.0) |  |
 | w20 | [手机备份聊天导出（本人数据）](https://github.com/campfire-code/wechat-backup-exporter) | 把自己 iPhone 备份里的微信聊天记录，导出成 HTML、PDF 或文本 | 上游安装包 | 1.9.5.13-campfire.1 | [看图](https://raw.githubusercontent.com/campfire-code/wechat-backup-exporter/main/docs/screenshot.png) | [Windows](https://github.com/campfire-code/wechat-backup-exporter/releases/tag/v1.9.5.13-campfire.1) |  |
 | w28 | [机器人多账号管理后台](https://github.com/campfire-code/bot-hub) | 多个机器人账号集中管理 | Docker 部署 | 0.1.36-campfire.2 | [看图](https://raw.githubusercontent.com/campfire-code/bot-hub/main/docs/screenshot.png) | [Docker 部署文件](https://github.com/campfire-code/bot-hub/releases/tag/v0.1.36-campfire.2) |  |
+| w29 | [行业答题获客](https://github.com/campfire-code/quiz-lead-game) | 可换题库、可换品牌的手机答题小游戏，答完看段位、领资料、引导加微信 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/quiz-lead-game/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/quiz-lead-game/releases/tag/v0.1.0) |  |
 | w30 | [群充值单识别记账](https://github.com/campfire-code/group-recharge-ledger) | 识别群里的充值文本和转账截图，登记对账并导出 Excel | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/group-recharge-ledger/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/group-recharge-ledger/releases/tag/v0.1.0) |  |
+| w31 | [个微消息助手（安卓）](https://github.com/campfire-code/wechat-message-assistant) | 安卓无障碍读取个人微信新消息，按规则提醒与辅助回复（从零重写） | 安卓 APK | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/wechat-message-assistant/main/docs/screenshot.png) | [安卓](https://github.com/campfire-code/wechat-message-assistant/releases/tag/v0.1.0) |  |
 
-## AI 助手（6 个）
+## 休闲游戏（1 个）
+
+| 编号 | 名称 | 一句话简介 | 交付形式 | 版本 | 截图 | 下载 | 价格 |
+|---|---|---|---|---|---|---|---|
+| x01 | [原创航海经商游戏](https://github.com/campfire-code/ocean-trade-voyage) | 原创世界的像素风航海经商游戏：航行、靠港、贸易、造船、海战 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/ocean-trade-voyage/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/ocean-trade-voyage/releases/tag/v0.1.0) |  |
+
+## AI 助手（9 个）
 
 | 编号 | 名称 | 一句话简介 | 交付形式 | 版本 | 截图 | 下载 | 价格 |
 |---|---|---|---|---|---|---|---|
@@ -125,3 +135,6 @@
 | a04 | [Excel AI 助手](https://github.com/campfire-code/excel-mcp) | 让 Claude 等 AI 助手直接读写 Excel（MCP） | 上游安装包 | 2.2.2-campfire.1 | [看图](https://raw.githubusercontent.com/campfire-code/excel-mcp/main/docs/screenshot.png) | [Claude Desktop 扩展](https://github.com/campfire-code/excel-mcp/releases/tag/v2.2.2-campfire.1) |  |
 | a05 | [浏览器助手（AI 接入教程）](https://github.com/campfire-code/browser-mcp) | 让 AI 助手控制浏览器 | 接入教程 | 0.0.83-campfire.1 | [看图](https://raw.githubusercontent.com/campfire-code/browser-mcp/main/docs/screenshot.png) | [发布页](https://github.com/campfire-code/browser-mcp/releases/tag/v0.0.83-campfire.1) |  |
 | a07 | [AI 编程工具一键安装器](https://github.com/campfire-code/ai-coding-installer) | 双击装好 Claude Code、Codex 等 AI 编程工具，自填接口自动配好，安装报错有引导 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/ai-coding-installer/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/ai-coding-installer/releases/tag/v0.1.0) |  |
+| a08 | [安卓自动化底座](https://github.com/campfire-code/android-automation-base) | 装在安卓手机上，电脑配对后远程点击、滑动、截图，每步留日志 | 安卓 APK | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/android-automation-base/main/docs/screenshot.png) | [安卓](https://github.com/campfire-code/android-automation-base/releases/tag/v0.1.0) |  |
+| a09 | [AI 落地方法论手册](https://github.com/campfire-code/ai-adoption-handbook) | AI 工具安装、上手与落地方法论资料包（已脱敏） | 接入教程 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/ai-adoption-handbook/main/docs/screenshot.png) | [手册 PDF](https://github.com/campfire-code/ai-adoption-handbook/releases/tag/v0.1.0) |  |
+| a10 | [OKX 合约监控与策略](https://github.com/campfire-code/okx-contract-monitor) | 监控 OKX 合约持仓与盈亏，策略默认只给信号不下单，模拟盘与实盘需手动开启 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/okx-contract-monitor/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/okx-contract-monitor/releases/tag/v0.1.0) |  |

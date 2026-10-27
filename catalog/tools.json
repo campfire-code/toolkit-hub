@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T11:57:09.294Z",
+  "generatedAt": "2026-10-27T12:48:24.386Z",
   "decisionsSource": "https://claude.ai/artifact/5r6mavUV5zM6ptrAn5Zkfi decisions/plan v54",
   "engineering": {
     "q_batch": "20",
@@ -21,8 +21,8 @@
       "id": "e01",
       "slug": "1688-to-pdd-listing",
       "category": "电商运营",
-      "name": "1688→拼多多 / 抖店上架数据包",
-      "desc": "抓取 1688 商品，自动映射类目、SKU、运费模板，生成上架数据包；发布走开放平台接口或人工导入",
+      "name": "1688 拼多多铺货助手",
+      "desc": "浏览器插件采集 1688 / 淘宝 / 天猫商品，整理类目与规格，自动填拼多多后台草稿或导出上架数据包",
       "upstream": null,
       "form": "桌面",
       "risk": "mid",
@@ -37,10 +37,10 @@
         "layout": "b",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/1688-to-pdd-listing",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/1688-to-pdd-listing/releases/tag/v0.1.0",
       "notes": ""
     },
     {
@@ -1575,8 +1575,8 @@
       "ui": null,
       "status": "released",
       "repo": "campfire-code/wecom-group-manager-android",
-      "version": "2.8.0-campfire.1",
-      "release": "https://github.com/campfire-code/wecom-group-manager-android/releases/tag/v2.8.0-campfire.1",
+      "version": "2.8.0-campfire.2",
+      "release": "https://github.com/campfire-code/wecom-group-manager-android/releases/tag/v2.8.0-campfire.2",
       "notes": ""
     },
     {
@@ -3459,10 +3459,10 @@
         "layout": "c",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/quiz-lead-game",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/quiz-lead-game/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3612,10 +3612,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "doing",
+      "status": "released",
       "repo": "campfire-code/android-automation-base",
-      "version": null,
-      "release": null,
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/android-automation-base/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3635,10 +3635,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/ai-adoption-handbook",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ai-adoption-handbook/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3658,10 +3658,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/waimai-ops-handbook",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/waimai-ops-handbook/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3671,7 +3671,7 @@
       "name": "原创航海经商游戏",
       "desc": "原创世界的像素风航海经商游戏：航行、靠港、贸易、造船、海战",
       "upstream": null,
-      "form": "其他",
+      "form": "桌面",
       "risk": "low",
       "recommended": "do",
       "decision": "do",
@@ -3679,12 +3679,15 @@
       "track": "own",
       "trackLabel": "从零写",
       "listing": "store",
-      "uiType": null,
-      "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "uiType": "media",
+      "ui": {
+        "layout": "b",
+        "palette": "teal"
+      },
+      "status": "released",
+      "repo": "campfire-code/ocean-trade-voyage",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ocean-trade-voyage/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3730,10 +3733,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/meituan-store-collector",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/meituan-store-collector/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3831,10 +3834,10 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/wechat-message-assistant",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/wechat-message-assistant/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     }
   ]

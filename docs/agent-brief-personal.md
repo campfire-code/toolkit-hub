@@ -29,3 +29,5 @@
 ## Windows 换行
 
 云端 Windows 检出会把文本文件转成 CRLF。测试里如果按字节比对 `samples/` 等文本文件，要么在工具根目录加 `.gitattributes`（`samples/** text eol=lf`），要么比对前统一换行符。
+- 测试里的「不含旧品牌 / 旧域名」反向检查也**不要写出旧品牌名、个人域名的字面量**（公开仓库会暴露），改用通用模式（如 IP、`/api/`、AppSecret 字样）。
+- 测试里拼出的文件路径在 Windows 上是反斜杠，和写死的 `a/b` 比较前要 `.split('\\').join('/')`（模板的 TS 目标不支持 replaceAll）。

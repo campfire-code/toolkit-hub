@@ -1,6 +1,6 @@
 // 发版：node scripts/release-tool.mjs <编号>
 // 按 tool.json 的版本打标签并推送，等云端三平台出包完成，核对安装包齐全后把总目录里的状态改为 released。
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -33,7 +33,10 @@ if (!out('git', ['tag', '-l', tag])) execFileSync('git', ['tag', tag], { cwd: di
 // docs 文档类条目没有出包流程：直接建一个只含说明的发布
 if (delivery === 'docs') {
   execFileSync('git', ['push', '-q', remote, tag], { cwd: dir });
-  const url = out('gh', ['release', 'create', tag, '-R', repo, '--title', `${t.name} ${version}`, '--notes', `中文接入教程见仓库首页：https://github.com/${repo}#readme`]);
+  // 资料包（手册）在仓库根目录放合并后的 PDF，作为附件一起发布
+  const pdfs = readdirSync(dir).filter((f) => f.endsWith('.pdf')).map((f) => `${dir}/${f}`);
+  const notes = pdfs.length ? `手册 PDF 见下方附件，分章节在线阅读见仓库首页：https://github.com/${repo}#readme` : `中文接入教程见仓库首页：https://github.com/${repo}#readme`;
+  const url = out('gh', ['release', 'create', tag, '-R', repo, '--title', `${t.name} ${version}`, '--notes', notes, ...pdfs]);
   const fresh = JSON.parse(readFileSync(catalogPath, 'utf8'));
   Object.assign(fresh.tools.find((x) => x.id === id), { status: 'released', version, release: url, repo });
   writeFileSync(catalogPath, JSON.stringify(fresh, null, 2) + '\n');
