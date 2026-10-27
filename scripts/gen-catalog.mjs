@@ -148,13 +148,39 @@ if (noType.length) throw new Error('自研界面的工具缺界面类型：' + n
 const EXTRA = [
   { id: 'o26', slug: 'Boundless', category: '办公提效', name: '无界', desc: '一套键盘鼠标控制两台电脑（Mac ↔ Mac、Mac ↔ Windows），鼠标推到屏幕边缘即切换，自动同步剪贴板', form: '桌面', repo: 'campfire-code/Boundless', version: '0.2.0', release: 'https://github.com/campfire-code/Boundless/releases/tag/v0.2.0' },
 ];
+// 用户个人应用重构（docs/个人应用重构方案.md，2026-10-27 拍板全部上架）：参考用户的私有仓库新建重写，对应关系见本机方案文档
+// uiType 有值的用桌面模板生成；为空的是手机网页、安卓、资料包、游戏，单独建仓
+const PERSONAL = [
+  ['c33', 'live-speech-pace', '内容生产', '直播语速告警器', '直播时实时测说话快慢，太快就响铃提醒，纯本地不录音', 'media', 'personal'],
+  ['o27', 'live-review-to-feishu', '办公提效', '主播复盘入表台', '上传抖音、视频号、快手直播复盘截图，识别关键指标一键写进飞书多维表格', 'data', 'personal'],
+  ['c34', 'douyin-live-review', '内容生产', '抖音直播复盘分析', '导出每场直播的话术与每分钟人数，标出留人和掉人的时段', 'data', 'personal'],
+  ['w29', 'quiz-lead-game', '微信私域', '行业答题获客', '可换题库、可换品牌的手机答题小游戏，答完看段位、领资料、引导加微信', null, 'personal'],
+  ['o28', 'notes-star-map', '办公提效', '笔记知识星图', '导入自己的笔记，生成能点能拖的知识星空图，看清知识之间的联系', 'data', 'personal'],
+  ['a07', 'ai-coding-installer', 'AI 助手', 'AI 编程工具一键安装器', '双击装好 Claude Code、Codex 等 AI 编程工具，自填接口自动配好，安装报错有引导', 'text', 'personal'],
+  ['c35', 'ai-room-render', '内容生产', 'AI 装修效果图', '上传房间照片，选材质和风格，用自填的图像模型生成装修效果图', 'media', 'personal'],
+  ['o29', 'cron-task-board', '办公提效', '定时任务看板', '监控本机定时脚本的运行日志与产出文件，30 天运行热力图', 'data', 'personal'],
+  ['e33', 'alibaba-customs-filler', '电商运营', '一达通报关单填写助手', '选客户 Excel，自动在阿里一达通填好报关草稿并校验，正式申报留给人工', 'data', 'personal'],
+  ['a08', 'android-automation-base', 'AI 助手', '安卓自动化底座', '装在安卓手机上，电脑配对后远程点击、滑动、截图，每步留日志', null, 'personal'],
+  ['a09', 'ai-adoption-handbook', 'AI 助手', 'AI 落地方法论手册', 'AI 工具安装、上手与落地方法论资料包（已脱敏）', null, 'personal'],
+  ['e34', 'waimai-ops-handbook', '电商运营', '外卖经营方法论手册', '外卖、选址、抖音同城、开店的经营方法论资料包（已脱敏）', null, 'personal'],
+  ['x01', 'ocean-trade-voyage', '休闲游戏', '原创航海经商游戏', '原创世界的像素风航海经商游戏：航行、靠港、贸易、造船、海战', null, 'personal'],
+  ['e35', 'meituan-bid-pacer', '电商运营', '美团点金调价助手', '按昨日曝光分配每小时推广预算，给出点金出价建议，自动保存默认关闭', 'data', 'personal'],
+  ['e36', 'meituan-store-collector', '电商运营', '美团门店数据采集（安卓）', '在手机上读取美团商家后台的订单、商品、评价数据存本机，写操作默认关闭', null, 'personal'],
+  ['c36', 'zsxq-post-helper', '内容生产', '知识星球发帖助手', '扫码登录知识星球后，一篇篇发图文帖并存档，可 AI 配图', 'text', 'personal'],
+  ['w30', 'group-recharge-ledger', '微信私域', '群充值单识别记账', '识别群里的充值文本和转账截图，登记对账并导出 Excel', 'data', 'personal'],
+  ['a10', 'okx-contract-monitor', 'AI 助手', 'OKX 合约监控与策略', '监控 OKX 合约持仓与盈亏，策略默认模拟盘运行，实盘需双重确认', 'data', 'personal'],
+  ['w31', 'wechat-message-assistant', '微信私域', '个微消息助手（安卓）', '安卓无障碍读取个人微信新消息，按规则提醒与辅助回复（从零重写）', null, 'personal'],
+];
+for (const [id, slug, category, name, desc, uiType, ref] of PERSONAL)
+  EXTRA.push({ id, slug, category, name, desc, form: uiType ? '桌面' : '其他', uiType, ref, status: 'todo' });
 for (const x of EXTRA) {
   const p = prev[x.id] ?? {};
   tools.push({
     id: x.id, slug: x.slug, category: x.category, name: x.name, desc: x.desc, upstream: null,
     form: x.form, risk: 'low', recommended: 'do', decision: 'do', firstBatch: false,
-    track: 'own', trackLabel: TRACK_LABEL.own, listing: 'store', uiType: null, ui: null,
-    status: p.status ?? 'released', repo: p.repo ?? x.repo, version: p.version ?? x.version, release: p.release ?? x.release, notes: p.notes ?? '队友自带',
+    track: 'own', trackLabel: TRACK_LABEL.own, listing: 'store', uiType: x.uiType ?? null, ui: x.uiType ? drawUi(x.id, x.uiType) : null,
+    status: p.status ?? x.status ?? 'released', repo: p.repo ?? x.repo ?? null, version: p.version ?? x.version ?? null, release: p.release ?? x.release ?? null,
+    notes: p.notes ?? (x.ref ? '参考用户个人应用重写' : '队友自带'),
   });
 }
 if (missing.length) throw new Error('缺仓库名：' + missing.join(','));

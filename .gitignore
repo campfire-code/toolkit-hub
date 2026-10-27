@@ -4,3 +4,6 @@ node_modules/
 .claude/
 node_modules/
 skills/
+ref-src/
+docs/个人应用重构方案.md
+design/personal-apps-plan.html
