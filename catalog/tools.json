@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T18:37:24.305Z",
+  "generatedAt": "2026-10-27T09:45:00.401Z",
   "decisionsSource": "https://claude.ai/artifact/5r6mavUV5zM6ptrAn5Zkfi decisions/plan v54",
   "engineering": {
     "q_batch": "20",
@@ -3337,6 +3337,29 @@
       "version": null,
       "release": null,
       "notes": ""
+    },
+    {
+      "id": "o26",
+      "slug": "Boundless",
+      "category": "办公提效",
+      "name": "无界",
+      "desc": "一套键盘鼠标控制两台电脑（Mac ↔ Mac、Mac ↔ Windows），鼠标推到屏幕边缘即切换，自动同步剪贴板",
+      "upstream": null,
+      "form": "桌面",
+      "risk": "low",
+      "recommended": "do",
+      "decision": "do",
+      "firstBatch": false,
+      "track": "own",
+      "trackLabel": "从零写",
+      "listing": "store",
+      "uiType": null,
+      "ui": null,
+      "status": "released",
+      "repo": "campfire-code/Boundless",
+      "version": "0.2.0",
+      "release": "https://github.com/campfire-code/Boundless/releases/tag/v0.2.0",
+      "notes": "队友自带"
     }
   ]
 }

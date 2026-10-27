@@ -4,7 +4,7 @@
 
 面向电商运营、微信私域、内容生产、办公提效的开源小工具合集。每个工具是 [campfire-code](https://github.com/campfire-code) 组织下的独立仓库，提供源码与 Windows / macOS 安装包。
 
-- 计划做 107 个，已发布 103 个；另有 15 个后做，见 [docs/backlog.md](docs/backlog.md)
+- 计划做 108 个，已发布 104 个；另有 15 个后做，见 [docs/backlog.md](docs/backlog.md)
 - 总方案：[docs/00-总方案.md](docs/00-总方案.md)
 - 本页由 `node scripts/gen-docs.mjs` 根据 `catalog/tools.json` 生成，不要手改
 
@@ -103,7 +103,7 @@
 | c30 | 抖音无水印下载（仅开源） | 解析抖音 / TikTok 无水印视频 | [douyin-downloader](https://github.com/campfire-code/douyin-downloader) | [Evil0ctal/Douyin_TikTok_Download_API](https://github.com/Evil0ctal/Douyin_TikTok_Download_API) · Apache-2.0 | 高 | 已发布 | [下载](https://github.com/campfire-code/douyin-downloader/releases/tag/v5.1.7-campfire.1) |
 | c31 | 评论情绪与需求分析 | 分析自有账号导出的评论数据 | [comment-insight](https://github.com/campfire-code/comment-insight) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/comment-insight/releases/tag/v0.2.0) |
 
-## 办公提效（22）
+## 办公提效（23）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
@@ -129,13 +129,14 @@
 | o22 | PDF 双语翻译（保版式） | 论文、说明书保留排版翻译 | [pdf-bilingual-translate](https://github.com/campfire-code/pdf-bilingual-translate) | [PDFMathTranslate/PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) · AGPL-3.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/pdf-bilingual-translate/releases/tag/v1.9.11-campfire.2) |
 | o23 | 本地知识库问答 | 产品手册、话术库本地问答 | [local-knowledge-qa](https://github.com/campfire-code/local-knowledge-qa) | [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/local-knowledge-qa/releases/tag/v1.18.0-campfire.1) |
 | o24 | 小店记账 | 收支记账与报表 | [shop-bookkeeping](https://github.com/campfire-code/shop-bookkeeping) | [mayswind/ezbookkeeping](https://github.com/mayswind/ezbookkeeping) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/shop-bookkeeping/releases/tag/v2.1.1-campfire.2) |
+| o26 | 无界 | 一套键盘鼠标控制两台电脑（Mac ↔ Mac、Mac ↔ Windows），鼠标推到屏幕边缘即切换，自动同步剪贴板 | [Boundless](https://github.com/campfire-code/Boundless) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/Boundless/releases/tag/v0.2.0) |
 
 ## AI 助手（5）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
 | a01 | 网页自动填表 / 采集助手 | 用一句话让 AI 操作浏览器完成重复操作 | [browser-agent](https://github.com/campfire-code/browser-agent) | [browser-use/web-ui](https://github.com/browser-use/web-ui) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/browser-agent/releases/tag/v3.0.0-campfire.2) |
-| a02 | 后台批量操作机器人 | 自然语言驱动的后台批量操作 | [backend-batch-bot](https://github.com/campfire-code/backend-batch-bot) | [web-infra-dev/midscene](https://github.com/web-infra-dev/midscene) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/backend-batch-bot/releases/tag/v1.17.0-campfire.1) |
+| a02 | 后台批量操作机器人 | 自然语言驱动的后台批量操作 | [backend-batch-bot](https://github.com/campfire-code/backend-batch-bot) | [web-infra-dev/midscene](https://github.com/web-infra-dev/midscene) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/backend-batch-bot/releases/tag/v1.17.0-campfire.2) |
 | a03 | 竞品价格 / 资讯采集器 | 网页转结构化数据，定时采集 | [web-data-collector](https://github.com/campfire-code/web-data-collector) | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) · Apache-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/web-data-collector/releases/tag/v0.9.5-campfire.2) |
 | a04 | Excel AI 助手 | 让 Claude 等 AI 助手直接读写 Excel（MCP） | [excel-mcp](https://github.com/campfire-code/excel-mcp) | [haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/excel-mcp/releases/tag/v2.2.2-campfire.1) |
 | a05 | 浏览器助手（AI 接入教程） | 让 AI 助手控制浏览器 | [browser-mcp](https://github.com/campfire-code/browser-mcp) | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/browser-mcp/releases/tag/v0.0.83-campfire.1) |

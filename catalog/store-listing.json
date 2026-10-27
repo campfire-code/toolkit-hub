@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T08:31:27.934Z",
+  "generatedAt": "2026-10-27T09:52:28.566Z",
   "note": "价格留空，由用户定",
   "items": [
     {
@@ -632,6 +632,33 @@
         }
       ],
       "upstream": "mayswind/ezbookkeeping",
+      "risk": "low"
+    },
+    {
+      "id": "o26",
+      "category": "办公提效",
+      "name": "无界",
+      "summary": "一套键盘鼠标控制两台电脑（Mac ↔ Mac、Mac ↔ Windows），鼠标推到屏幕边缘即切换，自动同步剪贴板",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.2.0",
+      "releaseNotes": "无界 0.2.0：一套键盘鼠标同时控制两台电脑，支持 Mac ↔ Mac、Mac ↔ Windows。\n\n**下载**\n- macOS（Apple 芯片与 Intel 通用，最低 macOS 13）：`Boundless_0.2.0_mac-universal.dmg`\n- Windows 10 1809 及以上（64 位）：`Boundless_0.2.0_windows-x64.exe`，免安装，双击运行\n\n**两台电脑都要装 0.2.0。**\n\n**首次打开**\n- macOS：程序没有经过苹果公证，第一次打开时 macOS 14 及以前请右键 → 打开；macOS 15 起到「系统设置 → 隐私与安全性」底部点「仍要打开」。主控端要授予「辅助功能」和「输入监控」两项权限。\n- Windows：程序没有代码签名，SmartScreen 拦截时点「更多信息 → 仍要运行」；防火墙弹窗时勾选「专用网络」并允许。\n\n**须知**：Windows 版已通过单元测试和与 Mac 版的互通测试，但还没有在 Windows 真机上做完整的人工验收。遇到问题请附上日志（托盘菜单「打开日志」）。详见 README。\n",
+      "repoUrl": "https://github.com/campfire-code/Boundless",
+      "releaseUrl": "https://github.com/campfire-code/Boundless/releases/tag/v0.2.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/Boundless/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS（Apple 芯片与 Intel 通用）",
+          "name": "Boundless_0.2.0_mac-universal.dmg",
+          "url": "https://github.com/campfire-code/Boundless/releases/download/v0.2.0/Boundless_0.2.0_mac-universal.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "Boundless_0.2.0_windows-x64.exe",
+          "url": "https://github.com/campfire-code/Boundless/releases/download/v0.2.0/Boundless_0.2.0_windows-x64.exe"
+        }
+      ],
+      "upstream": null,
       "risk": "low"
     },
     {

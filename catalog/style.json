@@ -478,5 +478,10 @@
     "accent": "#D38517",
     "cover": "split",
     "cards": "list"
+  },
+  "o26": {
+    "accent": "#1B1BA7",
+    "cover": "poster",
+    "cards": "story"
   }
 }

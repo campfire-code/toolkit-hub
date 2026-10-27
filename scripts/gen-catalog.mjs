@@ -143,6 +143,20 @@ const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec,
 const missing = tools.filter((t) => !t.slug).map((t) => t.id);
 const noType = tools.filter((t) => t.track !== 'fork' && !t.uiType).map((t) => t.id);
 if (noType.length) throw new Error('自研界面的工具缺界面类型：' + noType.join(','));
+
+// 队友自带的工具：不在拍板页候选里，界面不用工具箱外壳（uiType 为空）
+const EXTRA = [
+  { id: 'o26', slug: 'Boundless', category: '办公提效', name: '无界', desc: '一套键盘鼠标控制两台电脑（Mac ↔ Mac、Mac ↔ Windows），鼠标推到屏幕边缘即切换，自动同步剪贴板', form: '桌面', repo: 'campfire-code/Boundless', version: '0.2.0', release: 'https://github.com/campfire-code/Boundless/releases/tag/v0.2.0' },
+];
+for (const x of EXTRA) {
+  const p = prev[x.id] ?? {};
+  tools.push({
+    id: x.id, slug: x.slug, category: x.category, name: x.name, desc: x.desc, upstream: null,
+    form: x.form, risk: 'low', recommended: 'do', decision: 'do', firstBatch: false,
+    track: 'own', trackLabel: TRACK_LABEL.own, listing: 'store', uiType: null, ui: null,
+    status: p.status ?? 'released', repo: p.repo ?? x.repo, version: p.version ?? x.version, release: p.release ?? x.release, notes: p.notes ?? '队友自带',
+  });
+}
 if (missing.length) throw new Error('缺仓库名：' + missing.join(','));
 if (new Set(tools.map((t) => t.slug)).size !== tools.length) throw new Error('仓库名重复');
 

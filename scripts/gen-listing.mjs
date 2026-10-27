@@ -12,6 +12,7 @@ const gh = (args) => { try { return execFileSync('gh', args, { encoding: 'utf8',
 const PLATFORM = [
   [/mac-arm64\.dmg$|aarch64\.dmg$|arm64\.(dmg|pkg)$/i, 'macOS Apple 芯片'],
   [/mac-x64\.dmg$|x64\.dmg$|amd64\.pkg$|x86_64\.dmg$/i, 'macOS Intel'],
+  [/mac-universal\.dmg$/i, 'macOS（Apple 芯片与 Intel 通用）'],
   [/\.(exe|msi)$|win.*\.zip$/i, 'Windows'],
   [/\.apk$/i, '安卓'],
   [/_portable\.zip$/i, 'Windows / macOS 双击启动包'],

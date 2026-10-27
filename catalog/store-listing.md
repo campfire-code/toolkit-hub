@@ -2,7 +2,7 @@
 
 > 由 `scripts/gen-listing.mjs` 生成，不要手改。价格留空，由用户定。交付方式在 campfire 后台选「资源链接」，填仓库地址和下载地址。
 
-## 办公提效（21 个）
+## 办公提效（22 个）
 
 | 编号 | 名称 | 一句话简介 | 交付形式 | 版本 | 截图 | 下载 | 价格 |
 |---|---|---|---|---|---|---|---|
@@ -27,6 +27,7 @@
 | o22 | [PDF 双语翻译（保版式）](https://github.com/campfire-code/pdf-bilingual-translate) | 论文、说明书保留排版翻译 | 双击启动包 | 1.9.11-campfire.2 | [看图](https://raw.githubusercontent.com/campfire-code/pdf-bilingual-translate/main/docs/screenshot.png) | [Windows / macOS 双击启动包](https://github.com/campfire-code/pdf-bilingual-translate/releases/tag/v1.9.11-campfire.2) |  |
 | o23 | [本地知识库问答](https://github.com/campfire-code/local-knowledge-qa) | 产品手册、话术库本地问答 | 上游安装包 | 1.18.0-campfire.1 | [看图](https://raw.githubusercontent.com/campfire-code/local-knowledge-qa/master/docs/screenshot.png) | [Windows](https://github.com/campfire-code/local-knowledge-qa/releases/tag/v1.18.0-campfire.1) |  |
 | o24 | [小店记账](https://github.com/campfire-code/shop-bookkeeping) | 收支记账与报表 | Docker 部署 | 2.1.1-campfire.2 | [看图](https://raw.githubusercontent.com/campfire-code/shop-bookkeeping/campfire/docs/screenshot.png) | [Docker 部署文件](https://github.com/campfire-code/shop-bookkeeping/releases/tag/v2.1.1-campfire.2) |  |
+| o26 | [无界](https://github.com/campfire-code/Boundless) | 一套键盘鼠标控制两台电脑（Mac ↔ Mac、Mac ↔ Windows），鼠标推到屏幕边缘即切换，自动同步剪贴板 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/Boundless/main/docs/screenshot.png) | [macOS（Apple 芯片与 Intel 通用） / Windows](https://github.com/campfire-code/Boundless/releases/tag/v0.2.0) |  |
 
 ## 电商运营（23 个）
 
