@@ -578,5 +578,10 @@
     "accent": "#1E85B8",
     "cover": "split",
     "cards": "bento"
+  },
+  "e01": {
+    "accent": "#B81E45",
+    "cover": "split",
+    "cards": "bento"
   }
 }

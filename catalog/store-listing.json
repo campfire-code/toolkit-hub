@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:21:07.131Z",
+  "generatedAt": "2026-10-27T14:28:54.874Z",
   "note": "价格留空，由用户定",
   "items": [
     {
@@ -756,6 +756,38 @@
       ],
       "upstream": null,
       "risk": "low"
+    },
+    {
+      "id": "e01",
+      "category": "电商运营",
+      "name": "1688 拼多多铺货助手",
+      "summary": "浏览器插件采集 1688 / 淘宝 / 天猫商品，整理类目与规格，自动填拼多多后台草稿或导出上架数据包",
+      "delivery": "desktop",
+      "price": null,
+      "version": "0.1.0",
+      "releaseNotes": "\n- 首个版本：浏览器插件采集（1688、淘宝、天猫）→ 本地产品库 → 拼多多商家后台保存草稿 / 导出上架数据包。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `1688-to-pdd-listing_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `1688-to-pdd-listing_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `1688-to-pdd-listing_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「1688 拼多多铺货助手」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "repoUrl": "https://github.com/campfire-code/1688-to-pdd-listing",
+      "releaseUrl": "https://github.com/campfire-code/1688-to-pdd-listing/releases/tag/v0.1.0",
+      "screenshot": "https://raw.githubusercontent.com/campfire-code/1688-to-pdd-listing/main/docs/screenshot.png",
+      "downloads": [
+        {
+          "platform": "macOS Apple 芯片",
+          "name": "1688-to-pdd-listing_0.1.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/1688-to-pdd-listing/releases/download/v0.1.0/1688-to-pdd-listing_0.1.0_mac-arm64.dmg"
+        },
+        {
+          "platform": "macOS Intel",
+          "name": "1688-to-pdd-listing_0.1.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/1688-to-pdd-listing/releases/download/v0.1.0/1688-to-pdd-listing_0.1.0_mac-x64.dmg"
+        },
+        {
+          "platform": "Windows",
+          "name": "1688-to-pdd-listing_0.1.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/1688-to-pdd-listing/releases/download/v0.1.0/1688-to-pdd-listing_0.1.0_windows-x64-setup.exe"
+        }
+      ],
+      "upstream": null,
+      "risk": "mid"
     },
     {
       "id": "e03",
@@ -2912,26 +2944,26 @@
       "summary": "原创世界的像素风航海经商游戏：航行、靠港、贸易、造船、海战",
       "delivery": "desktop",
       "price": null,
-      "version": "0.1.0",
-      "releaseNotes": "\n- 首个版本。\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `ocean-trade-voyage_0.1.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `ocean-trade-voyage_0.1.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `ocean-trade-voyage_0.1.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「原创航海经商游戏」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "version": "0.2.0",
+      "releaseNotes": "\n- 回合制海战、敌船与势力、火炮 / 装甲 / 护卫。\n- 最多 3 艘船的船队。\n- 8 种海上事件，港口庆典 / 封港 / 瘟疫。\n- 5 章主线「潮汐账」。\n- 存档升级到第 2 版，兼容 0.1.x 存档。\n- 破产救济；自动跑单平衡模拟。\n\n\n---\n\n### 下载哪个\n\n| 电脑 | 下载 |\n|---|---|\n| Windows 10 / 11 | `ocean-trade-voyage_0.2.0_windows-x64-setup.exe` |\n| Mac（M1 / M2 / M3 / M4 等 Apple 芯片） | `ocean-trade-voyage_0.2.0_mac-arm64.dmg` |\n| Mac（Intel 芯片，2020 年及更早的机型） | `ocean-trade-voyage_0.2.0_mac-x64.dmg` |\n\n不确定 Mac 是哪种芯片：点屏幕左上角苹果图标 →「关于本机」，「芯片」一栏写着 Apple 就选 arm64，写着 Intel 就选 x64。\n\n### 第一次打开\n\n- **Windows**：如果弹出「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。\n- **Mac**：把「原创航海经商游戏」拖进「应用程序」后打开。如果提示「无法验证开发者」，打开「系统设置 → 隐私与安全性」，在下方找到这个应用，点「仍要打开」。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/ocean-trade-voyage",
-      "releaseUrl": "https://github.com/campfire-code/ocean-trade-voyage/releases/tag/v0.1.0",
+      "releaseUrl": "https://github.com/campfire-code/ocean-trade-voyage/releases/tag/v0.2.0",
       "screenshot": "https://raw.githubusercontent.com/campfire-code/ocean-trade-voyage/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "macOS Apple 芯片",
-          "name": "ocean-trade-voyage_0.1.0_mac-arm64.dmg",
-          "url": "https://github.com/campfire-code/ocean-trade-voyage/releases/download/v0.1.0/ocean-trade-voyage_0.1.0_mac-arm64.dmg"
+          "name": "ocean-trade-voyage_0.2.0_mac-arm64.dmg",
+          "url": "https://github.com/campfire-code/ocean-trade-voyage/releases/download/v0.2.0/ocean-trade-voyage_0.2.0_mac-arm64.dmg"
         },
         {
           "platform": "macOS Intel",
-          "name": "ocean-trade-voyage_0.1.0_mac-x64.dmg",
-          "url": "https://github.com/campfire-code/ocean-trade-voyage/releases/download/v0.1.0/ocean-trade-voyage_0.1.0_mac-x64.dmg"
+          "name": "ocean-trade-voyage_0.2.0_mac-x64.dmg",
+          "url": "https://github.com/campfire-code/ocean-trade-voyage/releases/download/v0.2.0/ocean-trade-voyage_0.2.0_mac-x64.dmg"
         },
         {
           "platform": "Windows",
-          "name": "ocean-trade-voyage_0.1.0_windows-x64-setup.exe",
-          "url": "https://github.com/campfire-code/ocean-trade-voyage/releases/download/v0.1.0/ocean-trade-voyage_0.1.0_windows-x64-setup.exe"
+          "name": "ocean-trade-voyage_0.2.0_windows-x64-setup.exe",
+          "url": "https://github.com/campfire-code/ocean-trade-voyage/releases/download/v0.2.0/ocean-trade-voyage_0.2.0_windows-x64-setup.exe"
         }
       ],
       "upstream": null,

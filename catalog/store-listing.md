@@ -32,10 +32,11 @@
 | o28 | [笔记知识星图](https://github.com/campfire-code/notes-star-map) | 导入自己的笔记，生成能点能拖的知识星空图，看清知识之间的联系 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/notes-star-map/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/notes-star-map/releases/tag/v0.1.0) |  |
 | o29 | [定时任务看板](https://github.com/campfire-code/cron-task-board) | 监控本机定时脚本的运行日志与产出文件，30 天运行热力图 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/cron-task-board/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/cron-task-board/releases/tag/v0.1.0) |  |
 
-## 电商运营（27 个）
+## 电商运营（28 个）
 
 | 编号 | 名称 | 一句话简介 | 交付形式 | 版本 | 截图 | 下载 | 价格 |
 |---|---|---|---|---|---|---|---|
+| e01 | [1688 拼多多铺货助手](https://github.com/campfire-code/1688-to-pdd-listing) | 浏览器插件采集 1688 / 淘宝 / 天猫商品，整理类目与规格，自动填拼多多后台草稿或导出上架数据包 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/1688-to-pdd-listing/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/1688-to-pdd-listing/releases/tag/v0.1.0) |  |
 | e03 | [主图一键白底（批量）](https://github.com/campfire-code/bg-remover-batch) | 本地抠图，整个文件夹一次处理 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/bg-remover-batch/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/bg-remover-batch/releases/tag/v0.2.0) |  |
 | e04 | [高清商品抠图](https://github.com/campfire-code/hd-product-cutout) | 发丝、透明件等难抠的商品 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/hd-product-cutout/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/hd-product-cutout/releases/tag/v0.2.0) |  |
 | e05 | [商品短视频去背景](https://github.com/campfire-code/video-bg-remover) | 视频逐帧去背景 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/video-bg-remover/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/video-bg-remover/releases/tag/v0.2.0) |  |
@@ -123,7 +124,7 @@
 
 | 编号 | 名称 | 一句话简介 | 交付形式 | 版本 | 截图 | 下载 | 价格 |
 |---|---|---|---|---|---|---|---|
-| x01 | [原创航海经商游戏](https://github.com/campfire-code/ocean-trade-voyage) | 原创世界的像素风航海经商游戏：航行、靠港、贸易、造船、海战 | 桌面安装包 | 0.1.0 | [看图](https://raw.githubusercontent.com/campfire-code/ocean-trade-voyage/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/ocean-trade-voyage/releases/tag/v0.1.0) |  |
+| x01 | [原创航海经商游戏](https://github.com/campfire-code/ocean-trade-voyage) | 原创世界的像素风航海经商游戏：航行、靠港、贸易、造船、海战 | 桌面安装包 | 0.2.0 | [看图](https://raw.githubusercontent.com/campfire-code/ocean-trade-voyage/main/docs/screenshot.png) | [macOS Apple 芯片 / macOS Intel / Windows](https://github.com/campfire-code/ocean-trade-voyage/releases/tag/v0.2.0) |  |
 
 ## AI 助手（9 个）
 

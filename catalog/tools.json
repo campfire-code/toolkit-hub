@@ -939,8 +939,8 @@
       },
       "status": "released",
       "repo": "campfire-code/wechat-draft-publisher",
-      "version": "0.2.0",
-      "release": "https://github.com/campfire-code/wechat-draft-publisher/releases/tag/v0.2.0",
+      "version": "0.3.0",
+      "release": "https://github.com/campfire-code/wechat-draft-publisher/releases/tag/v0.3.0",
       "notes": ""
     },
     {
@@ -3686,8 +3686,8 @@
       },
       "status": "released",
       "repo": "campfire-code/ocean-trade-voyage",
-      "version": "0.1.0",
-      "release": "https://github.com/campfire-code/ocean-trade-voyage/releases/tag/v0.1.0",
+      "version": "0.2.0",
+      "release": "https://github.com/campfire-code/ocean-trade-voyage/releases/tag/v0.2.0",
       "notes": "参考用户个人应用重写"
     },
     {
