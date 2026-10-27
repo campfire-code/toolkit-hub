@@ -154,7 +154,7 @@ const PERSONAL = [
   ['c33', 'live-speech-pace', '内容生产', '直播语速告警器', '直播时实时测说话快慢，太快就响铃提醒，纯本地不录音', 'media', 'personal'],
   ['o27', 'live-review-to-feishu', '办公提效', '主播复盘入表台', '上传抖音、视频号、快手直播复盘截图，识别关键指标一键写进飞书多维表格', 'data', 'personal'],
   ['c34', 'douyin-live-review', '内容生产', '抖音直播复盘分析', '导出每场直播的话术与每分钟人数，标出留人和掉人的时段', 'data', 'personal'],
-  ['w29', 'quiz-lead-game', '微信私域', '行业答题获客', '可换题库、可换品牌的手机答题小游戏，答完看段位、领资料、引导加微信', null, 'personal'],
+  ['w29', 'quiz-lead-game', '微信私域', '行业答题获客', '可换题库、可换品牌的手机答题小游戏，答完看段位、领资料、引导加微信', 'data', 'personal'],
   ['o28', 'notes-star-map', '办公提效', '笔记知识星图', '导入自己的笔记，生成能点能拖的知识星空图，看清知识之间的联系', 'data', 'personal'],
   ['a07', 'ai-coding-installer', 'AI 助手', 'AI 编程工具一键安装器', '双击装好 Claude Code、Codex 等 AI 编程工具，自填接口自动配好，安装报错有引导', 'text', 'personal'],
   ['c35', 'ai-room-render', '内容生产', 'AI 装修效果图', '上传房间照片，选材质和风格，用自填的图像模型生成装修效果图', 'media', 'personal'],
@@ -168,7 +168,7 @@ const PERSONAL = [
   ['e36', 'meituan-store-collector', '电商运营', '美团门店数据采集（安卓）', '在手机上读取美团商家后台的订单、商品、评价数据存本机，写操作默认关闭', null, 'personal'],
   ['c36', 'zsxq-post-helper', '内容生产', '知识星球发帖助手', '扫码登录知识星球后，一篇篇发图文帖并存档，可 AI 配图', 'text', 'personal'],
   ['w30', 'group-recharge-ledger', '微信私域', '群充值单识别记账', '识别群里的充值文本和转账截图，登记对账并导出 Excel', 'data', 'personal'],
-  ['a10', 'okx-contract-monitor', 'AI 助手', 'OKX 合约监控与策略', '监控 OKX 合约持仓与盈亏，策略默认模拟盘运行，实盘需双重确认', 'data', 'personal'],
+  ['a10', 'okx-contract-monitor', 'AI 助手', 'OKX 合约监控与策略', '监控 OKX 合约持仓与盈亏，策略默认只给信号不下单，模拟盘与实盘需手动开启', 'data', 'personal'],
   ['w31', 'wechat-message-assistant', '微信私域', '个微消息助手（安卓）', '安卓无障碍读取个人微信新消息，按规则提醒与辅助回复（从零重写）', null, 'personal'],
 ];
 for (const [id, slug, category, name, desc, uiType, ref] of PERSONAL)

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:35:41.042Z",
+  "generatedAt": "2026-10-27T11:57:09.294Z",
   "decisionsSource": "https://claude.ai/artifact/5r6mavUV5zM6ptrAn5Zkfi decisions/plan v54",
   "engineering": {
     "q_batch": "20",
@@ -3381,10 +3381,10 @@
         "layout": "b",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/live-speech-pace",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/live-speech-pace/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3407,10 +3407,10 @@
         "layout": "a",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/live-review-to-feishu",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/live-review-to-feishu/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3433,10 +3433,10 @@
         "layout": "a",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/douyin-live-review",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/douyin-live-review/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3446,7 +3446,7 @@
       "name": "行业答题获客",
       "desc": "可换题库、可换品牌的手机答题小游戏，答完看段位、领资料、引导加微信",
       "upstream": null,
-      "form": "其他",
+      "form": "桌面",
       "risk": "low",
       "recommended": "do",
       "decision": "do",
@@ -3454,8 +3454,11 @@
       "track": "own",
       "trackLabel": "从零写",
       "listing": "store",
-      "uiType": null,
-      "ui": null,
+      "uiType": "data",
+      "ui": {
+        "layout": "c",
+        "palette": "orange"
+      },
       "status": "todo",
       "repo": null,
       "version": null,
@@ -3482,10 +3485,10 @@
         "layout": "c",
         "palette": "rose"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/notes-star-map",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/notes-star-map/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3508,10 +3511,10 @@
         "layout": "a",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/ai-coding-installer",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ai-coding-installer/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3534,10 +3537,10 @@
         "layout": "d",
         "palette": "violet"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/ai-room-render",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/ai-room-render/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3560,10 +3563,10 @@
         "layout": "e",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/cron-task-board",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/cron-task-board/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3586,10 +3589,10 @@
         "layout": "a",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/alibaba-customs-filler",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/alibaba-customs-filler/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3609,8 +3612,8 @@
       "listing": "store",
       "uiType": null,
       "ui": null,
-      "status": "todo",
-      "repo": null,
+      "status": "doing",
+      "repo": "campfire-code/android-automation-base",
       "version": null,
       "release": null,
       "notes": "参考用户个人应用重写"
@@ -3704,10 +3707,10 @@
         "layout": "a",
         "palette": "teal"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/meituan-bid-pacer",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/meituan-bid-pacer/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3753,10 +3756,10 @@
         "layout": "e",
         "palette": "orange"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/zsxq-post-helper",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/zsxq-post-helper/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3779,10 +3782,10 @@
         "layout": "e",
         "palette": "green"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/group-recharge-ledger",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/group-recharge-ledger/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {
@@ -3790,7 +3793,7 @@
       "slug": "okx-contract-monitor",
       "category": "AI 助手",
       "name": "OKX 合约监控与策略",
-      "desc": "监控 OKX 合约持仓与盈亏，策略默认模拟盘运行，实盘需双重确认",
+      "desc": "监控 OKX 合约持仓与盈亏，策略默认只给信号不下单，模拟盘与实盘需手动开启",
       "upstream": null,
       "form": "桌面",
       "risk": "low",
@@ -3805,10 +3808,10 @@
         "layout": "b",
         "palette": "blue"
       },
-      "status": "todo",
-      "repo": null,
-      "version": null,
-      "release": null,
+      "status": "released",
+      "repo": "campfire-code/okx-contract-monitor",
+      "version": "0.1.0",
+      "release": "https://github.com/campfire-code/okx-contract-monitor/releases/tag/v0.1.0",
       "notes": "参考用户个人应用重写"
     },
     {

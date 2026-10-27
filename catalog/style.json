@@ -483,5 +483,60 @@
     "accent": "#1B1BA7",
     "cover": "poster",
     "cards": "story"
+  },
+  "o27": {
+    "accent": "#23559F",
+    "cover": "rise",
+    "cards": "bento"
+  },
+  "o28": {
+    "accent": "#1318AE",
+    "cover": "immersive",
+    "cards": "list"
+  },
+  "o29": {
+    "accent": "#2160CA",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "e33": {
+    "accent": "#AE6813",
+    "cover": "immersive",
+    "cards": "list"
+  },
+  "e35": {
+    "accent": "#CA3D21",
+    "cover": "split",
+    "cards": "bento"
+  },
+  "c33": {
+    "accent": "#B02785",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "c34": {
+    "accent": "#9B15C1",
+    "cover": "split",
+    "cards": "list"
+  },
+  "c35": {
+    "accent": "#A71B74",
+    "cover": "poster",
+    "cards": "story"
+  },
+  "c36": {
+    "accent": "#8A239F",
+    "cover": "rise",
+    "cards": "bento"
+  },
+  "w30": {
+    "accent": "#27B08D",
+    "cover": "immersive",
+    "cards": "story"
+  },
+  "a07": {
+    "accent": "#137BAE",
+    "cover": "poster",
+    "cards": "bento"
   }
 }

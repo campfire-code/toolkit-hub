@@ -4,11 +4,11 @@
 
 面向电商运营、微信私域、内容生产、办公提效的开源小工具合集。每个工具是 [campfire-code](https://github.com/campfire-code) 组织下的独立仓库，提供源码与 Windows / macOS 安装包。
 
-- 计划做 108 个，已发布 104 个；另有 15 个后做，见 [docs/backlog.md](docs/backlog.md)
+- 计划做 127 个，已发布 116 个；另有 15 个后做，见 [docs/backlog.md](docs/backlog.md)
 - 总方案：[docs/00-总方案.md](docs/00-总方案.md)
 - 本页由 `node scripts/gen-docs.mjs` 根据 `catalog/tools.json` 生成，不要手改
 
-## 电商运营（32）
+## 电商运营（36）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
@@ -44,8 +44,12 @@
 | e30 | 电商多店 AI 连接器 | 让支持 MCP 的 AI 助手只读查询你自己店铺的订单、售后等数据 | [ecom-mcp-connector](https://github.com/campfire-code/ecom-mcp-connector) | [TonyWang-hub/mcp-cn-commerce](https://github.com/TonyWang-hub/mcp-cn-commerce) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/ecom-mcp-connector/releases/tag/v0.1.6-campfire.2) |
 | e31 | AI 详情页一键生成 | 输入卖点和商品图，生成整套详情页 | [ai-detail-page](https://github.com/campfire-code/ai-detail-page) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/ai-detail-page/releases/tag/v0.2.0) |
 | e32 | 商品主图转短视频 | 多张商品图自动推拉运镜、加转场和标题，合成一条短视频 | [product-image-to-video](https://github.com/campfire-code/product-image-to-video) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/product-image-to-video/releases/tag/v0.2.0) |
+| e33 | 一达通报关单填写助手 | 选客户 Excel，自动在阿里一达通填好报关草稿并校验，正式申报留给人工 | [alibaba-customs-filler](https://github.com/campfire-code/alibaba-customs-filler) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/alibaba-customs-filler/releases/tag/v0.1.0) |
+| e34 | 外卖经营方法论手册 | 外卖、选址、抖音同城、开店的经营方法论资料包（已脱敏） | `waimai-ops-handbook` | 从零写 | 低 | 待做 | — |
+| e35 | 美团点金调价助手 | 按昨日曝光分配每小时推广预算，给出点金出价建议，自动保存默认关闭 | [meituan-bid-pacer](https://github.com/campfire-code/meituan-bid-pacer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/meituan-bid-pacer/releases/tag/v0.1.0) |
+| e36 | 美团门店数据采集（安卓） | 在手机上读取美团商家后台的订单、商品、评价数据存本机，写操作默认关闭 | `meituan-store-collector` | 从零写 | 低 | 待做 | — |
 
-## 微信私域（23）
+## 微信私域（26）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
@@ -72,8 +76,11 @@
 | w26 | 企微群管家（安卓）（仅开源） | 安卓无障碍控制企微做群管理 | [wecom-group-manager-android](https://github.com/campfire-code/wecom-group-manager-android) | [gallonyin/worktool](https://github.com/gallonyin/worktool) · Apache-2.0 | 高 | 已发布 | [下载](https://github.com/campfire-code/wecom-group-manager-android/releases/tag/v2.8.0-campfire.1) |
 | w27 | 视频号视频下载（仅开源） | 下载视频号视频 | [channels-video-downloader](https://github.com/campfire-code/channels-video-downloader) | [nobiyou/wx_channel](https://github.com/nobiyou/wx_channel) · MIT | 高 | 已发布 | [下载](https://github.com/campfire-code/channels-video-downloader/releases/tag/v5.7.13-campfire.1) |
 | w28 | 机器人多账号管理后台 | 多个机器人账号集中管理 | [bot-hub](https://github.com/campfire-code/bot-hub) | [openilink/openilink-hub](https://github.com/openilink/openilink-hub) · MIT | 中 | 已发布 | [下载](https://github.com/campfire-code/bot-hub/releases/tag/v0.1.36-campfire.2) |
+| w29 | 行业答题获客 | 可换题库、可换品牌的手机答题小游戏，答完看段位、领资料、引导加微信 | `quiz-lead-game` | 从零写 | 低 | 待做 | — |
+| w30 | 群充值单识别记账 | 识别群里的充值文本和转账截图，登记对账并导出 Excel | [group-recharge-ledger](https://github.com/campfire-code/group-recharge-ledger) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/group-recharge-ledger/releases/tag/v0.1.0) |
+| w31 | 个微消息助手（安卓） | 安卓无障碍读取个人微信新消息，按规则提醒与辅助回复（从零重写） | `wechat-message-assistant` | 从零写 | 低 | 待做 | — |
 
-## 内容生产（25）
+## 内容生产（29）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
@@ -102,8 +109,12 @@
 | c29 | 全网视频下载器（仅开源） | 各平台视频下载 | [video-downloader](https://github.com/campfire-code/video-downloader) | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) · Unlicense | 高 | 已发布 | [下载](https://github.com/campfire-code/video-downloader/releases/tag/v0.1.0) |
 | c30 | 抖音无水印下载（仅开源） | 解析抖音 / TikTok 无水印视频 | [douyin-downloader](https://github.com/campfire-code/douyin-downloader) | [Evil0ctal/Douyin_TikTok_Download_API](https://github.com/Evil0ctal/Douyin_TikTok_Download_API) · Apache-2.0 | 高 | 已发布 | [下载](https://github.com/campfire-code/douyin-downloader/releases/tag/v5.1.7-campfire.1) |
 | c31 | 评论情绪与需求分析 | 分析自有账号导出的评论数据 | [comment-insight](https://github.com/campfire-code/comment-insight) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/comment-insight/releases/tag/v0.2.0) |
+| c33 | 直播语速告警器 | 直播时实时测说话快慢，太快就响铃提醒，纯本地不录音 | [live-speech-pace](https://github.com/campfire-code/live-speech-pace) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/live-speech-pace/releases/tag/v0.1.0) |
+| c34 | 抖音直播复盘分析 | 导出每场直播的话术与每分钟人数，标出留人和掉人的时段 | [douyin-live-review](https://github.com/campfire-code/douyin-live-review) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/douyin-live-review/releases/tag/v0.1.0) |
+| c35 | AI 装修效果图 | 上传房间照片，选材质和风格，用自填的图像模型生成装修效果图 | [ai-room-render](https://github.com/campfire-code/ai-room-render) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/ai-room-render/releases/tag/v0.1.0) |
+| c36 | 知识星球发帖助手 | 扫码登录知识星球后，一篇篇发图文帖并存档，可 AI 配图 | [zsxq-post-helper](https://github.com/campfire-code/zsxq-post-helper) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/zsxq-post-helper/releases/tag/v0.1.0) |
 
-## 办公提效（23）
+## 办公提效（26）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
@@ -130,8 +141,11 @@
 | o23 | 本地知识库问答 | 产品手册、话术库本地问答 | [local-knowledge-qa](https://github.com/campfire-code/local-knowledge-qa) | [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/local-knowledge-qa/releases/tag/v1.18.0-campfire.1) |
 | o24 | 小店记账 | 收支记账与报表 | [shop-bookkeeping](https://github.com/campfire-code/shop-bookkeeping) | [mayswind/ezbookkeeping](https://github.com/mayswind/ezbookkeeping) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/shop-bookkeeping/releases/tag/v2.1.1-campfire.2) |
 | o26 | 无界 | 一套键盘鼠标控制两台电脑（Mac ↔ Mac、Mac ↔ Windows），鼠标推到屏幕边缘即切换，自动同步剪贴板 | [Boundless](https://github.com/campfire-code/Boundless) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/Boundless/releases/tag/v0.2.0) |
+| o27 | 主播复盘入表台 | 上传抖音、视频号、快手直播复盘截图，识别关键指标一键写进飞书多维表格 | [live-review-to-feishu](https://github.com/campfire-code/live-review-to-feishu) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/live-review-to-feishu/releases/tag/v0.1.0) |
+| o28 | 笔记知识星图 | 导入自己的笔记，生成能点能拖的知识星空图，看清知识之间的联系 | [notes-star-map](https://github.com/campfire-code/notes-star-map) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/notes-star-map/releases/tag/v0.1.0) |
+| o29 | 定时任务看板 | 监控本机定时脚本的运行日志与产出文件，30 天运行热力图 | [cron-task-board](https://github.com/campfire-code/cron-task-board) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/cron-task-board/releases/tag/v0.1.0) |
 
-## AI 助手（5）
+## AI 助手（9）
 
 | 编号 | 工具 | 能做什么 | 仓库 | 基于 | 风险 | 状态 | 安装包 |
 |---|---|---|---|---|---|---|---|
@@ -140,6 +154,10 @@
 | a03 | 竞品价格 / 资讯采集器 | 网页转结构化数据，定时采集 | [web-data-collector](https://github.com/campfire-code/web-data-collector) | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) · Apache-2.0 | 中 | 已发布 | [下载](https://github.com/campfire-code/web-data-collector/releases/tag/v0.9.5-campfire.2) |
 | a04 | Excel AI 助手 | 让 Claude 等 AI 助手直接读写 Excel（MCP） | [excel-mcp](https://github.com/campfire-code/excel-mcp) | [haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server) · MIT | 低 | 已发布 | [下载](https://github.com/campfire-code/excel-mcp/releases/tag/v2.2.2-campfire.1) |
 | a05 | 浏览器助手（AI 接入教程） | 让 AI 助手控制浏览器 | [browser-mcp](https://github.com/campfire-code/browser-mcp) | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) · Apache-2.0 | 低 | 已发布 | [下载](https://github.com/campfire-code/browser-mcp/releases/tag/v0.0.83-campfire.1) |
+| a07 | AI 编程工具一键安装器 | 双击装好 Claude Code、Codex 等 AI 编程工具，自填接口自动配好，安装报错有引导 | [ai-coding-installer](https://github.com/campfire-code/ai-coding-installer) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/ai-coding-installer/releases/tag/v0.1.0) |
+| a08 | 安卓自动化底座 | 装在安卓手机上，电脑配对后远程点击、滑动、截图，每步留日志 | [android-automation-base](https://github.com/campfire-code/android-automation-base) | 从零写 | 低 | 进行中 | — |
+| a09 | AI 落地方法论手册 | AI 工具安装、上手与落地方法论资料包（已脱敏） | `ai-adoption-handbook` | 从零写 | 低 | 待做 | — |
+| a10 | OKX 合约监控与策略 | 监控 OKX 合约持仓与盈亏，策略默认只给信号不下单，模拟盘与实盘需手动开启 | [okx-contract-monitor](https://github.com/campfire-code/okx-contract-monitor) | 从零写 | 低 | 已发布 | [下载](https://github.com/campfire-code/okx-contract-monitor/releases/tag/v0.1.0) |
 
 ## 许可证
 
