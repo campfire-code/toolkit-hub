@@ -583,5 +583,10 @@
     "accent": "#B81E45",
     "cover": "split",
     "cards": "bento"
+  },
+  "w26": {
+    "accent": "#1EB82F",
+    "cover": "phone",
+    "cards": "list"
   }
 }

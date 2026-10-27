@@ -119,6 +119,8 @@ const NO_UPSTREAM = new Set(['e16', 'e17', 'e19', 'w08', 'e28', 'w23', 'w24', 'e
 const UPSTREAM_FIX = { o02: { repo: 'Hopding/pdf-lib', stars: '8.7k', license: 'MIT' }, o15: { repo: 'soldair/node-qrcode', stars: '', license: 'MIT' }, o04: { repo: 'mwilliamson/mammoth.js', stars: '', license: 'BSD-2-Clause' }, a01: { repo: 'browser-use/web-ui', stars: '16.6k', license: 'MIT' }, c06: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, e05: { repo: 'danielgatis/rembg', stars: '', license: 'MIT' }, o16: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, o17: { repo: 'huggingface/transformers.js', stars: '', license: 'Apache-2.0' }, c29: { repo: 'yt-dlp/yt-dlp', stars: '', license: 'Unlicense' }, c10: { repo: 'k2-fsa/sherpa-onnx', stars: '', license: 'Apache-2.0' } };
 
 // 改名：用户 2026-10-24 要求产品里只能有中文（术语表允许的原文除外）
+// 用户 2026-10-27 拍板：w26 加了 AI 回复后上架
+const LISTING_FIX = { w26: 'store' };
 const NAME_FIX = { e01: '1688 拼多多铺货助手', w17: '群机器人调试器', a05: '浏览器助手（AI 接入教程）' };
 
 const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec, first]) => {
@@ -132,8 +134,8 @@ const tools = T.map(([id, cat, name, desc, base, star, license, form, risk, rec,
     form, risk, recommended: rec, decision,
     firstBatch: Boolean(first) && decision === 'do',
     track, trackLabel: TRACK_LABEL[track],
-    // 高风险工具按选择「开源但不上架应用区」
-    listing: risk === 'high' ? 'repo-only' : 'store',
+    // 高风险工具按选择「开源但不上架应用区」；LISTING_FIX 是用户事后单独拍板上架的
+    listing: LISTING_FIX[id] ?? (risk === 'high' ? 'repo-only' : 'store'),
     uiType: track === 'fork' ? null : uiTypeOf[id] ?? null,
     ui: track === 'fork' || !uiTypeOf[id] ? null : drawUi(id, uiTypeOf[id]),
     status: p.status ?? (decision === 'do' ? 'todo' : 'backlog'),
