@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:53:49.426Z",
+  "generatedAt": "2026-10-27T15:15:14.865Z",
   "note": "价格留空，由用户定",
   "items": [
     {
@@ -2691,16 +2691,16 @@
       "summary": "手机短信和通知转发到企微、钉钉",
       "delivery": "android",
       "price": null,
-      "version": "0.2.0",
-      "releaseNotes": "\n- 界面重做，主色改为 #239F6A 的绿色，浅色和深色模式都适配。\n- 首页改成状态面板：一眼看到「正在转发 / 已暂停」、今天已转发条数、最近一条去了哪个通道，以及失败数、待发送数；权限检查整理成「运行条件」清单。\n- 通道、规则、日志页重新排版：通道按类型显示图标和已加签标记，规则用标签展示条件并说明当前生效情况，日志顶部汇总成功、失败、进行中数量。\n- 界面和提示全部使用中文：「Webhook」改为「机器人地址」，自定义通道改为「自定义回调地址」；网络错误提示由英文异常名改为中文原因。\n- 新增深色模式下的窗口背景，避免启动时闪白。\n- 转发逻辑、数据格式和单元测试不变。\n\n\n---\n\n### 下载哪个\n\n| 手机 | 下载 |\n|---|---|\n| 安卓 8.0 及以上 | `sms-notify-forwarder_0.2.0_android.apk` |\n\n`SHA256SUMS.txt` 是安装包的校验值，想核对文件完整性时用。\n\n### 第一次安装\n\n- 用手机浏览器下载 APK 后点开安装。系统提示「不允许安装未知来源应用」时，按提示在设置里允许当前浏览器或文件管理器安装，装完可以再关掉。\n- 打开手机上的「短信通知转发」后，按首页提示逐项授权。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
+      "version": "0.3.0",
+      "releaseNotes": "\n- 新增「硬件方案」：用插着 SIM 卡的硬件收短信，再转发到企业微信、钉钉、飞书机器人或自建地址。代码在仓库的 `hardware/` 目录。\n  - 电脑端接收器 `hardware/receiver/sms_receiver.py`：只读 USB 串口，解析 JSON、键值对、纯文本和 SMS-DELIVER PDU 四种格式，复用应用的请求格式、加签、过滤规则、返回判断和日志打码；配置文件的通道、规则写法与应用一致；失败重试 3 次，同一帧只处理一次。\n  - Air780EPM 4G 模组固件 `hardware/firmware/`：收到短信先存闪存队列再推送，失败退避重试；推送类型和地址在 `config.lua` 里填写，不内置任何地址。\n  - 短信解析的测试随之带入，并新增推送规则、重试、固件逻辑等共 47 个 Python 测试。\n- 修正短信 PDU 里 GSM 7 位字符表缺了 5 项的错误（会让「hello」这样的西文短信解出乱码）。\n- 应用首页新增「硬件方案」入口和说明页：什么时候用手机、什么时候用硬件，硬件型号、接线和刷固件步骤概要，含未核实项的标注。\n- 手机端的转发逻辑、数据格式不变。\n\n\n---\n\n### 下载哪个\n\n| 手机 | 下载 |\n|---|---|\n| 安卓 8.0 及以上 | `sms-notify-forwarder_0.3.0_android.apk` |\n\n`SHA256SUMS.txt` 是安装包的校验值，想核对文件完整性时用。\n\n### 第一次安装\n\n- 用手机浏览器下载 APK 后点开安装。系统提示「不允许安装未知来源应用」时，按提示在设置里允许当前浏览器或文件管理器安装，装完可以再关掉。\n- 打开手机上的「短信通知转发」后，按首页提示逐项授权。\n\n---\n\n篝火出品 · 收录于篝火 App 应用区。本工具开源，源码与问题反馈都在本仓库，全部工具见 https://github.com/campfire-code/toolkit-hub\n",
       "repoUrl": "https://github.com/campfire-code/sms-notify-forwarder",
-      "releaseUrl": "https://github.com/campfire-code/sms-notify-forwarder/releases/tag/v0.2.0",
+      "releaseUrl": "https://github.com/campfire-code/sms-notify-forwarder/releases/tag/v0.3.0",
       "screenshot": "https://raw.githubusercontent.com/campfire-code/sms-notify-forwarder/main/docs/screenshot.png",
       "downloads": [
         {
           "platform": "安卓",
-          "name": "sms-notify-forwarder_0.2.0_android.apk",
-          "url": "https://github.com/campfire-code/sms-notify-forwarder/releases/download/v0.2.0/sms-notify-forwarder_0.2.0_android.apk"
+          "name": "sms-notify-forwarder_0.3.0_android.apk",
+          "url": "https://github.com/campfire-code/sms-notify-forwarder/releases/download/v0.3.0/sms-notify-forwarder_0.3.0_android.apk"
         }
       ],
       "upstream": null,
